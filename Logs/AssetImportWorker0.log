@@ -200,3 +200,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1388.382234 seconds.
+  path: Assets/PauseController.cs
+  artifactKey: Guid(f344ade6f379d05438262de5a85b1444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PauseController.cs using Guid(f344ade6f379d05438262de5a85b1444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c927ddc9741e3788e9ab5e6a913456') in 0.030732 seconds 
+  Import took 0.038579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.052700 seconds.
+  path: Assets/PauseController.cs
+  artifactKey: Guid(f344ade6f379d05438262de5a85b1444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PauseController.cs using Guid(f344ade6f379d05438262de5a85b1444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e435c78a8a2f961205682c430e74b08f') in 0.007068 seconds 
+  Import took 0.032259 seconds .
+

@@ -9,12 +9,14 @@ public class PauseController : MonoBehaviour
     public static bool GamePaused = false;
     [SerializeField] private GameObject PausePanel;
     [SerializeField] private GameObject PauseBackground;
+    [SerializeField] private GameObject PauseNotebook;
 
 
     private void Start()
     {
         PausePanel.SetActive(false);
         PauseBackground.SetActive(false);
+        PauseNotebook.SetActive(false);
     }
 
     void Update()
@@ -33,6 +35,7 @@ public class PauseController : MonoBehaviour
             Time.timeScale = 0f;
             PausePanel.SetActive(true);
             PauseBackground.SetActive(true);
+            PauseNotebook.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
@@ -41,6 +44,7 @@ public class PauseController : MonoBehaviour
             Time.timeScale = 1f;
             PausePanel.SetActive(false);
             PauseBackground.SetActive(false);
+            PauseNotebook.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }

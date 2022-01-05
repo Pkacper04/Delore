@@ -3,30 +3,50 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
 
-    [SerializeField] private Transform[] playerCameras;
+    [SerializeField] private float playerOffset = 7f;
+
+    private Transform mainCamera;
+    private Transform player;
 
     private Animator animator;
-    private int camNumber = 1;
 
-    // Start is called before the first frame update
+    internal int camNumber = 1;
+
     void Start()
     {
         animator = GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (!animator.IsInTransition(0))
+        {
+            if (CalculatePlayerOffset() >= playerOffset)
+            {
+                camNumber++;
+                animator.SetInteger("CameraNumber", camNumber);
 
-        if (playerCameras[camNumber - 1].rotation.y >= 0.40f)
-        {
-            camNumber++;
-            animator.SetInteger("CameraNumber", camNumber);
+            }
+            else if (CalculatePlayerOffset() <= -playerOffset)
+            {
+                camNumber--;
+                animator.SetInteger("CameraNumber", camNumber);
+            }
         }
-        if (playerCameras[camNumber - 1].rotation.y <= -0.40f)
+    }
+
+    private float CalculatePlayerOffset() => player.position.x - mainCamera.position.x;
+
+
+    public void ChangeCamera(bool right)
+    {
+        if (!animator.IsInTransition(0))
         {
-            camNumber--;
+            camNumber = right ? camNumber + 1 : camNumber - 1;
             animator.SetInteger("CameraNumber", camNumber);
         }
     }
+
 }

@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1191,7 +1191,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719889028}
-  m_LocalRotation: {x: 0.09565538, y: -0.062087726, z: 0.005978132, w: 0.99345833}
+  m_LocalRotation: {x: 0.09565542, y: -0.062087674, z: 0.00597813, w: 0.99345833}
   m_LocalPosition: {x: 204.99997, y: 1532.715, z: -2501}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3620,6 +3620,7 @@ GameObject:
   - component: {fileID: 1487077068}
   - component: {fileID: 1487077070}
   - component: {fileID: 1487077071}
+  - component: {fileID: 1487077072}
   m_Layer: 0
   m_Name: CM StateDrivenCamera1
   m_TagString: CameraController
@@ -3759,6 +3760,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerOffset: 7
+  cameraSaveSystem: {fileID: 1487077072}
+--- !u!114 &1487077072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487077067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382d22f4a9045c54090ec856ec6fea17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1501490225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,8 +4233,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e21a0624ff8db9e40b80699bc387b6d6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5104,15 +5118,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3018292816915930460, guid: 43ee8c1c0de229c4d904ad8b8c486d70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.09565538
+      value: 0.09565542
       objectReference: {fileID: 0}
     - target: {fileID: 3018292816915930460, guid: 43ee8c1c0de229c4d904ad8b8c486d70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.062087726
+      value: -0.062087674
       objectReference: {fileID: 0}
     - target: {fileID: 3018292816915930460, guid: 43ee8c1c0de229c4d904ad8b8c486d70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.005978132
+      value: 0.00597813
       objectReference: {fileID: 0}
     - target: {fileID: 3018292816915930460, guid: 43ee8c1c0de229c4d904ad8b8c486d70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -34,4 +34,10 @@ public class SaveSystem : MonoBehaviour
 
         return data;
     }
+
+    public static void DeletePlayerSave()
+    {
+        string path = Application.persistentDataPath + "/player.save";
+        File.Delete(path);
+    }
 }

@@ -13,6 +13,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
+
+        private void Awake()
+        {
+            PlayerData data = SaveSystem.LoadPlayer();
+            if (data != null)
+                transform.position = new Vector3(data.position_x, data.position_y, data.position_z);
+        }
         private void Start()
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -32,9 +39,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonCharacter>();
 
-            PlayerData data = SaveSystem.LoadPlayer();
-            if (data != null)
-                transform.position = new Vector3(data.position_x, data.position_y, data.position_z);
+            
+
         }
 
 

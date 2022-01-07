@@ -1,67 +1,88 @@
 using UnityEngine;
-using Cinemachine;
+using System.Collections;
+
 
 public class CameraController : MonoBehaviour
 {
 
     [SerializeField] internal float playerOffset = 7f;
+    [SerializeField] CmeraSaveLoad cameraSaveSystem;
 
 
-
-    private CinemachineStateDrivenCamera stateCamera;
-    private Transform mainCamera;
     private Transform player;
-
     private Animator animator;
+    private bool inTransition = false;
 
+
+    internal Transform mainCamera;
     internal int camNumber = 1;
+    internal int camNumberStorage = 0;
+    internal int lastCameraId = 0;
+    internal bool xAxis = true;
 
 
-
-    private void Awake()
+    private void Start()
     {
         animator = GetComponent<Animator>();
-        stateCamera = GetComponent<CinemachineStateDrivenCamera>();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        cameraSaveSystem.LoadData(this);
 
-        PlayerData data = SaveSystem.LoadPlayer();
-        if (data != null)
+        if(xAxis)
+            animator.SetInteger("CameraNumberX", camNumber);
+        else
         {
-            camNumber = data.camNumber;
-
-            CinemachineVirtualCameraBase tmpCamera = stateCamera.ChildCameras[0];
-            stateCamera.ChildCameras[0] = stateCamera.ChildCameras[camNumber - 1];
-            stateCamera.ChildCameras[camNumber - 1] = tmpCamera;
-
-            mainCamera.position = stateCamera.ChildCameras[0].gameObject.transform.position;
-
-            animator.SetInteger("CameraNumber", camNumber);
+            animator.SetInteger("CameraNumberZ", camNumber);
+            WaitForTransition();
         }
-
     }
+
 
 
     void Update()
     {
-       
-       // Debug.Log(animator.IsInTransition(0));
-        if (!animator.IsInTransition(0))
+
+        cameraSaveSystem.SetCameraId(this);
+
+        if (xAxis)
+            XAxisCamera();
+        else
+            ZAxisCamera();
+
+    }
+
+    private void ZAxisCamera()
+    {
+        
+        if(!animator.IsInTransition(0) && !inTransition)
         {
-            if (CalculatePlayerOffset() >= playerOffset)
-            {
+            if (CalculatePlayerOffsetZ() >= playerOffset)
                 camNumber++;
-            }
-            else if (CalculatePlayerOffset() <= -playerOffset)
-            {
+            else if (CalculatePlayerOffsetZ() <= -playerOffset)
                 camNumber--;
-            }
-            animator.SetInteger("CameraNumber", camNumber);
+            animator.SetInteger("CameraNumberZ", camNumber);
+        }
+        
+        
+    }
+
+    private void XAxisCamera()
+    {
+        
+        if (!animator.IsInTransition(0) && !inTransition)
+        {
+            if (CalculatePlayerOffsetX() >= playerOffset)
+                camNumber++;
+            else if (CalculatePlayerOffsetX() <= -playerOffset)
+                camNumber--;
+            animator.SetInteger("CameraNumberX", camNumber);
+
         }
     }
 
-    internal float CalculatePlayerOffset() => player.position.x - mainCamera.position.x;
+    private float CalculatePlayerOffsetX() => player.position.x - mainCamera.position.x;
+    private float CalculatePlayerOffsetZ() => player.position.z - mainCamera.position.z;
 
 
     public void ChangeCamera(bool right)
@@ -70,8 +91,39 @@ public class CameraController : MonoBehaviour
         if (!animator.IsInTransition(0))
         {
             camNumber = right ? camNumber + 1 : camNumber - 1;
-            animator.SetInteger("CameraNumber", camNumber);
+            animator.SetInteger("CameraNumberX", camNumber);
         }
+    }
+
+    public void ChangeAxis(bool Axis)
+    {
+        this.xAxis = Axis;
+
+        if (!animator.IsInTransition(0))
+        {
+            if (Axis)
+            {
+                camNumber = camNumberStorage;
+                animator.SetInteger("CameraNumberZ", 0);
+                animator.SetInteger("CameraNumberX", camNumber);
+            }
+            else
+            {
+                animator.SetInteger("CameraNumberZ", 1);
+                camNumberStorage = camNumber;
+                camNumber = 1;
+                StartCoroutine(WaitForTransition());
+                
+            }
+        }
+    }
+
+
+    private IEnumerator WaitForTransition()
+    {
+        inTransition = true;
+        yield return new WaitUntil(() => animator.IsInTransition(0));
+        inTransition = false;
     }
 
 }

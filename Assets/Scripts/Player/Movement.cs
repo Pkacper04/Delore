@@ -8,14 +8,23 @@ public class Movement : MonoBehaviour
 
     private NavMeshAgent agent;
     private Animator animator;
-    // Start is called before the first frame update
+
+
+    private void Awake()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        if(data != null)
+        {
+            transform.position = new Vector3(data.position_x, data.position_y, data.position_z);
+        }
+    }
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();    
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetMouseButton(0))
@@ -32,9 +41,7 @@ public class Movement : MonoBehaviour
         
         Physics.Raycast(ray, out hit);
         if (CanMove(hit.point))
-        {
             agent.destination = hit.point;
-        }
     }
 
     private void UpdateAnimations()
@@ -50,6 +57,12 @@ public class Movement : MonoBehaviour
     {
         NavMeshPath path = new NavMeshPath();
         bool hasPath = NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
+
+        agent.CalculatePath(destination, path);
+
+        if (path.status == NavMeshPathStatus.PathPartial)
+            return false;
+
         return hasPath;
     }
 }

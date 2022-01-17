@@ -33,15 +33,11 @@ public class PauseController : MonoBehaviour
         {
             Time.timeScale = 0f;
             Pause.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
         }
         else
         {
             Time.timeScale = 1f;
             Pause.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
         }
     }
 

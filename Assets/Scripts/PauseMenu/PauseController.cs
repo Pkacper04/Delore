@@ -8,24 +8,19 @@ using UnityEngine.UI;
 public class PauseController : MonoBehaviour
 {
     public static bool GamePaused = false;
-    [SerializeField] private GameObject PauseBackground;
-    [SerializeField] private GameObject PauseForeground;
-    [SerializeField] private GameObject PausePanel;
-    [SerializeField] private GameObject PauseNotebook;
+    [SerializeField] private Canvas canvas;
+
 
 
 
     private void Start()
     {
-        PausePanel.SetActive(false);
-        PauseBackground.SetActive(false);
-        PauseNotebook.SetActive(false);
-        PauseForeground.SetActive(false);
+        canvas.enabled = false;
     }
-
+    
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E)) // do zmiany na esc po wsyzstkich testach
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             GamePaused = !GamePaused;
             PauseGame();
@@ -37,22 +32,12 @@ public class PauseController : MonoBehaviour
         if(GamePaused)
         {
             Time.timeScale = 0f;
-            PausePanel.SetActive(true);
-            PauseBackground.SetActive(true);
-            PauseNotebook.SetActive(true);
-            PauseForeground.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            canvas.enabled = true;
         }
         else
         {
             Time.timeScale = 1f;
-            PausePanel.SetActive(false);
-            PauseBackground.SetActive(false);
-            PauseNotebook.SetActive(false);
-            PauseForeground.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            canvas.enabled = false;
         }
     }
 
@@ -63,11 +48,16 @@ public class PauseController : MonoBehaviour
         PauseGame();
     }
 
+
+    public void ExitToMenu()
+    {
+        GamePaused = false;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+    }
     public void ExitGame()
     {
-        Debug.Log("Wyjscie z gry");
-        //SceneManager.LoadScene("Menu");
-        //Dokoñczyæ gdy bêdzie gotowa scena menu
+        Application.Quit();
     }
 
     public void Settings()

@@ -23,7 +23,6 @@ public class SaveSystem : MonoBehaviour
     public static PlayerData LoadPlayer()
     {
         string path = Application.persistentDataPath + "/player.save";
-        Debug.Log(path);
         if (!File.Exists(path))
             return null;
 
@@ -33,5 +32,11 @@ public class SaveSystem : MonoBehaviour
         fs.Close();
 
         return data;
+    }
+
+    public static void DeletePlayerSave()
+    {
+        string path = Application.persistentDataPath + "/player.save";
+        File.Delete(path);
     }
 }

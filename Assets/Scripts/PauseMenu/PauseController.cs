@@ -8,14 +8,14 @@ using UnityEngine.UI;
 public class PauseController : MonoBehaviour
 {
     public static bool GamePaused = false;
-    [SerializeField] private GameObject Pause;
+    [SerializeField] private Canvas canvas;
 
 
 
 
     private void Start()
     {
-        Pause.SetActive(false);
+        canvas.enabled = false;
     }
     
     void Update()
@@ -32,12 +32,12 @@ public class PauseController : MonoBehaviour
         if(GamePaused)
         {
             Time.timeScale = 0f;
-            Pause.SetActive(true);
+            canvas.enabled = true;
         }
         else
         {
             Time.timeScale = 1f;
-            Pause.SetActive(false);
+            canvas.enabled = false;
         }
     }
 

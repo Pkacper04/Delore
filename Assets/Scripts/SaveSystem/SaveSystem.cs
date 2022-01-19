@@ -23,7 +23,6 @@ public class SaveSystem : MonoBehaviour
     public static PlayerData LoadPlayer()
     {
         string path = Application.persistentDataPath + "/player.save";
-        Debug.Log(path);
         if (!File.Exists(path))
             return null;
 

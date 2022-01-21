@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Threading.Tasks;
 
 public class SaveSystem : MonoBehaviour
 {
+
+    private static Animator saveIcon;
+    private void Start()
+    {
+        Debug.Log("dziala");
+        saveIcon = GameObject.Find("SaveIcon").GetComponent<Animator>();
+        Debug.Log(saveIcon.gameObject);
+    }
     public static void SavePlayer(GameObject player)
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-
-        string path = Application.persistentDataPath + "/player.save";
-        FileStream fs = new FileStream(path, FileMode.Create);
-
         PlayerData data = new PlayerData(player);
 
-        formatter.Serialize(fs, data);
-        fs.Close();
-
+        SaveGame(data);
     }
 
     public static PlayerData LoadPlayer()
@@ -39,4 +41,25 @@ public class SaveSystem : MonoBehaviour
         string path = Application.persistentDataPath + "/player.save";
         File.Delete(path);
     }
+
+
+    public static async void SaveGame(PlayerData data)
+    {
+
+        saveIcon.SetBool("Saving", true);
+        BinaryFormatter formatter = new BinaryFormatter();
+
+        string path = Application.persistentDataPath + "/player.save";
+        FileStream fs = new FileStream(path, FileMode.Create);
+
+
+        formatter.Serialize(fs, data);
+        fs.Close();
+
+        await Task.Delay(1000);
+        saveIcon.SetBool("Saving", false);
+
+    }
+
+
 }

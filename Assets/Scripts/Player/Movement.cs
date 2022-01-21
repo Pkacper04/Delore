@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     private Animator animator;
 
 
+
     private void Awake()
     {
         PlayerData data = SaveSystem.LoadPlayer();
@@ -27,7 +28,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && !PauseController.GamePaused)
         {
             MoveToCursor();
         }

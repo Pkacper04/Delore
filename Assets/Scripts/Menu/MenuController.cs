@@ -17,12 +17,12 @@ public class MenuController : MonoBehaviour
     }
     public void Continue()
     {
-        SceneManager.LoadScene("Prolog");
+        SceneManager.LoadScene(1);
     }
     public void NewGame()
     {
         SaveSystem.DeletePlayerSave();
-        SceneManager.LoadScene("Prolog");
+        SceneManager.LoadScene(1);
     }
 
     public void Settings()

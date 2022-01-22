@@ -11,8 +11,6 @@ public class PauseController : MonoBehaviour
     [SerializeField] private Canvas canvas;
 
 
-
-
     private void Start()
     {
         canvas.enabled = false;

@@ -9,8 +9,6 @@ public class Movement : MonoBehaviour
     private NavMeshAgent agent;
     private Animator animator;
 
-
-
     private void Awake()
     {
         PlayerData data = SaveSystem.LoadPlayer();

@@ -8,7 +8,6 @@ public class CmeraSaveLoad : MonoBehaviour
 {
     private CinemachineStateDrivenCamera stateCamera;
     private PlayerData data;
-    // Start is called before the first frame update
 
     private void Awake()
     {
@@ -18,7 +17,6 @@ public class CmeraSaveLoad : MonoBehaviour
 
     public void LoadData(CameraController controller)
     {
-        data = SaveSystem.LoadPlayer();
         if (data != null)
         {
 

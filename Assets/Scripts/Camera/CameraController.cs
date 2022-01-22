@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-
+using System;
 
 public class CameraController : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
 
     private Transform player;
     private Animator animator;
+
     private bool inTransition = false;
 
 
@@ -42,47 +43,38 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-
         cameraSaveSystem.SetCameraId(this);
 
-        if (xAxis)
-            XAxisCamera();
-        else
-            ZAxisCamera();
-
-    }
-
-    private void ZAxisCamera()
-    {
-        
-        if(!animator.IsInTransition(0) && !inTransition)
-        {
-            if (CalculatePlayerOffsetZ() >= playerOffset)
-                camNumber++;
-            else if (CalculatePlayerOffsetZ() <= -playerOffset)
-                camNumber--;
-            animator.SetInteger("CameraNumberZ", camNumber);
-        }
-        
-        
-    }
-
-    private void XAxisCamera()
-    {
-        
         if (!animator.IsInTransition(0) && !inTransition)
-        {
-            if (CalculatePlayerOffsetX() >= playerOffset)
-                camNumber++;
-            else if (CalculatePlayerOffsetX() <= -playerOffset)
-                camNumber--;
-            animator.SetInteger("CameraNumberX", camNumber);
-
-        }
+            AxisCamera();
+        
     }
 
-    private float CalculatePlayerOffsetX() => player.position.x - mainCamera.position.x;
-    private float CalculatePlayerOffsetZ() => player.position.z - mainCamera.position.z;
+    private void AxisCamera()
+    {
+        if (CalculatePlayerOffset() >= playerOffset)
+            camNumber++;
+        else if (CalculatePlayerOffset() <= -playerOffset)
+            camNumber--;
+
+        UpdateAnimation();
+
+    }
+
+    private void UpdateAnimation()
+    {
+        if (xAxis)
+            animator.SetInteger("CameraNumberX", camNumber);
+        else
+            animator.SetInteger("CameraNumberZ", camNumber);
+    }
+
+    private float CalculatePlayerOffset()
+    {
+        if(xAxis)
+            return player.position.x - mainCamera.position.x;
+        return player.position.z - mainCamera.position.z;
+    }
 
 
     public void ChangeCamera(bool right)

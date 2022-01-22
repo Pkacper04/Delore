@@ -9,15 +9,20 @@ public class MenuController : MonoBehaviour
 
     [SerializeField] private Button continueButton;
 
+    private int levelIndex;
+
     private void Start()
     {
         PlayerData data = SaveSystem.LoadPlayer();
-        if(data == null)
+        if (data == null)
             continueButton.interactable = false;
+        else
+            levelIndex = data.levelID;
+        
     }
     public void Continue()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(levelIndex);
     }
     public void NewGame()
     {

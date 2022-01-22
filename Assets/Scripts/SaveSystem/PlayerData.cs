@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 [System.Serializable]
@@ -14,17 +15,22 @@ public class PlayerData
     public bool xAxis;
     public int lastCameraId;
     public int storedCamNumber;
+    public int levelID;
     
     public PlayerData(GameObject player)
     {
         CameraController controller = GameObject.FindGameObjectWithTag("CameraController").GetComponent<CameraController>();
+
         position_x = player.transform.position.x;
         position_y = player.transform.position.y;
         position_z = player.transform.position.z;
+
         camNumber = controller.camNumber;
         xAxis = controller.xAxis;
         lastCameraId = controller.lastCameraId;
         storedCamNumber = controller.camNumberStorage;
+
+        levelID = SceneManager.GetActiveScene().buildIndex;
     }
 
 

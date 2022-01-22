@@ -11,9 +11,7 @@ public class SaveSystem : MonoBehaviour
     private static Animator saveIcon;
     private void Start()
     {
-        Debug.Log("dziala");
         saveIcon = GameObject.Find("SaveIcon").GetComponent<Animator>();
-        Debug.Log(saveIcon.gameObject);
     }
     public static void SavePlayer(GameObject player)
     {

@@ -66,7 +66,6 @@ public class PauseController : MonoBehaviour
 
     public void Save()
     {
-        Debug.Log("Saved Game");
         SaveSystem.SavePlayer(GameObject.FindGameObjectWithTag("Player"));
     }
 

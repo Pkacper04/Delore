@@ -26,7 +26,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && !PauseController.GamePaused)
+        if(Input.GetMouseButtonDown(1) && !PauseController.GamePaused)
         {
             MoveToCursor();
         }

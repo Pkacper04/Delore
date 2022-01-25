@@ -8,11 +8,13 @@ public class MenuController : MonoBehaviour
 {
 
     [SerializeField] private Button continueButton;
+    [SerializeField] private GameObject settings;
 
     private int levelIndex;
 
     private void Start()
     {
+        settings.SetActive(false);
         PlayerData data = SaveSystem.LoadPlayer();
         if (data == null)
             continueButton.interactable = false;
@@ -32,7 +34,7 @@ public class MenuController : MonoBehaviour
 
     public void Settings()
     {
-        //ustawienia jak olechowski skonczy
+        settings.SetActive(!settings.activeInHierarchy);
     }
 
     public void Credists()

@@ -9,7 +9,7 @@ public class MenuController : MonoBehaviour
 
     [SerializeField] private Button continueButton;
     [SerializeField] private GameObject settings;
-
+    [SerializeField] private Sprite unClickableButton;
     private int levelIndex;
 
     private void Start()
@@ -17,7 +17,11 @@ public class MenuController : MonoBehaviour
         settings.SetActive(false);
         PlayerData data = SaveSystem.LoadPlayer();
         if (data == null)
+        {
             continueButton.interactable = false;
+            continueButton.GetComponent<Animator>().enabled = false;
+            continueButton.GetComponent<Image>().sprite = unClickableButton;
+        }
         else
             levelIndex = data.levelID;
         

@@ -34,10 +34,13 @@ public class SoundManager : MonoBehaviour
         }
         else
         {
-            Debug.Log(PlayerPrefs.GetFloat(MusicPref));
             if (PlayerPrefs.GetFloat(MusicPref) == 0)
             {
                 musicSlider.value = 0.00001f;
+            }
+            if (PlayerPrefs.GetFloat(SoundEffectsPref) == 0)
+            {
+                soundEffectsSlider.value = 0.00001f;
             }
             musicVolume = PlayerPrefs.GetFloat(MusicPref);
             musicSlider.value = musicVolume;
@@ -70,5 +73,6 @@ public class SoundManager : MonoBehaviour
             soundEffectsAudio[i].volume = soundEffectsSlider.value;
         }
     }
+    
 
 }

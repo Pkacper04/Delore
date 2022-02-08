@@ -52,14 +52,14 @@ public class PauseController : MonoBehaviour
 
     public void ExitToMenu()
     {
-        SaveSystem.SavePlayer(GameObject.FindGameObjectWithTag("player"));
+        SaveSystem.SavePlayerExit(GameObject.FindGameObjectWithTag("Player"));
         GamePaused = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
     public void ExitGame()
     {
-        SaveSystem.SavePlayer(GameObject.FindGameObjectWithTag("player"));
+        SaveSystem.SavePlayerExit(GameObject.FindGameObjectWithTag("Player"));
         Application.Quit();
     }
 

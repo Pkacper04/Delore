@@ -6,8 +6,11 @@ using UnityEngine.AI;
 public class Movement : MonoBehaviour
 {
 
-    private NavMeshAgent agent;
+    [SerializeField] private NavMeshAgent agent;
     private Animator animator;
+    [SerializeField] private CapsuleCollider capsuleCollider;
+
+    float speed;
 
     private void Awake()
     {
@@ -20,8 +23,8 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        animator = GetComponent<Animator>();    
+        animator = GetComponent<Animator>();
+        speed = agent.speed;
     }
 
     void Update()
@@ -58,10 +61,62 @@ public class Movement : MonoBehaviour
         bool hasPath = NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
 
         agent.CalculatePath(destination, path);
+       
 
         if (path.status == NavMeshPathStatus.PathPartial)
             return false;
 
         return hasPath;
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.position.y > 4 && other.transform.position.y < 4.65f)
+            Crouch();
+    }
+
+
+    private void Crouch()
+    {
+        bool crouch = !animator.GetBool("Crouch");
+
+        animator.SetBool("Crouch", crouch);
+
+        float pos_y;
+        float height;
+        float agentHeight;
+
+        if(crouch)
+        {
+            pos_y = 0.44f;
+            height = 0.88f;
+            agentHeight = 0.8f;
+            agent.speed = 1.5f;
+        }
+        else
+        {
+            pos_y = 0.79f;
+            height = 1.58f;
+            agentHeight = 1.5f;
+            agent.speed = speed;
+        }
+
+        
+
+        Debug.Log(capsuleCollider.center);
+
+        capsuleCollider.center = new Vector3(capsuleCollider.center.x, pos_y, capsuleCollider.center.z);
+        capsuleCollider.height = height;
+        agent.height = agentHeight;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (animator.GetBool("Crouch"))
+            Crouch();
+    }
+       
+    
+
 }

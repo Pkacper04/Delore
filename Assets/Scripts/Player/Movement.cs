@@ -61,9 +61,10 @@ public class Movement : MonoBehaviour
         bool hasPath = NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
 
         agent.CalculatePath(destination, path);
-       
 
-        if (path.status == NavMeshPathStatus.PathPartial)
+        Debug.Log(path.status == NavMeshPathStatus.PathPartial);
+
+       if(path.status == NavMeshPathStatus.PathPartial)
             return false;
 
         return hasPath;

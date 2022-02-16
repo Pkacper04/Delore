@@ -21,7 +21,7 @@ public class CameraChanging : MonoBehaviour
         }
         else
         {
-            if (player.transform.position.z < transform.position.z)
+            if (player.transform.position.z > transform.position.z)
                 right = true;
 
         }
@@ -39,7 +39,8 @@ public class CameraChanging : MonoBehaviour
             }
             else
             {
-                right = player.transform.position.z < transform.position.z ? false : true;
+                
+                right = player.transform.position.z < transform.position.z+.5f ? false : true;
                 controller.ChangeAxis(right); 
             }
         }

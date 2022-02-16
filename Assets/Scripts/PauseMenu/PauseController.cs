@@ -70,7 +70,9 @@ public class PauseController : MonoBehaviour
 
     public void Save()
     {
-        SaveSystem.SavePlayer(GameObject.FindGameObjectWithTag("Player"));
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if(!player.GetComponent<Movement>().crouch)
+            SaveSystem.SavePlayer(player);
     }
 
 }

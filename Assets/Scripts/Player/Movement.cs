@@ -10,6 +10,8 @@ public class Movement : MonoBehaviour
     private Animator animator;
     [SerializeField] private CapsuleCollider capsuleCollider;
 
+    public bool crouch;
+    bool onEnemy = false;
     float speed;
 
     private void Awake()
@@ -34,6 +36,30 @@ public class Movement : MonoBehaviour
             MoveToCursor();
         }
         UpdateAnimations();
+
+
+        CheckForAttack();
+    }
+
+    private void CheckForAttack()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        Physics.Raycast(ray, out hit);
+        if (hit.collider == null)
+            return;
+        if (hit.collider.tag == "Enemy")
+        {
+            ChangeCursros.AttackCursor();
+            onEnemy = true;
+        }
+        else if (onEnemy)
+        {
+            ChangeCursros.ActiveCursor();
+            onEnemy = false;
+        }
+
     }
 
     private void MoveToCursor()
@@ -44,6 +70,8 @@ public class Movement : MonoBehaviour
         Physics.Raycast(ray, out hit);
         if (CanMove(hit.point))
             agent.destination = hit.point;
+        else
+            ChangeCursros.DeclineCursor();
     }
 
     private void UpdateAnimations()
@@ -62,11 +90,11 @@ public class Movement : MonoBehaviour
 
         agent.CalculatePath(destination, path);
 
-        Debug.Log(path.status == NavMeshPathStatus.PathPartial);
-
-       if(path.status == NavMeshPathStatus.PathPartial)
+        if (path.status == NavMeshPathStatus.PathPartial)
+        {
+            ChangeCursros.DeclineCursor();
             return false;
-
+        }
         return hasPath;
     }
 
@@ -80,7 +108,7 @@ public class Movement : MonoBehaviour
 
     private void Crouch()
     {
-        bool crouch = !animator.GetBool("Crouch");
+        crouch = !animator.GetBool("Crouch");
 
         animator.SetBool("Crouch", crouch);
 
@@ -103,10 +131,6 @@ public class Movement : MonoBehaviour
             agent.speed = speed;
         }
 
-        
-
-        Debug.Log(capsuleCollider.center);
-
         capsuleCollider.center = new Vector3(capsuleCollider.center.x, pos_y, capsuleCollider.center.z);
         capsuleCollider.height = height;
         agent.height = agentHeight;
@@ -115,7 +139,8 @@ public class Movement : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (animator.GetBool("Crouch"))
-            Crouch();
+            if (other.transform.position.y > 4 && other.transform.position.y < 4.65f)
+                Crouch();
     }
        
     

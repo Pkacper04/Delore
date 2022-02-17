@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using NaughtyAttributes;
 public class ChangeCursros : MonoBehaviour
 {
     [SerializeField] private Texture2D activeCursor;
     [SerializeField] private Texture2D[] declineCursors;
     [SerializeField] private Texture2D attackCursor;
+
+
     [SerializeField] private int numberOfCycles = 2;
     [SerializeField] private float animationTime = 1;
 
-    
+
+
+
 
     static public ChangeCursros instance;
 

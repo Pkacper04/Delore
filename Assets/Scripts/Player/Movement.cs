@@ -49,6 +49,8 @@ public class Movement : MonoBehaviour
         Physics.Raycast(ray, out hit);
         if (hit.collider == null)
             return;
+
+
         if (hit.collider.tag == "Enemy")
         {
             ChangeCursros.AttackCursor();

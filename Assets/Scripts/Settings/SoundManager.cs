@@ -73,6 +73,11 @@ public class SoundManager : MonoBehaviour
             soundEffectsAudio[i].volume = soundEffectsSlider.value;
         }
     }
+
+    public void OntoggleChange(Toggle toggle)
+    {
+        Screen.fullScreen = toggle.isOn;
+    }
     
 
 }

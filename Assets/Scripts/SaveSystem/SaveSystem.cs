@@ -17,9 +17,16 @@ public class SaveSystem : MonoBehaviour
     {
         PlayerData data = new PlayerData(player);
 
-        SaveGame(data);
+        SaveGameExit(data);
     }
 
+
+    public static void SavePlayerExit(GameObject player)
+    {
+        PlayerData data = new PlayerData(player);
+
+        SaveGameExit(data);
+    }
     public static PlayerData LoadPlayer()
     {
         string path = Application.persistentDataPath + "/player.save";
@@ -54,8 +61,22 @@ public class SaveSystem : MonoBehaviour
         formatter.Serialize(fs, data);
         fs.Close();
 
-        await Task.Delay(3000);
+        await Task.Delay(1000);
         saveIcon.SetBool("Saving", false);
+
+    }
+
+    public static void SaveGameExit(PlayerData data)
+    {
+
+        BinaryFormatter formatter = new BinaryFormatter();
+
+        string path = Application.persistentDataPath + "/player.save";
+        FileStream fs = new FileStream(path, FileMode.Create);
+
+
+        formatter.Serialize(fs, data);
+        fs.Close();
 
     }
 

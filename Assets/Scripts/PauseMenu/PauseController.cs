@@ -9,11 +9,13 @@ public class PauseController : MonoBehaviour
 {
     public static bool GamePaused = false;
     [SerializeField] private Canvas canvas;
+    [SerializeField] private GameObject settings;
 
 
     private void Start()
     {
         canvas.enabled = false;
+        settings.SetActive(false);
     }
     
     void Update()
@@ -36,6 +38,7 @@ public class PauseController : MonoBehaviour
         {
             Time.timeScale = 1f;
             canvas.enabled = false;
+            settings.SetActive(false);
         }
     }
 
@@ -49,24 +52,24 @@ public class PauseController : MonoBehaviour
 
     public void ExitToMenu()
     {
+        SaveSystem.SavePlayerExit(GameObject.FindGameObjectWithTag("Player"));
         GamePaused = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
     public void ExitGame()
     {
+        SaveSystem.SavePlayerExit(GameObject.FindGameObjectWithTag("Player"));
         Application.Quit();
     }
 
     public void Settings()
     {
-        Debug.Log("Settings on");
-        //Dodaæ uruchamianie ustawieñ w przysz³oœci
+        settings.SetActive(!settings.activeInHierarchy);
     }
 
     public void Save()
     {
-        Debug.Log("Saved Game");
         SaveSystem.SavePlayer(GameObject.FindGameObjectWithTag("Player"));
     }
 

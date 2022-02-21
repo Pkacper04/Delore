@@ -632,3 +632,555 @@ Received Import Request.
 Start importing Assets/Sprites/Cursors/kursor x.png using Guid(9a477a0ec0f6ff04a95e79eb7e3b937f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '525a44d7ff01f81fa8bb2be4dc497f18') in 0.019550 seconds 
   Import took 0.034569 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011834 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.753 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2754ms)
+		BeginReloadAssembly (177ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (2479ms)
+			LoadAssemblies (170ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (601ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (1088ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (318ms)
+				ProcessInitializeOnLoadAttributes (706ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2937 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.0 MB.
+System memory in use after: 130.2 MB.
+
+Unloading 98 unused Assets to reduce memory usage. Loaded Objects now: 3544.
+Total: 6.895300 ms (FindLiveObjects: 0.528300 ms CreateObjectMapping: 1.139300 ms MarkObjects: 5.145800 ms  DeleteObjects: 0.080500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 117.749763 seconds.
+  path: Assets/Sprites/reszta rzeczy
+  artifactKey: Guid(c69556ae776789344bf6a8d7a20cf1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy using Guid(c69556ae776789344bf6a8d7a20cf1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '088870a6b63e9279c8ce028e060e6930') in 0.015789 seconds 
+  Import took 0.059686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.804746 seconds.
+  path: Assets/Sprites/menu
+  artifactKey: Guid(0e4fcbe0c8481574891ef661de882829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/menu using Guid(0e4fcbe0c8481574891ef661de882829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a22f72e2d4795b98bcb3a1f36f7f02') in 0.089901 seconds 
+  Import took 0.097763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Sprites/menu/mapa2.png
+  artifactKey: Guid(177f9a1ab293e0c40b245ea24e34ede6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/menu/mapa2.png using Guid(177f9a1ab293e0c40b245ea24e34ede6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1c2ceea05b4d85e76e092ab37067a4') in 0.169427 seconds 
+  Import took 0.199224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/Sprites/menu/mapa1.png
+  artifactKey: Guid(497ef79e72de55841a74790fec2bbf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/menu/mapa1.png using Guid(497ef79e72de55841a74790fec2bbf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dfa311d262f99b637e4046cb7a8e624') in 0.061747 seconds 
+  Import took 0.197276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Sprites/menu/mapa3.png
+  artifactKey: Guid(1a377726d857fd64e9158639e984ef53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/menu/mapa3.png using Guid(1a377726d857fd64e9158639e984ef53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f246025a63107a363064a1f614497f3') in 0.082388 seconds 
+  Import took 0.117709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001310 seconds.
+  path: Assets/Sprites/menu/delore2.png
+  artifactKey: Guid(a6b32bba33c144e4983e06fe76cf4710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/menu/delore2.png using Guid(a6b32bba33c144e4983e06fe76cf4710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0aae57c202f77c0f61d5b42fb719d0') in 0.119910 seconds 
+  Import took 0.192715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.587690 seconds.
+  path: Assets/Sprites/opcje
+  artifactKey: Guid(9e52257bb4a034940ae315a52505db7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje using Guid(9e52257bb4a034940ae315a52505db7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05599735e85f15b869f4df5e6c50c485') in 0.144772 seconds 
+  Import took 0.259229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Sprites/opcje/tło.png
+  artifactKey: Guid(83e808e8a480fb7428c80d22cdeeb929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/tło.png using Guid(83e808e8a480fb7428c80d22cdeeb929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a128624ce13a5f976c0e1f735a99fd6') in 0.343357 seconds 
+  Import took 0.353997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Sprites/opcje/jsadhgvf.png
+  artifactKey: Guid(2ab172a41f7f61941bd70b24517bed87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/jsadhgvf.png using Guid(2ab172a41f7f61941bd70b24517bed87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def9ce4fb9918a3298ecf7c62d456924') in 0.323681 seconds 
+  Import took 1.017212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Sprites/opcje/dzyngiel tło3.png
+  artifactKey: Guid(ea6894e0f99535e468e7c1f3156d8432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/dzyngiel tło3.png using Guid(ea6894e0f99535e468e7c1f3156d8432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3792d1abce3ac758766006d96b954c03') in 0.108831 seconds 
+  Import took 0.176155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Sprites/animacja pióra/10.png
+  artifactKey: Guid(e8cc6cfd3edecbd4c950d94ae6ca4153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/10.png using Guid(e8cc6cfd3edecbd4c950d94ae6ca4153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13d98b57aa09e8670ce9cccc5ec8e6d') in 0.164524 seconds 
+  Import took 0.196759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Sprites/animacja pióra/14.png
+  artifactKey: Guid(460977bf443d1f7408e8cac28d392be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/14.png using Guid(460977bf443d1f7408e8cac28d392be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5913a12958c1805c2522344e659886c') in 0.099392 seconds 
+  Import took 0.114805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Sprites/opcje/pieczątka.png
+  artifactKey: Guid(5ae71201b695f7f42a61628f19c3a470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/pieczątka.png using Guid(5ae71201b695f7f42a61628f19c3a470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4483cf5ffd33da981a1f71ff8167ca2c') in 0.103040 seconds 
+  Import took 0.132780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Sprites/animacja pióra/21.png
+  artifactKey: Guid(a58afb48d6f62d34b9b89530b1db4d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/21.png using Guid(a58afb48d6f62d34b9b89530b1db4d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e365155957c925b5e09541e734a77382') in 0.116664 seconds 
+  Import took 0.158480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Sprites/opcje/dzyngiel tło1.png
+  artifactKey: Guid(30954567203696d4286bdce9e1468c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/dzyngiel tło1.png using Guid(30954567203696d4286bdce9e1468c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b891b4c0dbdd8fae5e344d0d3abf9be5') in 0.043324 seconds 
+  Import took 0.052997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Sprites/animacja pióra/13.1.png
+  artifactKey: Guid(30d527c5e1223c147a5241e8527050b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/13.1.png using Guid(30d527c5e1223c147a5241e8527050b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ea8f7680bc9c2dbbdfaee5f00b094c') in 0.129927 seconds 
+  Import took 0.138648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Sprites/animacja pióra/22.png
+  artifactKey: Guid(b6742f31fd055624ab6a7bdb160f6f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/22.png using Guid(b6742f31fd055624ab6a7bdb160f6f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b2de21ef27bd18e5f1d66f2b7966a3') in 0.107276 seconds 
+  Import took 0.140412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Sprites/animacja pióra/16.png
+  artifactKey: Guid(dffaf03b44ba55c408c3c839d7e39e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/16.png using Guid(dffaf03b44ba55c408c3c839d7e39e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f80c95792fa6236fe17efd08e167891') in 0.146915 seconds 
+  Import took 0.179684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Sprites/animacja pióra/1.png
+  artifactKey: Guid(d6d9dbbc7d0a88041a95860e4b7948a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/1.png using Guid(d6d9dbbc7d0a88041a95860e4b7948a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81808bf6a764016bd9b897167080da94') in 0.098278 seconds 
+  Import took 0.131553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Sprites/animacja pióra/ładowanie3.png
+  artifactKey: Guid(0789fb48a1339254383828352b9a1a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/ładowanie3.png using Guid(0789fb48a1339254383828352b9a1a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1534b6e73f71edcaa5d582284ef54602') in 0.044483 seconds 
+  Import took 0.075465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Sprites/opcje/jsadhgvf4.png
+  artifactKey: Guid(db9b1133dae7a6d41b5d3bc0dd3709c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/jsadhgvf4.png using Guid(db9b1133dae7a6d41b5d3bc0dd3709c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3826f457446db668205d3324d0809474') in 0.068678 seconds 
+  Import took 0.122864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Sprites/animacja pióra/stary papier.png
+  artifactKey: Guid(9e5dae2a8b5849e43b26abfe80f877d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/stary papier.png using Guid(9e5dae2a8b5849e43b26abfe80f877d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bead9aee2e41d426477c23703d8172') in 0.063294 seconds 
+  Import took 0.089000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Sprites/animacja pióra/9.png
+  artifactKey: Guid(2e5c9084f766d2140b790b7a09fa63dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/9.png using Guid(2e5c9084f766d2140b790b7a09fa63dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6753b0b3448ce763cf4380f55feb1267') in 0.112865 seconds 
+  Import took 0.192802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Sprites/animacja pióra/6.png
+  artifactKey: Guid(7a7d28c01e5ec2c4f92d9b9a772850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/6.png using Guid(7a7d28c01e5ec2c4f92d9b9a772850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf9e5711bd5a14d146465fcf5b72395') in 0.149797 seconds 
+  Import took 0.189030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/Sprites/opcje/suwak.png
+  artifactKey: Guid(2b3a97e2a41954d47a638bbc2760b64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/suwak.png using Guid(2b3a97e2a41954d47a638bbc2760b64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3ea7af97806c9e9ff77997ebfd0bd9') in 0.039950 seconds 
+  Import took 0.075467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Sprites/opcje/jsadhgvf3.png
+  artifactKey: Guid(790909dd597b34c469c11defa1985935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/jsadhgvf3.png using Guid(790909dd597b34c469c11defa1985935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff68f31d6e73d88696689afe7b3c8a2') in 0.035312 seconds 
+  Import took 0.056773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Sprites/animacja pióra/11.png
+  artifactKey: Guid(adb827762af8baa4fbeaec7e83661edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/11.png using Guid(adb827762af8baa4fbeaec7e83661edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d8ae6eda54295607d87bbacd95feea') in 0.118393 seconds 
+  Import took 0.162036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Sprites/opcje/jsadhgvf2.png
+  artifactKey: Guid(a60a5d2f7bbce3242ac7fc8ec527cf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/jsadhgvf2.png using Guid(a60a5d2f7bbce3242ac7fc8ec527cf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1dc4fbcb25f3cbaa7f2efe29769542') in 0.053327 seconds 
+  Import took 0.104553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Sprites/opcje/jsadhgvf5.png
+  artifactKey: Guid(8d2f6974129b8364eabd3f1ff4b85199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/jsadhgvf5.png using Guid(8d2f6974129b8364eabd3f1ff4b85199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6835858a5c1f305e9cb42923b0a5ad2a') in 0.056741 seconds 
+  Import took 0.062126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Sprites/animacja pióra/4.png
+  artifactKey: Guid(e33193b4405cd204981d0d136ece27e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/4.png using Guid(e33193b4405cd204981d0d136ece27e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a672077ab90b76ed21607462dd804dc') in 0.115668 seconds 
+  Import took 0.125421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000697 seconds.
+  path: Assets/Sprites/animacja pióra
+  artifactKey: Guid(b18a20bcfc799724ca36f04a66f96b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra using Guid(b18a20bcfc799724ca36f04a66f96b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08bb880cbc0511fbee6c72b8c2b3217e') in 0.047174 seconds 
+  Import took 0.132029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Sprites/animacja pióra/7.png
+  artifactKey: Guid(8a5a49770e9fae54fa050cfccbc13111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/7.png using Guid(8a5a49770e9fae54fa050cfccbc13111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6239e0e99634b9517d90b616f02e9254') in 0.154033 seconds 
+  Import took 0.183491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Sprites/animacja pióra/3.png
+  artifactKey: Guid(ea1a36cfc26c3bd4cbd0f31f8b8b4709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/3.png using Guid(ea1a36cfc26c3bd4cbd0f31f8b8b4709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c8cc7b0f066824c8c6d4fc319514b7d') in 0.108859 seconds 
+  Import took 0.131766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000621 seconds.
+  path: Assets/Sprites/animacja pióra/18.png
+  artifactKey: Guid(eb1f256f91be5764cabfdcf470ffa065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/18.png using Guid(eb1f256f91be5764cabfdcf470ffa065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '769948544c4831d93933b39003edc960') in 0.149918 seconds 
+  Import took 0.181604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Sprites/animacja pióra/13.2.png
+  artifactKey: Guid(6050bb4759f6d2c4b8ae58f662857e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/13.2.png using Guid(6050bb4759f6d2c4b8ae58f662857e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0920da677ada3aafc80af7dc8e945a6b') in 0.118361 seconds 
+  Import took 0.126350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Sprites/animacja pióra/loading tło 1.png
+  artifactKey: Guid(8da6f5dea7bc33c45bc6b5f96808b55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/loading tło 1.png using Guid(8da6f5dea7bc33c45bc6b5f96808b55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8dc745dc7b5d3891eb3a927ecbfa915') in 0.075625 seconds 
+  Import took 0.084397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Sprites/animacja pióra/19.png
+  artifactKey: Guid(3410bbf1d4fec4d449782ff7a2e625d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/19.png using Guid(3410bbf1d4fec4d449782ff7a2e625d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '565ab55e5c227262632ab90f52860121') in 0.110480 seconds 
+  Import took 0.149037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Sprites/animacja pióra/20.png
+  artifactKey: Guid(8de4c4c3482bdda498c9c7649bdc06d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/20.png using Guid(8de4c4c3482bdda498c9c7649bdc06d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32713c8e0719dcdd839fef5cfc922da6') in 0.119152 seconds 
+  Import took 0.160226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Sprites/animacja pióra/loading tło 2.png
+  artifactKey: Guid(ba7189fed91b33848a5fd50dc837a6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/loading tło 2.png using Guid(ba7189fed91b33848a5fd50dc837a6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71cc2d30dbebf87c3cc279b6f01fe1e') in 0.050662 seconds 
+  Import took 0.058451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/Sprites/animacja pióra/15.png
+  artifactKey: Guid(046f05192993b204c89ad6adabb64134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/15.png using Guid(046f05192993b204c89ad6adabb64134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af60777040008dc56158bc071f86917') in 0.090311 seconds 
+  Import took 0.133800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/Sprites/animacja pióra/12.png
+  artifactKey: Guid(98476708d0ada5447b6a449707d31f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/12.png using Guid(98476708d0ada5447b6a449707d31f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050753ffc4008454093aa67101a65f8a') in 0.097481 seconds 
+  Import took 0.105428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Sprites/animacja pióra/17.png
+  artifactKey: Guid(15e4de85dbe3e3e48b4d61adecd18dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/17.png using Guid(15e4de85dbe3e3e48b4d61adecd18dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b8669d226261e642bf5b1a7a305222') in 0.128022 seconds 
+  Import took 0.179822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000803 seconds.
+  path: Assets/Sprites/opcje/napis.png
+  artifactKey: Guid(a16a63a710370cd49a9ed2de6bd7bc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/opcje/napis.png using Guid(a16a63a710370cd49a9ed2de6bd7bc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6daa341d4bb8202016d1d73cd04b5b36') in 0.146189 seconds 
+  Import took 0.210552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Sprites/animacja pióra/loading tło 3.png
+  artifactKey: Guid(bb03af665bb148a4690ddad3c78520d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/loading tło 3.png using Guid(bb03af665bb148a4690ddad3c78520d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e761956c5696d6a7ae2cd380a9a2567c') in 0.042695 seconds 
+  Import took 0.049680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Sprites/animacja pióra/5.png
+  artifactKey: Guid(709a09b5bb97f9a4d9dee9cc8f1fe68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/5.png using Guid(709a09b5bb97f9a4d9dee9cc8f1fe68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa463a04152f456e41a2bd8a329af04') in 0.153614 seconds 
+  Import took 0.161252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Sprites/animacja pióra/2.png
+  artifactKey: Guid(1bb9fb847cf2db74abc4ab2cc9cfcff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/2.png using Guid(1bb9fb847cf2db74abc4ab2cc9cfcff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8610d360e55873741039ae0ab7066370') in 0.126625 seconds 
+  Import took 0.159712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Sprites/animacja pióra/8.png
+  artifactKey: Guid(d1d8c10f3d98d7c4195fd84a524fc553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/8.png using Guid(d1d8c10f3d98d7c4195fd84a524fc553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68535831d0b12231a16950665c35ca3a') in 0.143011 seconds 
+  Import took 0.165477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Sprites/animacja pióra/13.png
+  artifactKey: Guid(35840e9e680f61648af27fe29bd6ba9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/animacja pióra/13.png using Guid(35840e9e680f61648af27fe29bd6ba9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5865a4b02b2e18325e36669382ef257') in 0.102972 seconds 
+  Import took 0.109667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.769267 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz.png
+  artifactKey: Guid(4e6139f54d4ee6b42b8380eba6e66146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz.png using Guid(4e6139f54d4ee6b42b8380eba6e66146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39dd183a80a6114acde962f311fde7ba') in 0.022984 seconds 
+  Import took 0.032342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz8.png
+  artifactKey: Guid(22d1524b9faefcf47a0f6f8717ba421d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz8.png using Guid(22d1524b9faefcf47a0f6f8717ba421d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca783670ae738134e1584a34102428d') in 0.019862 seconds 
+  Import took 0.520002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz5.png
+  artifactKey: Guid(ad115001c6cf0d14fae9ea54f6017664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz5.png using Guid(ad115001c6cf0d14fae9ea54f6017664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313a727425345e71465c3a7a41fd26fd') in 0.026003 seconds 
+  Import took 0.590658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz4.png
+  artifactKey: Guid(e6be37252901b0e409ba398436224e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz4.png using Guid(e6be37252901b0e409ba398436224e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e5ddb8d6a9e44bd53a80805d34504f') in 0.022165 seconds 
+  Import took 0.099586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor x2.png
+  artifactKey: Guid(470e3b05b40fc00459dc1954a2ae7093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor x2.png using Guid(470e3b05b40fc00459dc1954a2ae7093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b157f887c84008b047e42d7283fce46a') in 0.018704 seconds 
+  Import took 0.126702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000620 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz6.png
+  artifactKey: Guid(393933f99489f2a43808ee664d800bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz6.png using Guid(393933f99489f2a43808ee664d800bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6479dfa9fc8fb4f5cd0ad57a83ae9f3b') in 0.023829 seconds 
+  Import took 0.089597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz2.png
+  artifactKey: Guid(0d5972fe142c0cf4bbbf6797c36fbbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz2.png using Guid(0d5972fe142c0cf4bbbf6797c36fbbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b78668a7ae308a5d20f024da7f3ecb') in 0.056245 seconds 
+  Import took 0.217444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001077 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz3.png
+  artifactKey: Guid(8a47628a6a6b11a499de63118f3c473e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz3.png using Guid(8a47628a6a6b11a499de63118f3c473e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e20c58df49ef41ffe79c41f6453b40b7') in 0.144139 seconds 
+  Import took 0.602248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.129488 seconds.
+  path: Assets/Sprites/reszta rzeczy/lapa.png
+  artifactKey: Guid(9c08347c616b2c642a9136b5d21bcb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/lapa.png using Guid(9c08347c616b2c642a9136b5d21bcb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '329b3e215a8dbdfd196a2427366d3a14') in 0.831508 seconds 
+  Import took 0.881058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.086502 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz7.png
+  artifactKey: Guid(058a99de9b1385346b98b18690c59d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz7.png using Guid(058a99de9b1385346b98b18690c59d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3129e5e5036965a4988731b3c53573dc') in 0.030863 seconds 
+  Import took 0.584505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049902 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz9.png
+  artifactKey: Guid(f3f0a601168eda14aa041fc9916a884f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz9.png using Guid(f3f0a601168eda14aa041fc9916a884f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9c9431579c72fa30181eb8d8273674') in 0.013260 seconds 
+  Import took 2.206498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033483 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor x.png
+  artifactKey: Guid(278db09cec918094087bfe036346da0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor x.png using Guid(278db09cec918094087bfe036346da0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f2daec67c02f1690f3280b986f01d2b') in 0.179139 seconds 
+  Import took 0.196049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor x3.png
+  artifactKey: Guid(9ce52789cca6c7a4a8ab101012c82b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor x3.png using Guid(9ce52789cca6c7a4a8ab101012c82b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def1661e55b3aa33357743edd443b95d') in 0.064612 seconds 
+  Import took 0.074398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Sprites/reszta rzeczy/kursor miecz1.png
+  artifactKey: Guid(3f1bb81b876f53249a4adc0354c30e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/reszta rzeczy/kursor miecz1.png using Guid(3f1bb81b876f53249a4adc0354c30e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5566714ab198b0737b7d2343363f79d7') in 0.033863 seconds 
+  Import took 0.260051 seconds .
+

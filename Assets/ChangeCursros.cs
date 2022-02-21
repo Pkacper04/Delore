@@ -1,76 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using NaughtyAttributes;
+using UnityEngine.UI;
 public class ChangeCursros : MonoBehaviour
 {
-    [SerializeField] private Texture2D activeCursor;
-    [SerializeField] private Texture2D[] declineCursors;
-    [SerializeField] private Texture2D attackCursor;
+    [SerializeField] private Image cursor;
+    private static Animator animator;
 
-
-    [SerializeField] private int numberOfCycles = 2;
-    [SerializeField] private float animationTime = 1;
-
-
-
-
-
-    static public ChangeCursros instance;
-
-    private static Texture2D active;
-    private static Texture2D[] decline;
-    private static Texture2D attack;
-    private static CursorMode cursorMode;
-    private static Vector2 hotSpot;
-    private static bool inAnimation = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        active = activeCursor;
-        decline = declineCursors;
-        attack = attackCursor;
-        hotSpot =  new Vector2(200, 100);
-        cursorMode = CursorMode.Auto;
-        instance = this;
+        animator = GetComponent<Animator>();
+        Debug.Log(animator);
     }
 
-    public static void DeclineCursor()
+    private void Update()
     {
-        if(!inAnimation)
-            instance.StartCoroutine("waitForChange");
+        cursor.rectTransform.position = Input.mousePosition;
     }
 
     public static void ActiveCursor()
     {
-        Cursor.SetCursor(active, hotSpot, cursorMode);
+        animator.SetBool("attack", false);
+        animator.SetBool("decline", false);
     }
 
     public static void AttackCursor()
     {
-        instance.StopCoroutine("waitForChange");
-        inAnimation = false;
-        Cursor.SetCursor(attack, hotSpot, cursorMode);
+        animator.SetBool("decline", false);
+        animator.SetBool("attack", true);
     }
 
-
-    IEnumerator waitForChange()
+    public static void DeclineCursor()
     {
-        inAnimation = true;
-        for(int i=0; i< numberOfCycles;i++)
-        {
-            Cursor.SetCursor(decline[0], hotSpot, cursorMode);
-            yield return new WaitForSeconds(animationTime);
-            Cursor.SetCursor(decline[1], hotSpot, cursorMode);
-            yield return new WaitForSeconds(animationTime);
-            Cursor.SetCursor(decline[0], hotSpot, cursorMode);
-            yield return new WaitForSeconds(animationTime);
-            Cursor.SetCursor(decline[2], hotSpot, cursorMode);
-        }
-
-        ActiveCursor();
-        inAnimation = false;
+        animator.SetBool("decline", true);
     }
+
+
+    public void EndDecline()
+    {
+        animator.SetBool("decline", false);
+    }
+
+
 
 }

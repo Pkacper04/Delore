@@ -47,7 +47,7 @@ namespace Delore.Player
 
             if (hit.collider.tag == "Enemy")
             {
-                ChangeCursros.AttackCursor();
+               ChangeCursros.AttackCursor();
                 onEnemy = true;
                 return;
             }

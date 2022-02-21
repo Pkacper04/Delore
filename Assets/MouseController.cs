@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,19 @@ namespace Delore.Player
         private void Update()
         {
             CheckForAttack();
+
+            if (Input.GetMouseButtonDown(0))
+                PickUpItem();
+        }
+
+        private void PickUpItem()
+        {
+            RaycastHit hit = GetMousePoint();
+
+            if (hit.collider.tag != "Pickup")
+                return;
+
+            Debug.Log("podniosles przedmiot: "+hit.collider.gameObject.name);
         }
 
         public RaycastHit GetMousePoint()
@@ -35,14 +49,25 @@ namespace Delore.Player
             {
                 ChangeCursros.AttackCursor();
                 onEnemy = true;
+                return;
             }
             else if (onEnemy)
             {
                 ChangeCursros.ActiveCursor();
                 onEnemy = false;
+                return;
             }
 
+            if(hit.collider.tag == "Pickup")
+            {
+                Debug.Log("na przedmiocie");
+            }
+
+
+
         }
+
+
 
 
 

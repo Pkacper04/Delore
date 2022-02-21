@@ -31,7 +31,7 @@ public class ChangeCursros : MonoBehaviour
         active = activeCursor;
         decline = declineCursors;
         attack = attackCursor;
-        hotSpot = Vector2.zero;
+        hotSpot =  new Vector2(200, 100);
         cursorMode = CursorMode.Auto;
         instance = this;
     }

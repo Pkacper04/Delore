@@ -19,6 +19,7 @@ namespace Delore.Player
         private Animator animator;
         private float speed;
         private MouseController mouseController;
+        private PlayerStats playerStats;
 
         private void Awake()
         {
@@ -34,6 +35,7 @@ namespace Delore.Player
             animator = GetComponent<Animator>();
             speed = agent.speed;
             mouseController = GetComponent<MouseController>();
+            playerStats = GetComponent<PlayerStats>();
         }
 
         void Update()
@@ -124,6 +126,18 @@ namespace Delore.Player
             if (animator.GetBool("Crouch"))
                 if (other.transform.position.y > 4 && other.transform.position.y < 4.65f)
                     Crouch();
+        }
+
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.transform.tag == "Pickup")
+            {
+                playerStats.AddItem(collision.gameObject);
+                collision.gameObject.SetActive(false);
+            }
+
+
         }
 
 

@@ -23,8 +23,9 @@ namespace Delore.AI
 
 
 
-        [SerializeField] List<Vector3> patrolPoints = new List<Vector3>();
-        [SerializeField] List<Quaternion> patrolRotations= new List<Quaternion>();
+        [SerializeField] SortedList<Vector3,float> patrolPoints = new SortedList<Vector3,float>();
+        [SerializeField] List<float> patrolRotations= new List<float>();
+        [SerializeField] float rotationSpeed = 10f;
 
         [SerializeField]
         float timeOfChasing = 3f, patrolTime = 8f;
@@ -91,15 +92,16 @@ namespace Delore.AI
 
             yield return new WaitUntil(() => Vector3.Distance(transform.position,patrolPoints[currentPoint]) <= 1f);
 
-            Debug.Log(transform.rotation.eulerAngles);
-            Debug.Log(patrolRotations[currentPoint].eulerAngles);
 
             agent.updateRotation = false;
-            while (Quaternion.Angle(transform.rotation, patrolRotations[currentPoint]) >= 5f)
+
+            if (patrolRotations[currentPoint] > 0)
             {
-                Debug.Log(Quaternion.Angle(transform.rotation, patrolRotations[currentPoint]));
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, patrolRotations[currentPoint], 2 * Time.deltaTime);
-                yield return null;
+                while (Mathf.Abs(transform.rotation.eulerAngles.y - patrolRotations[currentPoint]) >= .1f)
+                {
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(new Vector3(0,patrolRotations[currentPoint],0)), 2f * Time.deltaTime);
+                    yield return null;
+                }
             }
 
 

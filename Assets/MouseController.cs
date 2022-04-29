@@ -13,6 +13,8 @@ namespace Delore.Player
 
         private void Update()
         {
+            if (PauseController.GamePaused)
+                return;
             CheckForAttack();
 
             if (Input.GetMouseButtonDown(0))

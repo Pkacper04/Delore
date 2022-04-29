@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using NaughtyAttributes;
 
 
 namespace Delore.AI
@@ -23,12 +24,15 @@ namespace Delore.AI
 
 
 
-        [SerializeField] SortedList<Vector3,float> patrolPoints = new SortedList<Vector3,float>();
+        [SerializeField] List<Vector3> patrolPoints = new List<Vector3>();
         [SerializeField] List<float> patrolRotations= new List<float>();
         [SerializeField] float rotationSpeed = 10f;
 
         [SerializeField]
-        float timeOfChasing = 3f, patrolTime = 8f;
+        float timeOfChasing = 3f;
+
+        [SerializeField,MinMaxSlider(1f,30f)]
+        private Vector2 patrolTime = new Vector2(1f,1f);
 
 
 
@@ -44,7 +48,7 @@ namespace Delore.AI
 
         void Update()
         {
-            if (detection.playerInRange || isChasing)
+            if (detection.FieldOfView() || isChasing)
             {
                 Debug.Log("s");
                 Mover();
@@ -99,7 +103,7 @@ namespace Delore.AI
             {
                 while (Mathf.Abs(transform.rotation.eulerAngles.y - patrolRotations[currentPoint]) >= .1f)
                 {
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(new Vector3(0,patrolRotations[currentPoint],0)), 2f * Time.deltaTime);
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(new Vector3(0,patrolRotations[currentPoint],0)), rotationSpeed * Time.deltaTime);
                     yield return null;
                 }
             }
@@ -114,7 +118,7 @@ namespace Delore.AI
 
             
 
-            yield return new WaitForSeconds(Random.Range(patrolTime, patrolTime + 5));
+            yield return new WaitForSeconds(Random.Range(patrolTime.x,patrolTime.y));
             waiting = false;
         }
 

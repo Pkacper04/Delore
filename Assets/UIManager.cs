@@ -14,11 +14,16 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text[] buttons_text;
     [SerializeField] private Image NPC_Sprite;
     [SerializeField] VIDE_Assign asign;
+
+
+    private GraphicRaycaster raycaster;
     // Start is called before the first frame update
     void Start()
     {
+        raycaster = GetComponent<GraphicRaycaster>();
         container_NPC.SetActive(false);
         container_Player.SetActive(false);
+        raycaster.enabled = false;
     }
 
     // Update is called once per frame
@@ -39,6 +44,8 @@ public class UIManager : MonoBehaviour
 
     void Begin()
     {
+        raycaster.enabled = true;
+        PauseController.GamePaused = true;
         VD.OnNodeChange += UpdateUI;
         VD.OnEnd += End;
         VD.BeginDialogue(asign);
@@ -80,6 +87,8 @@ public class UIManager : MonoBehaviour
         VD.OnNodeChange -= UpdateUI;
         VD.OnEnd -= End;
         VD.EndDialogue();
+        PauseController.GamePaused = false;
+        raycaster.enabled = false;
     }
 
     private void OnDisable()

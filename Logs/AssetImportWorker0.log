@@ -2768,3 +2768,580 @@ Received Import Request.
 Start importing Assets/CustomAssets/NecroCity/Thanks using Guid(a70f68001667de346abbb1fbf22d0235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1225e1c9dd6a8dc53fc770b42bdb3c3c') in 0.004591 seconds 
   Import took 0.009759 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 55.642381 seconds.
+  path: Assets/CustomAssets/NecroCity/Sky/sky_1.exr
+  artifactKey: Guid(09fd69c0cb541484c909ba53a2911f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Sky/sky_1.exr using Guid(09fd69c0cb541484c909ba53a2911f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5909ce1a6eaea754146bf3c5d7c2f079') in 0.069625 seconds 
+  Import took 0.076552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/CustomAssets/NecroCity/Sky/sky_2.exr
+  artifactKey: Guid(9def853139c63b2438909ed6dd447021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Sky/sky_2.exr using Guid(9def853139c63b2438909ed6dd447021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3c06972ecbdcf667204aadf581755d0') in 0.073953 seconds 
+  Import took 0.080340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.858854 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/Comp_Merged.fbx
+  artifactKey: Guid(1729e7d35c1445340a5e47b465b500f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/Comp_Merged.fbx using Guid(1729e7d35c1445340a5e47b465b500f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4a252a82278421eaabc7cd63101cfd5') in 0.033749 seconds 
+  Import took 0.038975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_06.fbx
+  artifactKey: Guid(b7398009ed0a5484aa930d275669fd0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_06.fbx using Guid(b7398009ed0a5484aa930d275669fd0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f268eea83338b5f56704df6ade1025') in 0.029583 seconds 
+  Import took 0.034394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Segment_Moss_1c.fbx
+  artifactKey: Guid(100ec6ad33347f749afaf7b688f72071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Segment_Moss_1c.fbx using Guid(100ec6ad33347f749afaf7b688f72071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3262384b587202a6d69aabd25573367f') in 0.036755 seconds 
+  Import took 0.041534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_01b.fbx
+  artifactKey: Guid(576cc03fcf5902142ad7f1050fbca2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_01b.fbx using Guid(576cc03fcf5902142ad7f1050fbca2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f0e2fa4861288bf3c273f7182d5301c') in 0.046566 seconds 
+  Import took 0.051312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_01b.fbx
+  artifactKey: Guid(94f0042c8f5942b45a91045a38951ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_01b.fbx using Guid(94f0042c8f5942b45a91045a38951ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c558e48286cbcb8654660ac37361ae') in 0.030548 seconds 
+  Import took 0.035587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_1e.fbx
+  artifactKey: Guid(fcf96d6d03ae5be4092cf28ed09cfffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_1e.fbx using Guid(fcf96d6d03ae5be4092cf28ed09cfffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c071c1259d0a5648725778c52fad5490') in 0.032277 seconds 
+  Import took 0.036976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_01a.fbx
+  artifactKey: Guid(1b05083a7941bd14c8ddbd1a700ea1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_01a.fbx using Guid(1b05083a7941bd14c8ddbd1a700ea1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96b4d2fabe038b0ddb23e25042e6b45') in 0.033073 seconds 
+  Import took 0.038143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Column_01c.fbx
+  artifactKey: Guid(a1317e6c22f116142a263e9982abf321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Column_01c.fbx using Guid(a1317e6c22f116142a263e9982abf321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '536b6e78db8a8172c5394ca11ef53150') in 0.028230 seconds 
+  Import took 0.033099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_04a.fbx
+  artifactKey: Guid(7bac865017902514f82fc69ad3d5b9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_04a.fbx using Guid(7bac865017902514f82fc69ad3d5b9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3768a59ebfeb174f0efc33bfb4f24f') in 0.033230 seconds 
+  Import took 0.038042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall02_Ruin_01b.fbx
+  artifactKey: Guid(690678cf6547c2c42a77d7459b23522c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall02_Ruin_01b.fbx using Guid(690678cf6547c2c42a77d7459b23522c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '904f87ac875ca285b3765cd06a65bb8e') in 0.032079 seconds 
+  Import took 0.036806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall04_Ruin_01a.fbx
+  artifactKey: Guid(7388aafe284c7574a86eff35ac6dcc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall04_Ruin_01a.fbx using Guid(7388aafe284c7574a86eff35ac6dcc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c41aa0b3d7b59cd0f04a5520f15d2d') in 0.030846 seconds 
+  Import took 0.035692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Corner_01a.fbx
+  artifactKey: Guid(f4913e6b6e7b25e47b47dd550e7a328f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Corner_01a.fbx using Guid(f4913e6b6e7b25e47b47dd550e7a328f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e60364fffc1c4589c742547afc4c71') in 0.029033 seconds 
+  Import took 0.033923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Segment_Moss_1a.fbx
+  artifactKey: Guid(f90fddedf9330fb47877d08f5e6d7079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Segment_Moss_1a.fbx using Guid(f90fddedf9330fb47877d08f5e6d7079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '790689ac64e800ddb0c1cbc420d858f1') in 0.033296 seconds 
+  Import took 0.038303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_1c.fbx
+  artifactKey: Guid(fb43f7f769e0a6a428a98967daaa3ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_1c.fbx using Guid(fb43f7f769e0a6a428a98967daaa3ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ee75985d6f6f8246db3361f840c93d') in 0.021028 seconds 
+  Import took 0.026500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_02b.fbx
+  artifactKey: Guid(e69f6573430184149b31d30b8699569e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_02b.fbx using Guid(e69f6573430184149b31d30b8699569e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ba08a39e515048a45cc835f6df9ca1') in 0.022943 seconds 
+  Import took 0.027917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Segment_Clean_1c.fbx
+  artifactKey: Guid(556d3946e52df184e9c8d2e655b11dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Segment_Clean_1c.fbx using Guid(556d3946e52df184e9c8d2e655b11dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34fcc63549d1d215d117ee35545f9640') in 0.024172 seconds 
+  Import took 0.028885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Candle_01b.fbx
+  artifactKey: Guid(f1d2f0da6dc70944e8e0b40372f06517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Candle_01b.fbx using Guid(f1d2f0da6dc70944e8e0b40372f06517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db8dbcc00b08dd517d824571490e686c') in 0.034042 seconds 
+  Import took 0.038930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_3d.fbx
+  artifactKey: Guid(241c314a08437234b9970264f54367cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_3d.fbx using Guid(241c314a08437234b9970264f54367cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9fcec85cc5aa8bdb1ab0b0b7a4a12a') in 0.019549 seconds 
+  Import took 0.024573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Niche_Clean_Class_B_01a.fbx
+  artifactKey: Guid(8fadc54e01a85774bae7e98894996428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Niche_Clean_Class_B_01a.fbx using Guid(8fadc54e01a85774bae7e98894996428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d9d510a21fe9977360e685a2c9bdf8') in 0.022758 seconds 
+  Import took 0.027868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_3c.fbx
+  artifactKey: Guid(352e1ca6f0dd5b442b6337bfc43f59b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_3c.fbx using Guid(352e1ca6f0dd5b442b6337bfc43f59b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16fbead96a2ca2348d258f8e6dc549cc') in 0.021886 seconds 
+  Import took 0.027054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Niche_Mossy_Class_C_01b.fbx
+  artifactKey: Guid(55a2044860254ce43858e1c21e0f56d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Niche_Mossy_Class_C_01b.fbx using Guid(55a2044860254ce43858e1c21e0f56d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70fcbf5388bce0193a0d26285e24afc') in 0.026179 seconds 
+  Import took 0.031063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Corner_01c.fbx
+  artifactKey: Guid(6e72e36cc497a5540ac8ee3888f78eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Corner_01c.fbx using Guid(6e72e36cc497a5540ac8ee3888f78eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd8a0f928eb0711af83345b1c615cd30') in 0.052864 seconds 
+  Import took 0.057656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_3a.fbx
+  artifactKey: Guid(87248c1330e83f84caaffc11a8e96746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_3a.fbx using Guid(87248c1330e83f84caaffc11a8e96746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e781de25f0f63478f13de15f746d2900') in 0.021825 seconds 
+  Import took 0.026684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_03a.fbx
+  artifactKey: Guid(39a324945f74836429bc9590698e1654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_03a.fbx using Guid(39a324945f74836429bc9590698e1654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35490e9014d58c00460b4362f9078e07') in 0.024094 seconds 
+  Import took 0.028924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_03b.fbx
+  artifactKey: Guid(f3ee3b3de30d5a74aad4b71e946d5d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_03b.fbx using Guid(f3ee3b3de30d5a74aad4b71e946d5d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb71679781e06c6abddef8cd0291656') in 0.022704 seconds 
+  Import took 0.027556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_02a.fbx
+  artifactKey: Guid(740b0d23bcd1f754cbb5054b4682fe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_02a.fbx using Guid(740b0d23bcd1f754cbb5054b4682fe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa26948837c66463ac3c122686e4c6c2') in 0.028652 seconds 
+  Import took 0.033493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_End_01b.fbx
+  artifactKey: Guid(64f44a05499e2874abf5ab83ad114deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_End_01b.fbx using Guid(64f44a05499e2874abf5ab83ad114deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b0408c83df7aaebc2a565e77437769') in 0.028898 seconds 
+  Import took 0.034006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Ruin_01b.fbx
+  artifactKey: Guid(c41743cd67d678346832d641491b4ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Ruin_01b.fbx using Guid(c41743cd67d678346832d641491b4ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c1e090d75514ebaf3d211800e739f76') in 0.028387 seconds 
+  Import took 0.033332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Corner_01c.001.fbx
+  artifactKey: Guid(97c425e71426a5a40a463ee13b5a6774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Corner_01c.001.fbx using Guid(97c425e71426a5a40a463ee13b5a6774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f791726a7426bc1acf07ac5ecfac774d') in 0.024617 seconds 
+  Import took 0.029222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_01c.fbx
+  artifactKey: Guid(d2fa7f0aa4c75fc49aa468cd003d09e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_01c.fbx using Guid(d2fa7f0aa4c75fc49aa468cd003d09e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70b3bb698ee666549e8a4c4a7ede04e') in 0.030044 seconds 
+  Import took 0.034638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Candle_01a.fbx
+  artifactKey: Guid(f16023405151e624d9bda0d8b7f28dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Candle_01a.fbx using Guid(f16023405151e624d9bda0d8b7f28dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed7d82182410a25347041decc95086d') in 0.028401 seconds 
+  Import took 0.033064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_04b.fbx
+  artifactKey: Guid(bd198fd6ca7f09d49b0737a27af71b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_04b.fbx using Guid(bd198fd6ca7f09d49b0737a27af71b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8140a5ba0dbe00f8ada746175015a462') in 0.022665 seconds 
+  Import took 0.027387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Gate_01a.fbx
+  artifactKey: Guid(b1dc9280d4d7f364f8e6488a71f87371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Gate_01a.fbx using Guid(b1dc9280d4d7f364f8e6488a71f87371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c999f3007d65b67448684e961c99e91') in 0.029484 seconds 
+  Import took 0.034267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Mossy_Ruined_01c.fbx
+  artifactKey: Guid(69f597b4dab5a324a87a4e70e9dd3cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Mossy_Ruined_01c.fbx using Guid(69f597b4dab5a324a87a4e70e9dd3cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1385d08711431a8ea467f86e64fda64') in 0.022686 seconds 
+  Import took 0.027336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_02c.fbx
+  artifactKey: Guid(ae3abed306f048a44a026184c3bd7484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_02c.fbx using Guid(ae3abed306f048a44a026184c3bd7484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc27aedeba54c066d1a7d4a1bbbc87ae') in 0.023867 seconds 
+  Import took 0.028722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_broken_01a.fbx
+  artifactKey: Guid(ca129e7ba21702e43932e740f4e1c6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_broken_01a.fbx using Guid(ca129e7ba21702e43932e740f4e1c6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f43dc09b2e3aff6deb25ddc24c116701') in 0.021326 seconds 
+  Import took 0.026105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_02.fbx
+  artifactKey: Guid(3d4c4f9e06abdea4ca75b8d273d9e51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_02.fbx using Guid(3d4c4f9e06abdea4ca75b8d273d9e51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375a486a01b43be4d52e02481f244467') in 0.024116 seconds 
+  Import took 0.028727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall02_Ruin_01a.fbx
+  artifactKey: Guid(3d30f1ff0d68e864b97ae484783f43c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall02_Ruin_01a.fbx using Guid(3d30f1ff0d68e864b97ae484783f43c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0752d9743dacfb8928797592e883bae') in 0.029846 seconds 
+  Import took 0.035182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Ruin_01c.fbx
+  artifactKey: Guid(46624c73aeec3b242a4a19e081bbf495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Ruin_01c.fbx using Guid(46624c73aeec3b242a4a19e081bbf495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '685614944d6a6cfb00cdeda3b3e9e10c') in 0.028751 seconds 
+  Import took 0.033765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Niche_Mossy_Class_C_01a.fbx
+  artifactKey: Guid(438fa5fcad7a6424cba6c9bc67a6a43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Niche_Mossy_Class_C_01a.fbx using Guid(438fa5fcad7a6424cba6c9bc67a6a43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79ff70031b35fcfb009a6d4a0cdd6a2') in 0.025282 seconds 
+  Import took 0.029993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_02a.fbx
+  artifactKey: Guid(521f9038d4bafa3499e463259f59768b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_02a.fbx using Guid(521f9038d4bafa3499e463259f59768b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b7942007801b51e829c63de3c029d02') in 0.025536 seconds 
+  Import took 0.030602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_06b.fbx
+  artifactKey: Guid(bc0548cf85c3f8e43b31da6c704a7d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_06b.fbx using Guid(bc0548cf85c3f8e43b31da6c704a7d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a112f0dca7f7475955787b2207fdcc8e') in 0.021532 seconds 
+  Import took 0.026520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Mossy_Ruined_01b.fbx
+  artifactKey: Guid(d714b211477a40a4dba0ff6dd6e7614f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Mossy_Ruined_01b.fbx using Guid(d714b211477a40a4dba0ff6dd6e7614f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0764b980f025530aa6f1d93a480a8eed') in 0.025461 seconds 
+  Import took 0.030446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_03.fbx
+  artifactKey: Guid(95ce5096765e1974c938b3b04cfbda45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_03.fbx using Guid(95ce5096765e1974c938b3b04cfbda45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a3b2eda47ad146e46a63033ac096dc') in 0.022551 seconds 
+  Import took 0.027251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_04.fbx
+  artifactKey: Guid(700858d580e34eb45bdfffbf47379c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_04.fbx using Guid(700858d580e34eb45bdfffbf47379c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ffbd61f8f4c90debb23bdbf1e1e485') in 0.028281 seconds 
+  Import took 0.032982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_broken_01b.fbx
+  artifactKey: Guid(91f016a5359d2ad458bc4518a4d44d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_broken_01b.fbx using Guid(91f016a5359d2ad458bc4518a4d44d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdf0b124089974dbccb32cf152e50498') in 0.022170 seconds 
+  Import took 0.027161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_05a.fbx
+  artifactKey: Guid(89dc8bb465d1dfb43992956a75ec0e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_05a.fbx using Guid(89dc8bb465d1dfb43992956a75ec0e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ded8171af682c2aa1ba31619e9f73ab') in 0.022219 seconds 
+  Import took 0.027021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_02b.fbx
+  artifactKey: Guid(7e8c6fa4e669c43409e8cd61b8ab17ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_02b.fbx using Guid(7e8c6fa4e669c43409e8cd61b8ab17ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df61f151c70da2de1fb1b6f295476a45') in 0.029694 seconds 
+  Import took 0.034600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_01a.fbx
+  artifactKey: Guid(52cab35c768158140a4dfcc352d675b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_01a.fbx using Guid(52cab35c768158140a4dfcc352d675b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a2d08c6a7c27ffc50095b6cbee7233') in 0.028831 seconds 
+  Import took 0.033533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Column_01a.fbx
+  artifactKey: Guid(d00230fb0457799438b97208e8bf63a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Column_01a.fbx using Guid(d00230fb0457799438b97208e8bf63a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7139b812c4c27d084ba14dc5e43049') in 0.030385 seconds 
+  Import took 0.035349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_3b.fbx
+  artifactKey: Guid(7a86fd7e6ac77074f8e665fb921c25fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_3b.fbx using Guid(7a86fd7e6ac77074f8e665fb921c25fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de7bcf348466d8a5d204abcf0af6fe9a') in 0.022561 seconds 
+  Import took 0.027654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_End_01d.fbx
+  artifactKey: Guid(9f16de6835dec9048b37f2e13fa92bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_End_01d.fbx using Guid(9f16de6835dec9048b37f2e13fa92bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feff9c142afa2c711f5ed8bee502a01d') in 0.020410 seconds 
+  Import took 0.025445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Gate_01a.fbx
+  artifactKey: Guid(0895b063ec7650f498c818036119a186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Gate_01a.fbx using Guid(0895b063ec7650f498c818036119a186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c085074d084182312fcfe2fc29859eb1') in 0.029143 seconds 
+  Import took 0.034267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_1d.fbx
+  artifactKey: Guid(8d013a2d199fcc346bf0a23fe2fdf3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_1d.fbx using Guid(8d013a2d199fcc346bf0a23fe2fdf3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b716e4575302f1c781368a3bcc1ab4d7') in 0.041995 seconds 
+  Import took 0.046980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_06a.fbx
+  artifactKey: Guid(d6e62c37b6f89f445924493281442beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_06a.fbx using Guid(d6e62c37b6f89f445924493281442beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4993d1fe2c090b66b4f8845c87ed60') in 0.022318 seconds 
+  Import took 0.027144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Obelisk_2d.fbx
+  artifactKey: Guid(cd35e4312e25f3f4384641a7dacb7161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Obelisk_2d.fbx using Guid(cd35e4312e25f3f4384641a7dacb7161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e967fa94424998c22f48036cb0c5a9c') in 0.029135 seconds 
+  Import took 0.034048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_01e.fbx
+  artifactKey: Guid(805503c99c0a4734cbded9121ad6d920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Rubble_01e.fbx using Guid(805503c99c0a4734cbded9121ad6d920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75da7a5e7021264c79fd596fe73cbec8') in 0.029745 seconds 
+  Import took 0.034541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Hillock_01c.fbx
+  artifactKey: Guid(b3add497ec0b6014098bf5e825386c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Hillock_01c.fbx using Guid(b3add497ec0b6014098bf5e825386c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc0b8786a0c5e299f570b0e4ff267d4') in 0.029121 seconds 
+  Import took 0.033853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Mossy_Ruined_01d.fbx
+  artifactKey: Guid(e3438e1e7bd76844da0b350ef90c2d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Tomb_Mossy_Ruined_01d.fbx using Guid(e3438e1e7bd76844da0b350ef90c2d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48bf14b2f9ff485f8ae545460a0f380c') in 0.022141 seconds 
+  Import took 0.026814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_04c.fbx
+  artifactKey: Guid(b311fbf02bd445a4f9c85d42aa9084d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_04c.fbx using Guid(b311fbf02bd445a4f9c85d42aa9084d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00007983237956466578553a04a790a5') in 0.023506 seconds 
+  Import took 0.028397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_2a.fbx
+  artifactKey: Guid(24b07fa311b372b46bb729d823f4368c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Monument_2a.fbx using Guid(24b07fa311b372b46bb729d823f4368c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc60660bf36dbcd074c0ea36feaf9bb9') in 0.029238 seconds 
+  Import took 0.033872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_End_01c.fbx
+  artifactKey: Guid(0c7c5d29c6a2e9749b224784ec6fdc3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_End_01c.fbx using Guid(0c7c5d29c6a2e9749b224784ec6fdc3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1238781255e126f16ea1b4d3fa4a2798') in 0.029773 seconds 
+  Import took 0.034508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Seam_01b.fbx
+  artifactKey: Guid(6368c436c242cc74094d5097f181d550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Seam_01b.fbx using Guid(6368c436c242cc74094d5097f181d550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94cdc9cf24b3ae6e9538c40a30e8ba11') in 0.030537 seconds 
+  Import took 0.035330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Obelisk_2b.fbx
+  artifactKey: Guid(48d0d1d339c61084581c393de929aa6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Bld_Obelisk_2b.fbx using Guid(48d0d1d339c61084581c393de929aa6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73170ec61720e25bc39c01c64b164f07') in 0.029345 seconds 
+  Import took 0.034474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall04_Ruin_01b.fbx
+  artifactKey: Guid(67466b5a8907eec48a1f8307527ed42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall04_Ruin_01b.fbx using Guid(67466b5a8907eec48a1f8307527ed42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27206b86beca79ad6dedc76bc50a809d') in 0.029868 seconds 
+  Import took 0.034753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Corner_01b.fbx
+  artifactKey: Guid(83335b825a4d130458745a2988830bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA_Arch_Wall03_Corner_01b.fbx using Guid(83335b825a4d130458745a2988830bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8959841b30768c8608e47592d120c3b4') in 0.020424 seconds 
+  Import took 0.025219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_05b.fbx
+  artifactKey: Guid(2e0f824b8abe06e44ad4f2ba315440a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_Moss_05b.fbx using Guid(2e0f824b8abe06e44ad4f2ba315440a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c79d14293bdb171a727d08012a3d4fee') in 0.021823 seconds 
+  Import took 0.026738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_05.fbx
+  artifactKey: Guid(58c4984cd701a4c4c85f53c2714cb8ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA03_Environment_Mud_05.fbx using Guid(58c4984cd701a4c4c85f53c2714cb8ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05dd229fd537b31c9666e3aee2516e4e') in 0.022800 seconds 
+  Import took 0.027474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_02c.fbx
+  artifactKey: Guid(841d75412e84d384f88dc06558b93966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/NecroCity/Meshes/EA01_Env_Road_Cobble_02c.fbx using Guid(841d75412e84d384f88dc06558b93966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '894a10d569fe9c2c19ec8de50ade61f1') in 0.030340 seconds 
+  Import took 0.035177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 192.352244 seconds.
+  path: Assets/Prefabs/MapBuilding/wine room .prefab
+  artifactKey: Guid(3eb64a867b14eb74ba06ff9530c9eb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapBuilding/wine room .prefab using Guid(3eb64a867b14eb74ba06ff9530c9eb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961753645f602cb4f7acf804778d58e2') in 0.071167 seconds 
+  Import took 0.079975 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

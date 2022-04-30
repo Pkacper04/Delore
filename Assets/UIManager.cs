@@ -14,16 +14,25 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text[] buttons_text;
     [SerializeField] private Image NPC_Sprite;
     [SerializeField] VIDE_Assign asign;
+
+
+    private GraphicRaycaster raycaster;
     // Start is called before the first frame update
     void Start()
     {
         container_NPC.SetActive(false);
         container_Player.SetActive(false);
+        raycaster = GetComponent<GraphicRaycaster>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(PauseController.GamePaused)
+            raycaster.enabled = false;
+        else
+            raycaster.enabled = true;
+
         if(Input.GetKeyDown(KeyCode.Return))
         {
             if(!VD.isActive)

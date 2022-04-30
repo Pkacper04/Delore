@@ -961,6 +961,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (39)
@@ -1023,6 +1027,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (26)
@@ -1145,6 +1153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426962739762 stripped
@@ -1159,6 +1171,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (27)
@@ -1221,6 +1237,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (32)
@@ -1343,6 +1363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426941731118 stripped
@@ -1417,6 +1441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426941926686 stripped
@@ -1431,6 +1459,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (33)
@@ -1493,6 +1525,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (44)
@@ -1629,6 +1665,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (47)
@@ -1751,6 +1791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427032065415 stripped
@@ -1825,6 +1869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427012103654 stripped
@@ -1839,6 +1887,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (62)
@@ -1901,6 +1953,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711422735856003}
     m_Modifications:
+    - target: {fileID: 2053237084470612349, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6698533136370866307, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
       propertyPath: m_Name
       value: Jug_02
@@ -2023,6 +2079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427005061398 stripped
@@ -2037,6 +2097,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (37)
@@ -2220,6 +2284,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -2467,6 +2535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_Open
       objectReference: {fileID: 0}
+    - target: {fileID: 6098996794725213002, guid: 6353832c19eb9674b8143b16ab17c820, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6353832c19eb9674b8143b16ab17c820, type: 3}
 --- !u!4 &5870940230928196855 stripped
@@ -2543,6 +2615,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (41)
@@ -2665,6 +2741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426834315712 stripped
@@ -2738,6 +2818,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -2813,6 +2897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426802718430 stripped
@@ -2827,6 +2915,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (50)
@@ -2949,6 +3041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426888014865 stripped
@@ -3023,6 +3119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426886742065 stripped
@@ -3037,6 +3137,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (22)
@@ -3172,6 +3276,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (52)
@@ -3234,6 +3342,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (42)
@@ -3356,6 +3468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426883513513 stripped
@@ -3370,6 +3486,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (12)
@@ -3432,6 +3552,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (31)
@@ -3497,6 +3621,10 @@ PrefabInstance:
     - target: {fileID: 8954041185955669000, guid: 01b18908cb794a34a8fc133e9f4ec355, type: 3}
       propertyPath: m_Name
       value: Quill
+      objectReference: {fileID: 0}
+    - target: {fileID: 8954041185955669001, guid: 01b18908cb794a34a8fc133e9f4ec355, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8954041185955837992, guid: 01b18908cb794a34a8fc133e9f4ec355, type: 3}
       propertyPath: m_RootOrder
@@ -3616,6 +3744,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2316854688227896739, guid: ad4bcbbca7d5fde4cbaa62e8f9296dd9, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad4bcbbca7d5fde4cbaa62e8f9296dd9, type: 3}
 --- !u!4 &978209034156459232 stripped
@@ -3690,6 +3822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427213768944 stripped
@@ -3704,6 +3840,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (34)
@@ -3826,6 +3966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427325083526 stripped
@@ -3840,6 +3984,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (36)
@@ -3902,6 +4050,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (40)
@@ -4024,6 +4176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427284177359 stripped
@@ -4100,6 +4256,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (18)
@@ -4162,6 +4322,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711422735856003}
     m_Modifications:
+    - target: {fileID: 5192507207863506341, guid: d8e4874eaa27b1749b17632d68f5fd79, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6944851314684478534, guid: d8e4874eaa27b1749b17632d68f5fd79, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -4284,6 +4448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 2122566037265000455, guid: dc02f77b0506f764c9d22c61c681c4af, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc02f77b0506f764c9d22c61c681c4af, type: 3}
 --- !u!4 &732278119436741536 stripped
@@ -4358,6 +4526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427087748661 stripped
@@ -4375,6 +4547,10 @@ PrefabInstance:
     - target: {fileID: 4369247199797357114, guid: 591bed4d8c69b824c81e7261d794d9f5, type: 3}
       propertyPath: m_Name
       value: Barrel_Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369247199797357115, guid: 591bed4d8c69b824c81e7261d794d9f5, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4369247199797523994, guid: 591bed4d8c69b824c81e7261d794d9f5, type: 3}
       propertyPath: m_RootOrder
@@ -4446,6 +4622,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (48)
@@ -4568,6 +4748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427188451762 stripped
@@ -4642,6 +4826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427188027101 stripped
@@ -4656,6 +4844,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (23)
@@ -4778,6 +4970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427172111640 stripped
@@ -4852,6 +5048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427175234238 stripped
@@ -4925,6 +5125,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -5062,6 +5266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427531252866 stripped
@@ -5136,6 +5344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427527798085 stripped
@@ -5150,6 +5362,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (65)
@@ -5212,6 +5428,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711422735856003}
     m_Modifications:
+    - target: {fileID: 6390087017413320644, guid: b402bc0133532434b873cefde0db7814, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6390087017413320645, guid: b402bc0133532434b873cefde0db7814, type: 3}
       propertyPath: m_Name
       value: Inkwell
@@ -5407,6 +5627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427576199730 stripped
@@ -5424,6 +5648,10 @@ PrefabInstance:
     - target: {fileID: 6721092324546943810, guid: 6eee7306fe377634f9645a176df43265, type: 3}
       propertyPath: m_Name
       value: Bucket
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721092324546943811, guid: 6eee7306fe377634f9645a176df43265, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6721092324547233634, guid: 6eee7306fe377634f9645a176df43265, type: 3}
       propertyPath: m_RootOrder
@@ -5555,6 +5783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427572980680 stripped
@@ -5628,6 +5860,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -5703,6 +5939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427557234879 stripped
@@ -5777,6 +6017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427550278554 stripped
@@ -5791,6 +6035,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (60)
@@ -5853,6 +6101,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (4)
@@ -5975,6 +6227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427543565988 stripped
@@ -6048,6 +6304,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -6185,6 +6445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427365551707 stripped
@@ -6199,6 +6463,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (58)
@@ -6309,6 +6577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk
       objectReference: {fileID: 0}
+    - target: {fileID: 1293891031151802735, guid: 06b9d15b7d33e854cb23fe58a33238aa, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06b9d15b7d33e854cb23fe58a33238aa, type: 3}
 --- !u!4 &1454358407836476767 stripped
@@ -6323,6 +6595,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (53)
@@ -6385,6 +6661,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (67)
@@ -6507,6 +6787,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427464334400 stripped
@@ -6580,6 +6864,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -6655,6 +6943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427469040323 stripped
@@ -6672,6 +6964,10 @@ PrefabInstance:
     - target: {fileID: 374151818356740834, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
       propertyPath: m_Name
       value: Bottle_05 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027090182464138263, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8204406447206829204, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
       propertyPath: m_RootOrder
@@ -6802,6 +7098,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -6950,6 +7250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427432645135 stripped
@@ -7086,6 +7390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427801453121 stripped
@@ -7159,6 +7467,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -7234,6 +7546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427806792832 stripped
@@ -7248,6 +7564,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (16)
@@ -7370,6 +7690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427778535539 stripped
@@ -7384,6 +7708,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (54)
@@ -7446,6 +7774,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (35)
@@ -7567,6 +7899,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -7715,6 +8051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427835650969 stripped
@@ -7788,6 +8128,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -7863,6 +8207,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8372423046979021021, guid: f3fb1271ede9bf8469d8b99637b77b42, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3fb1271ede9bf8469d8b99637b77b42, type: 3}
 --- !u!4 &6450428560169224008 stripped
@@ -7877,6 +8225,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (55)
@@ -8101,6 +8453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427663048896 stripped
@@ -8249,6 +8605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427654835920 stripped
@@ -8336,6 +8696,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (21)
@@ -8398,6 +8762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711422735856003}
     m_Modifications:
+    - target: {fileID: 2053237084470612349, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6698533136370866307, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
       propertyPath: m_Name
       value: Jug_02 (2)
@@ -8520,6 +8888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427622135752 stripped
@@ -8534,6 +8906,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (13)
@@ -8596,6 +8972,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (7)
@@ -8718,6 +9098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427733359516 stripped
@@ -8791,6 +9175,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -8866,6 +9254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427703161609 stripped
@@ -8880,6 +9272,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (10)
@@ -9064,6 +9460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427695992386 stripped
@@ -9138,6 +9538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696427674989351 stripped
@@ -9196,6 +9600,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 8169520561329651930, guid: 2569a62b0421feb4fbb320665445719f, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8169520561329651933, guid: 2569a62b0421feb4fbb320665445719f, type: 3}
       propertyPath: m_Name
       value: Book_Big_Brown
@@ -9214,6 +9622,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (59)
@@ -9331,6 +9743,10 @@ PrefabInstance:
     - target: {fileID: 8528820825029762706, guid: a05d4d94c1106004abcd87df4b8f1777, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528820825029984909, guid: a05d4d94c1106004abcd87df4b8f1777, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8528820825029984946, guid: a05d4d94c1106004abcd87df4b8f1777, type: 3}
       propertyPath: m_Name
@@ -9484,6 +9900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696425879187543 stripped
@@ -9557,6 +9977,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -9632,6 +10056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696425971970301 stripped
@@ -9646,6 +10074,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (3)
@@ -9708,6 +10140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (28)
@@ -9770,6 +10206,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (29)
@@ -9892,6 +10332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696425967814248 stripped
@@ -9906,6 +10350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (63)
@@ -10030,6 +10478,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big
@@ -10092,6 +10544,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (43)
@@ -10214,6 +10670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696425769973700 stripped
@@ -10228,6 +10688,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (64)
@@ -10350,6 +10814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696425763206842 stripped
@@ -10364,6 +10832,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (1)
@@ -10560,6 +11032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696425821357425 stripped
@@ -10643,6 +11119,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (61)
@@ -10765,6 +11245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426180226990 stripped
@@ -10839,6 +11323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426178268553 stripped
@@ -10853,6 +11341,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (15)
@@ -10975,6 +11467,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8372423046979021021, guid: f3fb1271ede9bf8469d8b99637b77b42, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3fb1271ede9bf8469d8b99637b77b42, type: 3}
 --- !u!4 &6450428561836621195 stripped
@@ -10992,6 +11488,10 @@ PrefabInstance:
     - target: {fileID: 374151818356740834, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
       propertyPath: m_Name
       value: Bottle_05 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027090182464138263, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8204406447206829204, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
       propertyPath: m_RootOrder
@@ -11123,6 +11623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426253891117 stripped
@@ -11184,6 +11688,10 @@ PrefabInstance:
     - target: {fileID: 597135567908895808, guid: ad4bcbbca7d5fde4cbaa62e8f9296dd9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316854688227896739, guid: ad4bcbbca7d5fde4cbaa62e8f9296dd9, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad4bcbbca7d5fde4cbaa62e8f9296dd9, type: 3}
@@ -11407,6 +11915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426056155685 stripped
@@ -11481,6 +11993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426058960677 stripped
@@ -11554,6 +12070,10 @@ PrefabInstance:
     - target: {fileID: 6655967117974321470, guid: f3fb1271ede9bf8469d8b99637b77b42, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372423046979021021, guid: f3fb1271ede9bf8469d8b99637b77b42, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3fb1271ede9bf8469d8b99637b77b42, type: 3}
@@ -11643,6 +12163,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (14)
@@ -11705,6 +12229,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (2)
@@ -11827,6 +12355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426007773177 stripped
@@ -11841,6 +12373,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (6)
@@ -12036,6 +12572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426129124317 stripped
@@ -12050,6 +12590,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (20)
@@ -12112,6 +12656,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (46)
@@ -12234,6 +12782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426110819248 stripped
@@ -12308,6 +12860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426083497300 stripped
@@ -12381,6 +12937,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -12592,6 +13152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426448619346 stripped
@@ -12666,6 +13230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426440719607 stripped
@@ -12739,6 +13307,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -12816,6 +13388,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (49)
@@ -12938,6 +13514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426530680284 stripped
@@ -13012,6 +13592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426500634652 stripped
@@ -13026,6 +13610,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (17)
@@ -13088,6 +13676,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (24)
@@ -13212,6 +13804,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (11)
@@ -13475,6 +14071,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -13830,6 +14430,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (8)
@@ -13892,6 +14496,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (5)
@@ -13954,6 +14562,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (25)
@@ -14016,6 +14628,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (66)
@@ -14078,6 +14694,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (9)
@@ -14200,6 +14820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426336467292 stripped
@@ -14273,6 +14897,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -14348,6 +14976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426728168246 stripped
@@ -14365,6 +14997,10 @@ PrefabInstance:
     - target: {fileID: 374151818356740834, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
       propertyPath: m_Name
       value: Bottle_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027090182464138263, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8204406447206829204, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
       propertyPath: m_RootOrder
@@ -14611,6 +15247,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (51)
@@ -14733,6 +15373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426709280406 stripped
@@ -14806,6 +15450,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -14955,6 +15603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426687936549 stripped
@@ -15091,6 +15743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426670946422 stripped
@@ -15164,6 +15820,10 @@ PrefabInstance:
     - target: {fileID: 2317576605586580694, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
       propertyPath: m_Name
       value: Barrel_Closed (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
@@ -15239,6 +15899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426735577897 stripped
@@ -15313,6 +15977,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426738739214 stripped
@@ -15327,6 +15995,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (30)
@@ -15389,6 +16061,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711422735856003}
     m_Modifications:
+    - target: {fileID: 2053237084470612349, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6698533136370866307, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
       propertyPath: m_Name
       value: Jug_02 (1)
@@ -15525,6 +16201,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (19)
@@ -15587,6 +16267,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (45)
@@ -15709,6 +16393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_Closed (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 2317576605586580695, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adaedd4c0081614da171fecdf6bbd37, type: 3}
 --- !u!4 &2734696426660934039 stripped
@@ -15796,6 +16484,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (38)
@@ -15858,6 +16550,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421711421719943854}
     m_Modifications:
+    - target: {fileID: 5754540700685389708, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754540700685389711, guid: d4fdeae2fb6f5d245b9a6116920d503e, type: 3}
       propertyPath: m_Name
       value: Barrel_Big (56)

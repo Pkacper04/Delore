@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.28f1 (f5400f52e03f) revision 16072719'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'en' Physical Memory: 16267 MB
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'pl' Physical Memory: 16261 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,113 +11,113 @@ C:\Program Files\Unity\Hub\Editor\2020.3.28f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Experimental unity/Delore
+C:/Users/ja/Documents/GitHub/Delore
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53662
-Successfully changed project path to: D:/Experimental unity/Delore
-D:/Experimental unity/Delore
+2885
+Successfully changed project path to: C:/Users/ja/Documents/GitHub/Delore
+C:/Users/ja/Documents/GitHub/Delore
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 121.25 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 87.93 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.28f1 (f5400f52e03f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Experimental unity/Delore/Assets
+[Subsystems] Discovering subsystems at path C:/Users/ja/Documents/GitHub/Delore/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c20)
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   
-    VRAM:     6052 MB
-    Driver:   30.0.14.9709
+    VRAM:     5991 MB
+    Driver:   27.21.14.6140
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002505 seconds.
+Registered in 0.001617 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 113.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 90.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.802 seconds
+- Completed reload, in  0.568 seconds
 Domain Reload Profiling:
-	ReloadAssembly (802ms)
-		BeginReloadAssembly (76ms)
+	ReloadAssembly (569ms)
+		BeginReloadAssembly (53ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (641ms)
-			LoadAssemblies (73ms)
+		EndReloadAssembly (453ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (198ms)
+			SetupTypeCache (131ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (267ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (203ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (113ms)
-				BeforeProcessingInitializeOnLoad (17ms)
-				ProcessInitializeOnLoadAttributes (100ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (90ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007614 seconds.
+Registered in 0.004590 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 125.85 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 95.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.767 seconds
+- Completed reload, in  1.256 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1768ms)
-		BeginReloadAssembly (174ms)
+	ReloadAssembly (1256ms)
+		BeginReloadAssembly (130ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1523ms)
-			LoadAssemblies (140ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (1072ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (425ms)
+			SetupTypeCache (295ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (745ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (529ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (126ms)
-				BeforeProcessingInitializeOnLoad (130ms)
-				ProcessInitializeOnLoadAttributes (465ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (96ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (338ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3683 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 167.7 MB.
-System memory in use after: 167.8 MB.
+System memory in use before: 180.3 MB.
+System memory in use after: 180.5 MB.
 
-Unloading 148 unused Assets to reduce memory usage. Loaded Objects now: 4104.
-Total: 4.613300 ms (FindLiveObjects: 0.334500 ms CreateObjectMapping: 0.252200 ms MarkObjects: 3.778200 ms  DeleteObjects: 0.247200 ms)
+Unloading 148 unused Assets to reduce memory usage. Loaded Objects now: 4123.
+Total: 3.695800 ms (FindLiveObjects: 0.272400 ms CreateObjectMapping: 0.186400 ms MarkObjects: 3.050500 ms  DeleteObjects: 0.185600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,25 +131,961 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Prolog.unity
-  artifactKey: Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Prolog.unity using Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36a1fce894de437441b49e8dfaa7979') in 0.016001 seconds 
-  Import took 0.024685 seconds .
+  path: Assets/Prefabs/MapBuilding/wardrobe.prefab
+  artifactKey: Guid(0d9d94bdf5fa96e4b812806c211853e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapBuilding/wardrobe.prefab using Guid(0d9d94bdf5fa96e4b812806c211853e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f96baa1deb2e5758480573bb853a12') in 0.212888 seconds 
+  Import took 0.218761 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(ffe57dfc2b378744bad8ff9c82235b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(ffe57dfc2b378744bad8ff9c82235b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813d92fb276d9bd748caf80364627d1c') in 0.011027 seconds 
-  Import took 0.018976 seconds .
+  Time since last request: 122.863976 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Table_01.fbx
+  artifactKey: Guid(87f4cd45b028bcd4eaa6f6ebd885157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Table_01.fbx using Guid(87f4cd45b028bcd4eaa6f6ebd885157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2967f18acf92dda6d7c198b2c18a6bf1') in 0.071594 seconds 
+  Import took 0.077250 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(4fde0707ef6b1384484b0dc752e5f8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(4fde0707ef6b1384484b0dc752e5f8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bef3ed96cbffc04bac2177bb88996ef') in 0.039939 seconds 
-  Import took 0.047349 seconds .
+  Time since last request: 0.000205 seconds.
+  path: Assets/CustomAssets/Dungeons Lite/Models/Table_01.fbx
+  artifactKey: Guid(d6d2f7aefe8e8cb4aac4725d78e70fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Dungeons Lite/Models/Table_01.fbx using Guid(d6d2f7aefe8e8cb4aac4725d78e70fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371b4624b8fca1b49414c9bb3aa48e47') in 0.027084 seconds 
+  Import took 0.031670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Furniture/Table_Big.fbx
+  artifactKey: Guid(f82b9f16845dc9b419151a2519c758f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Furniture/Table_Big.fbx using Guid(f82b9f16845dc9b419151a2519c758f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e513b0f8ad73050c572abc25658733fd') in 0.026551 seconds 
+  Import took 0.030996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Table_01_Convex.asset
+  artifactKey: Guid(1cf3c6ff2b831f0419c4cea1efc61162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Table_01_Convex.asset using Guid(1cf3c6ff2b831f0419c4cea1efc61162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8360353a697ffb0320c99ac158da0fd2') in 0.011149 seconds 
+  Import took 0.015750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Furniture/Table_Small.fbx
+  artifactKey: Guid(5cb6753c16611884384f3beaff2906bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Furniture/Table_Small.fbx using Guid(5cb6753c16611884384f3beaff2906bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af881d403937b119011c49afae3cd7e5') in 0.026980 seconds 
+  Import took 0.031800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Table_02.fbx
+  artifactKey: Guid(0f2d3bff67e486e40bdd967af726a86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Table_02.fbx using Guid(0f2d3bff67e486e40bdd967af726a86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782e1b7140b4d178c75f9aefdaa1aa85') in 0.035332 seconds 
+  Import took 0.039952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Table_02_Convex.asset
+  artifactKey: Guid(c1abfe8d50c948e4b838829a40c7f468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Table_02_Convex.asset using Guid(c1abfe8d50c948e4b838829a40c7f468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e81a20751fe934580085e99ddf5e207') in 0.010655 seconds 
+  Import took 0.015344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.395422 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Furniture/Desk.fbx
+  artifactKey: Guid(5b206fed98dd6d041b1c804df7d42011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Furniture/Desk.fbx using Guid(5b206fed98dd6d041b1c804df7d42011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bedd5ed674aa126cc82914ea3d7abc7') in 0.023790 seconds 
+  Import took 0.028857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.771929 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_Polished.mat
+  artifactKey: Guid(f0999b03096512247a557b9bba30ef43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_Polished.mat using Guid(f0999b03096512247a557b9bba30ef43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3be271364a16a05aa39b298f92b28d') in 0.023687 seconds 
+  Import took 0.029134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1464.004562 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Amphora.fbx
+  artifactKey: Guid(b9a1c0a49b015804e83705d2e66fa591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Amphora.fbx using Guid(b9a1c0a49b015804e83705d2e66fa591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a9bc757972d0902a22c1e802ce45645') in 0.025009 seconds 
+  Import took 0.030381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Furniture/Amphora_Stand.fbx
+  artifactKey: Guid(e21b6c9b113d50a4b865c5a99ce0a58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Furniture/Amphora_Stand.fbx using Guid(e21b6c9b113d50a4b865c5a99ce0a58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f691f62886bec70694629d308e2c941e') in 0.013549 seconds 
+  Import took 0.018187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.145264 seconds.
+  path: Assets/CustomAssets/Farm/Materials/PolygonFarm_01_A.mat
+  artifactKey: Guid(fdf18c58b725a2f469593ece1786d307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/PolygonFarm_01_A.mat using Guid(fdf18c58b725a2f469593ece1786d307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c68d391baa5eceb2506aab0e3ae365') in 0.023322 seconds 
+  Import took 0.028608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Plastic.mat
+  artifactKey: Guid(bf715e35a7149c64fb0e3abb0c735c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Plastic.mat using Guid(bf715e35a7149c64fb0e3abb0c735c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a303d65985e36856d9807ab95bcb13') in 0.017954 seconds 
+  Import took 0.023056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/CustomAssets/Farm/Models/Materials/PolygonFarm_Texture_01_A.mat
+  artifactKey: Guid(9a9047abcfc5db544a51361c96f9328b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/Materials/PolygonFarm_Texture_01_A.mat using Guid(9a9047abcfc5db544a51361c96f9328b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12cb641a81ae713fb5d83c615382c464') in 0.025488 seconds 
+  Import took 0.030428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_02_A.png
+  artifactKey: Guid(611d398dfa4b6ec4885e04eb9698b56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_02_A.png using Guid(611d398dfa4b6ec4885e04eb9698b56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf16b982c207b74dc242e8b14066ac4') in 0.019913 seconds 
+  Import took 0.024659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_02_C.png
+  artifactKey: Guid(ccab993996c89f8438dbd423e86619a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_02_C.png using Guid(ccab993996c89f8438dbd423e86619a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa38e4d0cffbb9d680ae0257b09fc76') in 0.009850 seconds 
+  Import took 0.014524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Leaf_01.mat
+  artifactKey: Guid(da5a311d3775332478c396918dda3aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Leaf_01.mat using Guid(da5a311d3775332478c396918dda3aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2ab5250a14cdf3523faa752e3f2812') in 0.021855 seconds 
+  Import took 0.026926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_01_C.png
+  artifactKey: Guid(f6c6c8dff868940499d666549f361772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_01_C.png using Guid(f6c6c8dff868940499d666549f361772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe581f5fe8bc1426ebf9c36c6d0d9e1a') in 0.009605 seconds 
+  Import took 0.014170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/CustomAssets/Farm/Materials/PolygonFarm_02_A.mat
+  artifactKey: Guid(fcf73fdc6bcbef7458fa48497bdf600a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/PolygonFarm_02_A.mat using Guid(fcf73fdc6bcbef7458fa48497bdf600a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b0263b837e6c8b0c11fcaba2d3042d') in 0.240203 seconds 
+  Import took 0.245381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/CustomAssets/Farm/Models/Materials/PolygonFarm_Texture_01_A_2k.mat
+  artifactKey: Guid(d0aa53788d635d64ebef76f112210297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/Materials/PolygonFarm_Texture_01_A_2k.mat using Guid(d0aa53788d635d64ebef76f112210297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97884d4f3c7e9b767e3d12d511ff67b') in 0.014270 seconds 
+  Import took 0.018725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Clouds 2.mat
+  artifactKey: Guid(9704ec08420ed464ba9fd80f81da93e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Clouds 2.mat using Guid(9704ec08420ed464ba9fd80f81da93e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c59ee9df1224c46df31e73c79fd9ca') in 0.014736 seconds 
+  Import took 0.019472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_01_C.mat
+  artifactKey: Guid(b782a0026f3ce734ca45bd2ed7076f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_01_C.mat using Guid(b782a0026f3ce734ca45bd2ed7076f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cfa649d94b38e99357598b1886ffd7a') in 0.016473 seconds 
+  Import took 0.021200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Signs.png
+  artifactKey: Guid(f6126cec9a696994e801505559cf2f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Signs.png using Guid(f6126cec9a696994e801505559cf2f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4199b6c939f13f355ac95794bcea5da') in 0.009360 seconds 
+  Import took 0.013915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_02_B.mat
+  artifactKey: Guid(238068fd67f0d3f468362f86083e01a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_02_B.mat using Guid(238068fd67f0d3f468362f86083e01a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fae4ba04b5a29c409ab7bcd671929d3') in 0.016645 seconds 
+  Import took 0.021713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_04_B.png
+  artifactKey: Guid(57aefcb63282e874fbb6884bf1471f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_04_B.png using Guid(57aefcb63282e874fbb6884bf1471f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c7ac211d61b585f9ca66ccec7ea169') in 0.010217 seconds 
+  Import took 0.015302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_03_C.mat
+  artifactKey: Guid(943bedeade8ffa44fb60a749d8f1a395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_03_C.mat using Guid(943bedeade8ffa44fb60a749d8f1a395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95991aab72aa6584b05a9c901694f96c') in 0.016293 seconds 
+  Import took 0.021177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_Metallic.tga
+  artifactKey: Guid(e67c1760eb8372147963f558a3eda112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_Metallic.tga using Guid(e67c1760eb8372147963f558a3eda112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6aa6cbe40b564827c825b2175a82670') in 0.013543 seconds 
+  Import took 0.018375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/CustomAssets/Farm/Materials/PolygonFarm_04_A.mat
+  artifactKey: Guid(d2bc36813fbd80e4a82b18b186f8c475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/PolygonFarm_04_A.mat using Guid(d2bc36813fbd80e4a82b18b186f8c475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dcfb31ff878f33b7ee329577207778c') in 0.016732 seconds 
+  Import took 0.021591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_02_B.png
+  artifactKey: Guid(b52f211dca5e2a74a811ec3d1899b7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_02_B.png using Guid(b52f211dca5e2a74a811ec3d1899b7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87405147e770418e5825f0c0dff6cf9') in 0.010223 seconds 
+  Import took 0.015131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Windfarm_Blades_01.fbx
+  artifactKey: Guid(467b95496d484194084d7d5cfd722b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Windfarm_Blades_01.fbx using Guid(467b95496d484194084d7d5cfd722b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd72bb6ee1c07dd9426eeab54933a686b') in 0.028654 seconds 
+  Import took 0.033484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Windfarm_01.fbx
+  artifactKey: Guid(05e4b3c293c93a240add9619ccd42eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Windfarm_01.fbx using Guid(05e4b3c293c93a240add9619ccd42eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e48fe37f3b26c379fc28218c6dce5be') in 0.023084 seconds 
+  Import took 0.027994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Signs_01.mat
+  artifactKey: Guid(d412664aca96fa84981a7fcb1e6f22f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Signs_01.mat using Guid(d412664aca96fa84981a7fcb1e6f22f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989d39da488ea0ffc4a5fec6e2844744') in 0.014040 seconds 
+  Import took 0.019002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Fence.mat
+  artifactKey: Guid(2845f789a0bac5746b21033a32853739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Fence.mat using Guid(2845f789a0bac5746b21033a32853739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a6ab1c2713fe5aa9a85f948814dcde') in 0.016471 seconds 
+  Import took 0.020957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_04_B.mat
+  artifactKey: Guid(56a8f0c6c14457f48ab7b691aa942d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_04_B.mat using Guid(56a8f0c6c14457f48ab7b691aa942d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cddd2b7077f355ac031f4f7e6879a349') in 0.016345 seconds 
+  Import took 0.020985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionCustom/SM_Bld_Farmhouse_01_Collision.fbx
+  artifactKey: Guid(2f4b5d12d3642474a9cc957771e54a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionCustom/SM_Bld_Farmhouse_01_Collision.fbx using Guid(2f4b5d12d3642474a9cc957771e54a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fee33c144f35e6f649cb20b0f73f952') in 0.029590 seconds 
+  Import took 0.034207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_02_C.mat
+  artifactKey: Guid(fce3e1dac5c5658469a304bb1d3911f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_02_C.mat using Guid(fce3e1dac5c5658469a304bb1d3911f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa73b641628ce470b2b5c238228eeb8') in 0.017063 seconds 
+  Import took 0.021598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_Metallic_Dirt.tga
+  artifactKey: Guid(2c5d50796bb2ed74684f63b7f71b7e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_Metallic_Dirt.tga using Guid(2c5d50796bb2ed74684f63b7f71b7e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f511d0046018b52821ad78d67cf4dd') in 0.011240 seconds 
+  Import took 0.015758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_03_A.png
+  artifactKey: Guid(52dd7ff639e37c6438d85383e89170ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_03_A.png using Guid(52dd7ff639e37c6438d85383e89170ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3a8c88d4beb3e3b55b6b709bce5c65') in 0.010337 seconds 
+  Import took 0.015376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_01_A.png
+  artifactKey: Guid(04b7bb4212f0e9b498769b2077336c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_01_A.png using Guid(04b7bb4212f0e9b498769b2077336c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81ad3cea12562581a211785c1713993a') in 0.009595 seconds 
+  Import took 0.014512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/CustomAssets/Farm/Materials/PolygonFarm_03_A.mat
+  artifactKey: Guid(a366bdc638fe7e54b84cefd5ce0be9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/PolygonFarm_03_A.mat using Guid(a366bdc638fe7e54b84cefd5ce0be9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6ae91aff366af894f4e31999702c22') in 0.016757 seconds 
+  Import took 0.021664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/CustomAssets/Farm/Models/Characters.fbx
+  artifactKey: Guid(0125309e38bea8a48bc578cf8f220634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/Characters.fbx using Guid(0125309e38bea8a48bc578cf8f220634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7684d2642e256a330803a2a6a1cf766') in 0.070977 seconds 
+  Import took 0.075910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Bld_Farmhouse_01_Convex.asset
+  artifactKey: Guid(08779640158e2a24495ea0abd24d939b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Bld_Farmhouse_01_Convex.asset using Guid(08779640158e2a24495ea0abd24d939b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eafdb0126adb3e1d1a3ba492f6ef4f1') in 0.009812 seconds 
+  Import took 0.014410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_Emissive_01.png
+  artifactKey: Guid(714d5f655b2edf543a83504b67c01861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_Emissive_01.png using Guid(714d5f655b2edf543a83504b67c01861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '153e544b421c1d4598d7aaf5d30d9e7d') in 0.009407 seconds 
+  Import took 0.014066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Glass.mat
+  artifactKey: Guid(5ad23908d1f12ef408aa3e1fffa3edb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Glass.mat using Guid(5ad23908d1f12ef408aa3e1fffa3edb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a9cc6eff144069909ad25b608d6cbb') in 0.015517 seconds 
+  Import took 0.020487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_03_B.mat
+  artifactKey: Guid(3503af801ab3525419a179b6ea5dc5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_03_B.mat using Guid(3503af801ab3525419a179b6ea5dc5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46761616aaf234540de4babc4776d850') in 0.017099 seconds 
+  Import took 0.022489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_01_B.mat
+  artifactKey: Guid(c32db614be2c60d4ca78417d651331b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_01_B.mat using Guid(c32db614be2c60d4ca78417d651331b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295b47ef796a452a9f986f5514c169cf') in 0.016598 seconds 
+  Import took 0.021632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Water.mat
+  artifactKey: Guid(a2a86c5ae886b7c44b06a6b8fa249255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Water.mat using Guid(a2a86c5ae886b7c44b06a6b8fa249255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d7ddd6008074b927f83fdef0756a157') in 0.015098 seconds 
+  Import took 0.020537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Clouds.mat
+  artifactKey: Guid(de692b10f47a331438b02e10a46a6e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Clouds.mat using Guid(de692b10f47a331438b02e10a46a6e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411dfda34ab2ae87b5594f038af300c0') in 0.014730 seconds 
+  Import took 0.019730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Clouds 1.mat
+  artifactKey: Guid(c6f95b935fe405f469af32abee9ec8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Misc/PolygonFarm_Clouds 1.mat using Guid(c6f95b935fe405f469af32abee9ec8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b94cdc9170ad508f4f9de08d26bdcb5a') in 0.014299 seconds 
+  Import took 0.019064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_03_B.png
+  artifactKey: Guid(5d24c3253a0fd3a4bbec990294cc11bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_03_B.png using Guid(5d24c3253a0fd3a4bbec990294cc11bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c681a337cebbad2951b840a4e02d4fab') in 0.010445 seconds 
+  Import took 0.015134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Bld_Farmhouse_02_Convex.asset
+  artifactKey: Guid(65723aed68cae1342878de09363678ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Bld_Farmhouse_02_Convex.asset using Guid(65723aed68cae1342878de09363678ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8bf1c45a9da5aa0d2c58f2aab862fc0') in 0.009862 seconds 
+  Import took 0.014833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_01_B.png
+  artifactKey: Guid(c01edb0891339db49b47c49b00827d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_01_B.png using Guid(c01edb0891339db49b47c49b00827d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c11b644f0bc3898911f9822fbd3766') in 0.009470 seconds 
+  Import took 0.015019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_04_C.png
+  artifactKey: Guid(2f195a6e50bbd234da354fb09cc9d850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_04_C.png using Guid(2f195a6e50bbd234da354fb09cc9d850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4ba5efbc690b42a35de80d5c947cefc') in 0.010900 seconds 
+  Import took 0.015674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_03_C.png
+  artifactKey: Guid(687c9db25462a9945a008a678bff04c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_03_C.png using Guid(687c9db25462a9945a008a678bff04c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98ee6f522af560b8e01a2cbadc45480b') in 0.010819 seconds 
+  Import took 0.015617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_04_A.png
+  artifactKey: Guid(30ba64d9d0301f54e923f16315503804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Textures/PolygonFarm_Texture_04_A.png using Guid(30ba64d9d0301f54e923f16315503804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa6c89cbbd1d91d0bcc2583d70c5c14') in 0.010233 seconds 
+  Import took 0.015039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Bld_Farmhouse_02.fbx
+  artifactKey: Guid(ea1ba4b74f4bce84d977ef4f2cdaceb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Bld_Farmhouse_02.fbx using Guid(ea1ba4b74f4bce84d977ef4f2cdaceb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72534270699e48dba19912a6eb2a2bf') in 0.034555 seconds 
+  Import took 0.040412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Bld_Farmhouse_01.fbx
+  artifactKey: Guid(5243c0c91203f794aa144f4cfbc03d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Bld_Farmhouse_01.fbx using Guid(5243c0c91203f794aa144f4cfbc03d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a85b64c920825bc6d536309f835c0f24') in 0.047006 seconds 
+  Import took 0.051788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionCustom/SM_Bld_Farmhouse_02_Collision.fbx
+  artifactKey: Guid(eaceb10b3a6a96d4886c2480511297c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionCustom/SM_Bld_Farmhouse_02_Collision.fbx using Guid(eaceb10b3a6a96d4886c2480511297c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4a0570230378f7efb8617fd63fb0d9') in 0.031626 seconds 
+  Import took 0.036324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_04_C.mat
+  artifactKey: Guid(407e31252bfa83c4c8d5d17cda223637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Materials/Alts/PolygonFarm_04_C.mat using Guid(407e31252bfa83c4c8d5d17cda223637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8977f2e459500797330360e5c075fc9c') in 0.016910 seconds 
+  Import took 0.022032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 131.376771 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter
+  artifactKey: Guid(7534bd1358c16b74f88d534eb094290a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter using Guid(7534bd1358c16b74f88d534eb094290a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff86632cfdad551cdc1cff9594b5918') in 0.005021 seconds 
+  Import took 0.010211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.211870 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Beaker_Empty.fbx
+  artifactKey: Guid(affe7203ad95ac04884cd98a039abd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Beaker_Empty.fbx using Guid(affe7203ad95ac04884cd98a039abd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29ccf4b3abdeb38e05bea2c61a760c1') in 0.020013 seconds 
+  Import took 0.026063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Bread.fbx
+  artifactKey: Guid(66ff87ab9380a334bacec924d01224a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Bread.fbx using Guid(66ff87ab9380a334bacec924d01224a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b79a81609dee73884136082736150bf') in 0.017038 seconds 
+  Import took 0.023031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Jar_Big.fbx
+  artifactKey: Guid(b7e1480ce257ecf43ab1570081afc3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Jar_Big.fbx using Guid(b7e1480ce257ecf43ab1570081afc3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47555d1fd47444223e8315e3d0ae1ace') in 0.021220 seconds 
+  Import took 0.026048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Beaker_Small.fbx
+  artifactKey: Guid(b1c10eb87d6afd940a081f2a841004e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Beaker_Small.fbx using Guid(b1c10eb87d6afd940a081f2a841004e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fdd86c3caeb4831779003adacd058e8') in 0.018733 seconds 
+  Import took 0.023404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Red.fbx
+  artifactKey: Guid(9028aa2abf4ff9d45a5c341199180134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Red.fbx using Guid(9028aa2abf4ff9d45a5c341199180134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f3d5ff36965a3460814bc4ce4a26496') in 0.018509 seconds 
+  Import took 0.023243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Cauldron_Small_Stand.fbx
+  artifactKey: Guid(16a4a317255b8c849a35489a1d7be83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Cauldron_Small_Stand.fbx using Guid(16a4a317255b8c849a35489a1d7be83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49146e4237e3fc05cc0e00a41c8ca438') in 0.014382 seconds 
+  Import took 0.019031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Spear.fbx
+  artifactKey: Guid(2924dc40f6141404a89f2e38832b88a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Spear.fbx using Guid(2924dc40f6141404a89f2e38832b88a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bce5a800227b1e869b2a4752bd0d78f') in 0.014474 seconds 
+  Import took 0.019293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/CrystalBall_Stand.fbx
+  artifactKey: Guid(202d822c8af712b4ebc5790fc0111392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/CrystalBall_Stand.fbx using Guid(202d822c8af712b4ebc5790fc0111392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d3bfce4103ead161b9d32be9ef4f88') in 0.016929 seconds 
+  Import took 0.021579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Shield.fbx
+  artifactKey: Guid(4c4e4839eaee70b4b9f3987785cfce57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Shield.fbx using Guid(4c4e4839eaee70b4b9f3987785cfce57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9aebb9a77447b801c73c11d1b7a3180') in 0.013981 seconds 
+  Import took 0.019305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Bottle.fbx
+  artifactKey: Guid(764ac3d453b8da24d91a0894ffdc6655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Bottle.fbx using Guid(764ac3d453b8da24d91a0894ffdc6655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34908646974248036e7e3b2a47bd2b03') in 0.017630 seconds 
+  Import took 0.022659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Potion_Green.fbx
+  artifactKey: Guid(7e1b98bbe17b88644aea6625cb61b2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Potion_Green.fbx using Guid(7e1b98bbe17b88644aea6625cb61b2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c7abd1d3ebf95a5d177f70836f96fd') in 0.014655 seconds 
+  Import took 0.019676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Potion_Blue.fbx
+  artifactKey: Guid(e873cbc7c65c12b409ffa8b357ef3039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Potion_Blue.fbx using Guid(e873cbc7c65c12b409ffa8b357ef3039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf3d7f842562bf89a3c53194764740f') in 0.018051 seconds 
+  Import took 0.022660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Bucket.fbx
+  artifactKey: Guid(c92f800f4ab0055479becfd4aa479194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Bucket.fbx using Guid(c92f800f4ab0055479becfd4aa479194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c97aa814e5edf1c4c8c58e26887fcb') in 0.013950 seconds 
+  Import took 0.018478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Fork.fbx
+  artifactKey: Guid(053045d0926c27f46b1a625fbb577e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Fork.fbx using Guid(053045d0926c27f46b1a625fbb577e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ee9b6857a0a4192b8ac49851e92e3b') in 0.017310 seconds 
+  Import took 0.022062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Potato.fbx
+  artifactKey: Guid(0f7a0546cdceb1f4d8df8c7fb52f2523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Potato.fbx using Guid(0f7a0546cdceb1f4d8df8c7fb52f2523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da672502b39c429ab0d85c9dfa6517c2') in 0.017264 seconds 
+  Import took 0.021895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Key_Silver.fbx
+  artifactKey: Guid(1b73a1dd76adf8c47b44e5557a53568f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Key_Silver.fbx using Guid(1b73a1dd76adf8c47b44e5557a53568f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0646febf0f67e055586a2bc640ffabb1') in 0.017485 seconds 
+  Import took 0.021990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Small.fbx
+  artifactKey: Guid(07c11632f362e9544a7c89ada554f4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Small.fbx using Guid(07c11632f362e9544a7c89ada554f4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f446ca27ea82927c66a18884982b4299') in 0.014033 seconds 
+  Import took 0.018783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scales.fbx
+  artifactKey: Guid(d148b357b948fda4e90a57588e5662f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scales.fbx using Guid(d148b357b948fda4e90a57588e5662f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85ad63ffa3ed56eade5ebd07b31d460') in 0.017554 seconds 
+  Import took 0.022596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Elder.fbx
+  artifactKey: Guid(1cc69bcd5c8feea4493059cb89fd3104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Elder.fbx using Guid(1cc69bcd5c8feea4493059cb89fd3104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba859ab06cc2da17228543ffeec630c') in 0.014691 seconds 
+  Import took 0.019773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Skull.fbx
+  artifactKey: Guid(34636936646bab64fb61023e7f3410ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Skull.fbx using Guid(34636936646bab64fb61023e7f3410ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e733feebcc6abbc329f84e06d42b953') in 0.016125 seconds 
+  Import took 0.021825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Meat.fbx
+  artifactKey: Guid(fd8f5bc11b0289948b50da67132110ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Meat.fbx using Guid(fd8f5bc11b0289948b50da67132110ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b1ee9f623e1701f048e1817f1a8017') in 0.016801 seconds 
+  Import took 0.021800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Inkwell.fbx
+  artifactKey: Guid(61beba42400fa6940aad007d84cba284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Inkwell.fbx using Guid(61beba42400fa6940aad007d84cba284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f443fa06602774e55eecb51737af30') in 0.013840 seconds 
+  Import took 0.018620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Key_Golden.fbx
+  artifactKey: Guid(ba63f90d8844c4f4995e182266e20c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Key_Golden.fbx using Guid(ba63f90d8844c4f4995e182266e20c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d02832d42664e0433ef4b0a61a56a1') in 0.017191 seconds 
+  Import took 0.021989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Cauldron_Small.fbx
+  artifactKey: Guid(0dbe52e7e22a05648ad36efdc78ea7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Cauldron_Small.fbx using Guid(0dbe52e7e22a05648ad36efdc78ea7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d21d47dbab17a6cf5fbe80d81bfb0b') in 0.014297 seconds 
+  Import took 0.018949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Plant_Root.fbx
+  artifactKey: Guid(88572447e83b2514ab33f918fad7afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Plant_Root.fbx using Guid(88572447e83b2514ab33f918fad7afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9326ff925ff2916afffa1671fd3e81f6') in 0.014083 seconds 
+  Import took 0.018869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Goblet.fbx
+  artifactKey: Guid(70f89a7157d12f24faa9cc7887dea3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Goblet.fbx using Guid(70f89a7157d12f24faa9cc7887dea3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '281d9f99d5d65537aff58e6f917ce20d') in 0.015560 seconds 
+  Import took 0.020397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Bone.fbx
+  artifactKey: Guid(b08e173721554e44285d4e3ab0acda13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Bone.fbx using Guid(b08e173721554e44285d4e3ab0acda13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45a5b9b77edccba31dbd6033d369cb6') in 0.014289 seconds 
+  Import took 0.019114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Big_Red.fbx
+  artifactKey: Guid(ca50010b0ae6b8f4c94725ca828dc68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Big_Red.fbx using Guid(ca50010b0ae6b8f4c94725ca828dc68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3af29416ea9b892ed7b16a97f4ff4c') in 0.017655 seconds 
+  Import took 0.022398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Flask_Small.fbx
+  artifactKey: Guid(227bb45ed71e6694d82c6e560b269325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Flask_Small.fbx using Guid(227bb45ed71e6694d82c6e560b269325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944e010b4d1411e066658ccfe3fb30c6') in 0.017197 seconds 
+  Import took 0.022099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Drinkinghorn.fbx
+  artifactKey: Guid(bff0d08e50f52a145bc100bcf4c67b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Drinkinghorn.fbx using Guid(bff0d08e50f52a145bc100bcf4c67b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2678b3accfe82c3c6e77e6b5275fc29') in 0.018090 seconds 
+  Import took 0.023016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Mug.fbx
+  artifactKey: Guid(882cf729cef5a2e4ab2a057cb8072a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Mug.fbx using Guid(882cf729cef5a2e4ab2a057cb8072a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0b58c4ec58bc16d480659236ac05be') in 0.013184 seconds 
+  Import took 0.017966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Open.fbx
+  artifactKey: Guid(6f4b9214b0fbf6749a2aa0d49b616c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Open.fbx using Guid(6f4b9214b0fbf6749a2aa0d49b616c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887c468415bbc96075d507622f6ba664') in 0.014833 seconds 
+  Import took 0.019586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Cauldron_Empty.fbx
+  artifactKey: Guid(0b6871c7b1cb6a244a438bb3ba423e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Cauldron_Empty.fbx using Guid(0b6871c7b1cb6a244a438bb3ba423e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60f6d37858338a510ac0cf66f44cd8b') in 0.017460 seconds 
+  Import took 0.022374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Knife.fbx
+  artifactKey: Guid(122018831a92b5f49a92b2094a4062d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Knife.fbx using Guid(122018831a92b5f49a92b2094a4062d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41c383892974b4c21387756f5cd7676') in 0.014095 seconds 
+  Import took 0.018965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Big.fbx
+  artifactKey: Guid(1da1c0220f154654db607bfbdae2c3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Big.fbx using Guid(1da1c0220f154654db607bfbdae2c3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea17c8023c1f9a648f952351067d3be') in 0.014055 seconds 
+  Import took 0.018866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Big_DeepRed.fbx
+  artifactKey: Guid(32184c617bf8b624d8d54af843ec427c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Big_DeepRed.fbx using Guid(32184c617bf8b624d8d54af843ec427c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9418736df67efe05ad5887b84eba54a7') in 0.013867 seconds 
+  Import took 0.018683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Ivy_Branch.fbx
+  artifactKey: Guid(72c499c22acd8d242bb45e122ec43fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Ivy_Branch.fbx using Guid(72c499c22acd8d242bb45e122ec43fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483d475a3df76951b69698384fa76f14') in 0.017161 seconds 
+  Import took 0.021980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Small_DeepRed.fbx
+  artifactKey: Guid(84c3a15b577df7648905fcbe72f4c5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Small_DeepRed.fbx using Guid(84c3a15b577df7648905fcbe72f4c5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc4d404213a3450805d57ed8e35351c') in 0.017170 seconds 
+  Import took 0.021869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/CrystalBall.fbx
+  artifactKey: Guid(f57cc7a1624e76443b185852b327936b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/CrystalBall.fbx using Guid(f57cc7a1624e76443b185852b327936b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17cc8d3b3c1fb4db03259d70db9ca07') in 0.017373 seconds 
+  Import took 0.022305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Jar_Empty.fbx
+  artifactKey: Guid(2003491c76bef4040b25de9ed9e5054b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Jar_Empty.fbx using Guid(2003491c76bef4040b25de9ed9e5054b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc99f73e7527cb8564ea4844255c58c8') in 0.017171 seconds 
+  Import took 0.021798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_DeepRed.fbx
+  artifactKey: Guid(8842cdd23cd83c14c9425c0ae07507c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_DeepRed.fbx using Guid(8842cdd23cd83c14c9425c0ae07507c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603a7ca079f27dab5507cfc12ff9a8f1') in 0.018543 seconds 
+  Import took 0.023305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Spoon.fbx
+  artifactKey: Guid(0b8129244588a614b874c1ef934695a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Spoon.fbx using Guid(0b8129244588a614b874c1ef934695a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13702e351cf57e3328554785b9600d1f') in 0.018289 seconds 
+  Import took 0.022922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Jug.fbx
+  artifactKey: Guid(0a2618eaf865fb249b3ac4d9a5790629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Jug.fbx using Guid(0a2618eaf865fb249b3ac4d9a5790629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7aed44831a6ddb942552bde8919bcc') in 0.015419 seconds 
+  Import took 0.020728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Small_Red.fbx
+  artifactKey: Guid(a7c3956a09720fe49a2dc5e04a686b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Small_Red.fbx using Guid(a7c3956a09720fe49a2dc5e04a686b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33da232e4a46f3689ae33c13f0e493a') in 0.016624 seconds 
+  Import took 0.021627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Potion_Red.fbx
+  artifactKey: Guid(c6179e854b44e2541a9956947c806de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Potion_Red.fbx using Guid(c6179e854b44e2541a9956947c806de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06100979d9f6007e0a744e0cebdc6f92') in 0.017608 seconds 
+  Import took 0.022292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Key_Rusty.fbx
+  artifactKey: Guid(4009cba106d20f748ab650a274328adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Key_Rusty.fbx using Guid(4009cba106d20f748ab650a274328adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c1a479add57a687cbc3027941d21f46') in 0.016984 seconds 
+  Import took 0.021716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Flask.fbx
+  artifactKey: Guid(9ec750fc4cf747f4fbc15d8898b84ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Flask.fbx using Guid(9ec750fc4cf747f4fbc15d8898b84ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db19c1cd76c6600615a6b38f8fe7ea42') in 0.017437 seconds 
+  Import took 0.022546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Ivy_Leaf.fbx
+  artifactKey: Guid(63909009afc9c704591595c2ef356487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Ivy_Leaf.fbx using Guid(63909009afc9c704591595c2ef356487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7305e065264ab4acf6208829e21a354c') in 0.013687 seconds 
+  Import took 0.018393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Plate_Small.fbx
+  artifactKey: Guid(69a7edade3532ac41a5500bd7987aaec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Plate_Small.fbx using Guid(69a7edade3532ac41a5500bd7987aaec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efd3a03f0a5022f1abef7ebef5f6c907') in 0.014245 seconds 
+  Import took 0.018930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Big_Green.fbx
+  artifactKey: Guid(40d34602bace745418e82f25e6287075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Big_Green.fbx using Guid(40d34602bace745418e82f25e6287075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13476622c9ee5d3c71951c1df19fde40') in 0.014346 seconds 
+  Import took 0.018981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Green.fbx
+  artifactKey: Guid(86eb514168a2b5343a94c3b241459305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Green.fbx using Guid(86eb514168a2b5343a94c3b241459305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9046dc83d78c328b092ba8b2beedad5a') in 0.018729 seconds 
+  Import took 0.023240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Quill.fbx
+  artifactKey: Guid(2e41661bbaacdea4dbb88e6b20ca88d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Quill.fbx using Guid(2e41661bbaacdea4dbb88e6b20ca88d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2b29c45aef9ac506972b7779f8cd10') in 0.013992 seconds 
+  Import took 0.018790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Carrot.fbx
+  artifactKey: Guid(fa1dbf3ce607faa4eaf5d6c71e9ccc66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Carrot.fbx using Guid(fa1dbf3ce607faa4eaf5d6c71e9ccc66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc2535d1bb208ddf8ffc06ec44019cdd') in 0.017553 seconds 
+  Import took 0.023081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Small_Green.fbx
+  artifactKey: Guid(e55a876c8839b57418359bcec709a948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Book_Small_Green.fbx using Guid(e55a876c8839b57418359bcec709a948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a85090f227eebc8d0bd40117de5299') in 0.017318 seconds 
+  Import took 0.022242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Open.fbx
+  artifactKey: Guid(ac8910006b2a62947a9342d2b6ddfa2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Open.fbx using Guid(ac8910006b2a62947a9342d2b6ddfa2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d76aafc15f116f9629deb9587b6b54') in 0.014056 seconds 
+  Import took 0.018745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Stack.fbx
+  artifactKey: Guid(0f9577e3d59f81a45a567d9e256f092c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Scroll_Stack.fbx using Guid(0f9577e3d59f81a45a567d9e256f092c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289f632c70c3681ea0ee8847277962da') in 0.014052 seconds 
+  Import took 0.019215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Jar_Full.fbx
+  artifactKey: Guid(c0469cdae04acd04a848fec5a569effb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Jar_Full.fbx using Guid(c0469cdae04acd04a848fec5a569effb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b605d80a98fdd60793c1889c248e83a') in 0.018270 seconds 
+  Import took 0.023746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Lock.fbx
+  artifactKey: Guid(c5ad9d55f3f826e44ad8d392fc6b9b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Lock.fbx using Guid(c5ad9d55f3f826e44ad8d392fc6b9b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918c4181579d3b1b2428ca650b615c8a') in 0.017389 seconds 
+  Import took 0.022532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Plate.fbx
+  artifactKey: Guid(5ea2f20c59b62c94cb5613b2b9d46328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Models/Clutter/Plate.fbx using Guid(5ea2f20c59b62c94cb5613b2b9d46328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60aade78fb6b87da55d2945a9eb5680') in 0.013851 seconds 
+  Import took 0.018654 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

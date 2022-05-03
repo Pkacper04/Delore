@@ -5194,3 +5194,4 @@ Received Import Request.
 Start importing Assets/CustomAssets/SkyBox.mat using Guid(e9d8463edb005224a86bdc99a27139eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628da4399cdb04c71ab2a1e3ee6a8109') in 0.339639 seconds 
   Import took 0.351895 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

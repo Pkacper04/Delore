@@ -49,10 +49,7 @@ namespace Delore.AI
         void Update()
         {
             if (detection.FieldOfView() || isChasing)
-            {
-                Debug.Log("s");
                 Mover();
-            }
                 
             if (!isChasing && !waiting)
                 StartCoroutine(Patrol());

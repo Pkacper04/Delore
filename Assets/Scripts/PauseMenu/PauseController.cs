@@ -12,6 +12,7 @@ public class PauseController : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         canvas.enabled = false;
         settings.SetActive(false);
         GameEnded = false;
@@ -52,27 +53,16 @@ public class PauseController : MonoBehaviour
 
     public void ExitToMenu()
     {
-        SaveSystem.SavePlayerExit(GameObject.FindGameObjectWithTag("Player"));
-        GamePaused = false;
-        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
     public void ExitGame()
     {
-        SaveSystem.SavePlayerExit(GameObject.FindGameObjectWithTag("Player"));
         Application.Quit();
     }
 
     public void Settings()
     {
         settings.SetActive(!settings.activeInHierarchy);
-    }
-
-    public void Save()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if(!player.GetComponent<Movement>().crouch)
-            SaveSystem.SavePlayer(player);
     }
 
 }

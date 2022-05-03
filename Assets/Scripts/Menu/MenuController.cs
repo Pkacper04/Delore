@@ -39,6 +39,8 @@ public class MenuController : MonoBehaviour
             return;
         if (animator.IsInTransition(0))
             return;
+        if (continueButton.interactable == false)
+            StartNewGame();
 
         if(infoBox.activeInHierarchy)
         {
@@ -82,7 +84,7 @@ public class MenuController : MonoBehaviour
 
     }
 
-    public void Credists()
+    public void Credits()
     {
         // Przyszle creditsy
     }

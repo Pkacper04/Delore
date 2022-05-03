@@ -14,6 +14,8 @@ namespace Delore.Player
         [SerializeField] private NavMeshAgent agent;
         [SerializeField] private CapsuleCollider capsuleCollider;
 
+        public event Action Triggered;
+
         public bool crouch;
 
         private Animator animator;
@@ -129,13 +131,21 @@ namespace Delore.Player
         }
 
 
+        
+
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.transform.tag == "Pickup")
+
+            if(collision.transform.tag == "Enemy")
+            {
+                Triggered?.Invoke();
+            }
+
+            /*if (collision.transform.tag == "Pickup")
             {
                 playerStats.AddItem(collision.gameObject);
                 collision.gameObject.SetActive(false);
-            }
+            }*/
 
 
         }

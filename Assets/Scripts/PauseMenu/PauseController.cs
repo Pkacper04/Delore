@@ -5,6 +5,7 @@ using Delore.Player;
 public class PauseController : MonoBehaviour
 {
     public static bool GamePaused = false;
+    public static bool GameEnded = false;
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject settings;
 
@@ -13,11 +14,13 @@ public class PauseController : MonoBehaviour
     {
         canvas.enabled = false;
         settings.SetActive(false);
+        GameEnded = false;
+        GamePaused = false;
     }
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(!GameEnded && Input.GetKeyDown(KeyCode.Escape))
         {
             GamePaused = !GamePaused;
             PauseGame();

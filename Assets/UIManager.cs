@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 using VIDE_Data;
 using UnityEngine.UI;
+using Delore.Player;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -14,16 +16,38 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text[] buttons_text;
     [SerializeField] private Image NPC_Sprite;
     [SerializeField] VIDE_Assign asign;
+    [SerializeField] private GameObject GameOverScreen;
+    [SerializeField] private Movement gameOverTrigger;
+
+
+    private GraphicRaycaster raycaster;
     // Start is called before the first frame update
     void Start()
     {
+        GameOverScreen.SetActive(false);
         container_NPC.SetActive(false);
         container_Player.SetActive(false);
+        raycaster = GetComponent<GraphicRaycaster>();
     }
+
+    private void OnEnable()
+    {
+        gameOverTrigger.Triggered += GameOver;
+    }
+
+
+
+    
 
     // Update is called once per frame
     void Update()
     {
+
+        if(PauseController.GamePaused)
+            raycaster.enabled = false;
+        else
+            raycaster.enabled = true;
+
         if(Input.GetKeyDown(KeyCode.Return))
         {
             if(!VD.isActive)
@@ -86,6 +110,9 @@ public class UIManager : MonoBehaviour
     {
         if (container_NPC != null)
             End(null);
+
+
+        gameOverTrigger.Triggered -= GameOver;
     }
 
     public void SetPlayerChoice(int choice)
@@ -94,4 +121,21 @@ public class UIManager : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
             VD.Next();
     }
+
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
+    }
+
+
+    private void GameOver()
+    {
+        GameOverScreen.SetActive(true);
+        Time.timeScale = 0;
+        PauseController.GameEnded = true;
+    }
+
+
 }

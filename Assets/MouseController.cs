@@ -7,12 +7,27 @@ namespace Delore.Player
 {
     public class MouseController : MonoBehaviour
     {
-        private bool onEnemy = false;
+        private PlayerStats playerStats;
+        private PickupCore core;
         // Start is called before the first frame update
 
+        private void Start()
+        {
+            playerStats = GetComponent<PlayerStats>();
+            core = GetComponent<PickupCore>();
+        }
 
         private void Update()
         {
+            #region DO WYRZUCENIA
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                core.SaveChests();
+                SaveSystem.SavePlayer(gameObject);
+            }
+
+            #endregion DO WYRZUCENIA
+
             if (PauseController.GamePaused)
                 return;
             CheckForAttack();
@@ -28,7 +43,14 @@ namespace Delore.Player
             if (hit.collider.tag != "Pickup")
                 return;
 
-            Debug.Log("podniosles przedmiot: "+hit.collider.gameObject.name);
+            ChestItem item = hit.collider.GetComponent<ChestItem>();
+
+            if (item.Opened == 1)
+                return;
+
+            item.OpenChest();
+
+            playerStats.AddItem(item.ItemId, item.ItemName);
         }
 
         public RaycastHit GetMousePoint()
@@ -46,26 +68,10 @@ namespace Delore.Player
             if (hit.collider == null)
                 return;
 
-
-            if (hit.collider.tag == "Enemy")
-            {
-                ChangeCursros.AttackCursor();
-                onEnemy = true;
-                return;
-            }
-            else if (onEnemy)
-            {
-                ChangeCursros.ActiveCursor();
-                onEnemy = false;
-                return;
-            }
-
             if(hit.collider.tag == "Pickup")
             {
                 Debug.Log("na przedmiocie");
             }
-
-
 
         }
 

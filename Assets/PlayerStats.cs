@@ -5,16 +5,35 @@ using NaughtyAttributes;
 
 public class PlayerStats : MonoBehaviour
 {
-     public List<GameObject> PickedUpItems = new List<GameObject>();
+    public SortedList<int,string> PickedUpItems = new SortedList<int,string>();
+    public SortedList<int, string> UsedItems = new SortedList<int, string>();
 
-
-    public void AddItem(GameObject item)
+    private void Awake()
     {
-        PickedUpItems.Add(item);
+        PlayerData data = SaveSystem.LoadPlayer();
+        if (data != null)
+        {
+            PickedUpItems = data.pickedUpItems;
+            UsedItems = data.usedItems;
+        }
     }
 
-    public void DeleteItem(GameObject item)
+    private void Update()
     {
-        PickedUpItems.Remove(item);
+        foreach (var item in PickedUpItems.Values)
+        {
+            Debug.Log(item);
+        }
+    }
+
+    public void AddItem(int itemId, string itemName)
+    {
+        PickedUpItems.Add(itemId,itemName);
+    }
+
+    public void DeleteItem(int itemId, string itemName)
+    {
+        PickedUpItems.Remove(itemId);
+        UsedItems.Add(itemId,itemName);
     }
 }

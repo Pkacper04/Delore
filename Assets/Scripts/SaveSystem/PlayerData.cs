@@ -16,6 +16,8 @@ public class PlayerData
     public int lastCameraId;
     public int storedCamNumber;
     public int levelID;
+    public SortedList<int, string> pickedUpItems = new SortedList<int, string>();
+    public SortedList<int, string> usedItems = new SortedList<int, string>();
     
     public PlayerData(GameObject player)
     {
@@ -31,6 +33,10 @@ public class PlayerData
         storedCamNumber = controller.camNumberStorage;
 
         levelID = SceneManager.GetActiveScene().buildIndex;
+
+        PlayerStats stats = player.GetComponent<PlayerStats>();
+        pickedUpItems = stats.PickedUpItems;
+        usedItems = stats.UsedItems;
     }
 
 

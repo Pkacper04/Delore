@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class LockedDoor : MonoBehaviour
 {
-    [SerializeField] GameObject key;
+    [SerializeField] int keyId;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            if (other.GetComponent<PlayerStats>().PickedUpItems.Contains(key))
+            if (other.GetComponent<PlayerStats>().PickedUpItems.ContainsKey(keyId))
                 Destroy(gameObject);
         }
     }

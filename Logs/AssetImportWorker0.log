@@ -168,3 +168,4 @@ Received Import Request.
 Start importing Assets/Prefabs/MapBuilding/Entrance 1.prefab using Guid(59537b7707ecc3b4899f064a83390e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00fc23522662626c3684966d5f93054c') in 0.052752 seconds 
   Import took 0.060399 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

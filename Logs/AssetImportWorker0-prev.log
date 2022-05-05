@@ -15,11 +15,11 @@ C:/Users/ja/Documents/GitHub/Delore
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-2136
+4098
 Successfully changed project path to: C:/Users/ja/Documents/GitHub/Delore
 C:/Users/ja/Documents/GitHub/Delore
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 91.77 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 80.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.28f1 (f5400f52e03f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.160687 seconds.
+Registered in 0.001617 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 92.58 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 84.13 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.731 seconds
+- Completed reload, in  0.567 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3731ms)
-		BeginReloadAssembly (2612ms)
+	ReloadAssembly (567ms)
+		BeginReloadAssembly (53ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (782ms)
-			LoadAssemblies (2614ms)
+		EndReloadAssembly (451ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (432ms)
+			SetupTypeCache (136ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (208ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (196ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (93ms)
+				RefreshPlugins (84ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (75ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.496466 seconds.
+Registered in 0.004380 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 95.14 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 84.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.555 seconds
+- Completed reload, in  1.311 seconds
 Domain Reload Profiling:
-	ReloadAssembly (6559ms)
-		BeginReloadAssembly (150ms)
+	ReloadAssembly (1312ms)
+		BeginReloadAssembly (130ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (6350ms)
-			LoadAssemblies (4105ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (1129ms)
+			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (433ms)
+			SetupTypeCache (301ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (1644ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (573ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (95ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (730ms)
-				ProcessInitializeOnLoadMethodAttributes (732ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (391ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3682 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 180.6 MB.
-System memory in use after: 180.7 MB.
+System memory in use after: 180.8 MB.
 
 Unloading 148 unused Assets to reduce memory usage. Loaded Objects now: 4122.
-Total: 4.059200 ms (FindLiveObjects: 0.329500 ms CreateObjectMapping: 0.241400 ms MarkObjects: 3.273400 ms  DeleteObjects: 0.213900 ms)
+Total: 3.396700 ms (FindLiveObjects: 0.226100 ms CreateObjectMapping: 0.151800 ms MarkObjects: 2.846300 ms  DeleteObjects: 0.171900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,57 +131,41 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/MapBuilding/wardrobe with books 1.prefab
-  artifactKey: Guid(4bcb812fb5cbad4428c4ee99deb00bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MapBuilding/wardrobe with books 1.prefab using Guid(4bcb812fb5cbad4428c4ee99deb00bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d0ad1ff4fd0789d839d70902d7275c') in 0.341265 seconds 
-  Import took 0.347771 seconds .
+  path: Assets/Prefabs/MapBuilding/Library.prefab
+  artifactKey: Guid(4597293ffd975a849ba0a35e95ebc852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapBuilding/Library.prefab using Guid(4597293ffd975a849ba0a35e95ebc852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbb824774cd384b027c20f1d1588e24') in 0.363889 seconds 
+  Import took 0.384262 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 134.945554 seconds.
-  path: Assets/Prefabs/MapBuilding/wardrobe with books 2.prefab
-  artifactKey: Guid(5f9f4d77a8b77894aa1871e967fc8712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MapBuilding/wardrobe with books 2.prefab using Guid(5f9f4d77a8b77894aa1871e967fc8712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c85cec1587be2fa5d81e9fda7a5e572') in 0.040689 seconds 
-  Import took 0.047126 seconds .
+  Time since last request: 43.444823 seconds.
+  path: Assets/Prefabs/MapBuilding/dungeon room with table and wine.prefab
+  artifactKey: Guid(ebe5787faa2c37b48967084054ca2fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapBuilding/dungeon room with table and wine.prefab using Guid(ebe5787faa2c37b48967084054ca2fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd301323910bc82c9b1701e7f99d9d97') in 0.062123 seconds 
+  Import took 0.070305 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 117.665811 seconds.
-  path: Assets/Prefabs/MapBuilding/wardrobe with books 3.prefab
-  artifactKey: Guid(5e8dd635c73b7e949b0ab50731b28f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MapBuilding/wardrobe with books 3.prefab using Guid(5e8dd635c73b7e949b0ab50731b28f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ec486717bbf8d108a22f289a122c321') in 0.029113 seconds 
-  Import took 0.034803 seconds .
+  Time since last request: 11.445875 seconds.
+  path: Assets/Prefabs/MapBuilding/jail room.prefab
+  artifactKey: Guid(ac6913b5251817547995b14aeb8512bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapBuilding/jail room.prefab using Guid(ac6913b5251817547995b14aeb8512bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642aefb9671f4c26e81fa38bbfb89f86') in 0.044592 seconds 
+  Import took 0.052267 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 74.585675 seconds.
-  path: Assets/Prefabs/MapBuilding/wardrobe with books 4.prefab
-  artifactKey: Guid(03eb2228a1c732c408a8977500cc082b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MapBuilding/wardrobe with books 4.prefab using Guid(03eb2228a1c732c408a8977500cc082b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061c4fa3345f6aea907e61ed14f16b13') in 0.024523 seconds 
-  Import took 0.030079 seconds .
+  Time since last request: 28.531640 seconds.
+  path: Assets/Prefabs/MapBuilding/Entrance.prefab
+  artifactKey: Guid(1a416d6365222b747859f354a375c415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapBuilding/Entrance.prefab using Guid(1a416d6365222b747859f354a375c415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7033732e15b43ff7eee3222f1c258060') in 0.050231 seconds 
+  Import took 0.057809 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 95.642086 seconds.
-  path: Assets/Prefabs/MapBuilding/wardrobe with books 5.prefab
-  artifactKey: Guid(947fd8359ba318d4790c2f4fa5d1be53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MapBuilding/wardrobe with books 5.prefab using Guid(947fd8359ba318d4790c2f4fa5d1be53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50816ba297e6909d37141d98239ee102') in 0.028059 seconds 
-  Import took 0.034920 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 588.309787 seconds.
-  path: Assets/Prefabs/MapBuilding/wardrobe with books 1.prefab
-  artifactKey: Guid(4bcb812fb5cbad4428c4ee99deb00bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MapBuilding/wardrobe with books 1.prefab using Guid(4bcb812fb5cbad4428c4ee99deb00bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024d4b664fe0bb2c99c2e3bf776199ee') in 0.025346 seconds 
-  Import took 0.032020 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.701871 seconds.
-  path: Assets/Prefabs/MapBuilding/wardrobe with books 2.prefab
-  artifactKey: Guid(5f9f4d77a8b77894aa1871e967fc8712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MapBuilding/wardrobe with books 2.prefab using Guid(5f9f4d77a8b77894aa1871e967fc8712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be5139ceba2bb95cf30c3ca04a69ce3') in 0.021203 seconds 
-  Import took 0.026928 seconds .
+  Time since last request: 15.656068 seconds.
+  path: Assets/Prefabs/MapBuilding/Entrance 1.prefab
+  artifactKey: Guid(59537b7707ecc3b4899f064a83390e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapBuilding/Entrance 1.prefab using Guid(59537b7707ecc3b4899f064a83390e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00fc23522662626c3684966d5f93054c') in 0.052752 seconds 
+  Import took 0.060399 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

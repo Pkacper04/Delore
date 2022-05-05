@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Delore.Player
 {
@@ -9,10 +10,14 @@ namespace Delore.Player
     {
         private PlayerStats playerStats;
         private PickupCore core;
+        private Movement playerMovement;
+
+        public bool MovingToChest { get; set; }
         // Start is called before the first frame update
 
         private void Start()
         {
+            playerMovement = GetComponent<Movement>();
             playerStats = GetComponent<PlayerStats>();
             core = GetComponent<PickupCore>();
         }
@@ -48,9 +53,16 @@ namespace Delore.Player
             if (item.Opened == 1)
                 return;
 
-            item.OpenChest();
+            NavMeshPath path = new NavMeshPath();
 
-            playerStats.AddItem(item.ItemId, item.ItemName);
+            NavMeshHit navHit;
+            NavMesh.SamplePosition(hit.transform.position, out navHit, 20f, -1);
+
+            MovingToChest = true;
+            playerMovement.PickUpMove(navHit.position);
+            object[] parms = new object[2] { navHit.position, item };
+            StartCoroutine("WaitToOpenChest",parms);
+
         }
 
         public RaycastHit GetMousePoint()
@@ -75,6 +87,24 @@ namespace Delore.Player
 
         }
 
+        private IEnumerator WaitToOpenChest(object[] parms)
+        {
+
+            Vector3 targetPosition = (Vector3)parms[0];
+
+            Debug.Log("test");
+            yield return new WaitUntil(() => MovingToChest == false);
+            Debug.Log(playerMovement.agent.destination);
+            Debug.Log((Vector3)parms[0]);
+            if (playerMovement.agent.destination == (Vector3)parms[0])
+            {
+                ChestItem item = (ChestItem)parms[1];
+
+                item.OpenChest();
+
+                playerStats.AddItem(item.ItemId, item.ItemName);
+            }
+        }
 
 
 

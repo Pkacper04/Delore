@@ -11,7 +11,7 @@ namespace Delore.Player
     public class Movement : MonoBehaviour
     {
 
-        [SerializeField] private NavMeshAgent agent;
+        public NavMeshAgent agent;
         [SerializeField] private CapsuleCollider capsuleCollider;
 
         public event Action Triggered;
@@ -50,13 +50,20 @@ namespace Delore.Player
         }
 
         
+        public void PickUpMove(Vector3 targetPosition)
+        {
+            agent.destination = targetPosition;
+        }
 
         private void MoveToCursor()
         {
             RaycastHit hit = mouseController.GetMousePoint();
 
             if (CanMove(hit.point))
+            {
                 agent.destination = hit.point;
+                mouseController.MovingToChest = false;
+            }
             else
                 ChangeCursros.DeclineCursor();
         }

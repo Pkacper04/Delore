@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - CameraController
+  - Pickup
+  - NPC
   layers:
   - Default
   - TransparentFX

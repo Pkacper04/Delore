@@ -8,19 +8,20 @@ public class CameraChanging : MonoBehaviour
     
     private CameraController controller;
     private bool right = false;
+    private GameObject player;
 
     void Start()
     {
         controller = GameObject.FindGameObjectWithTag("CameraController").GetComponent<CameraController>();
-        GameObject Player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("Player");
         if (!changeAxis)
         {
-            if (Player.transform.position.x > transform.position.x)
+            if (player.transform.position.x > transform.position.x)
                 right = true;
         }
         else
         {
-            if (Player.transform.position.z < transform.position.z)
+            if (player.transform.position.z > transform.position.z)
                 right = true;
 
         }
@@ -28,13 +29,20 @@ public class CameraChanging : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+
+        if (other.tag == "Player" && !other.isTrigger)
         {
-            right = !right;
-            if(!changeAxis)
+            if (!changeAxis)
+            {
+                right = player.transform.position.x > transform.position.x ? false : true;
                 controller.ChangeCamera(right);
+            }
             else
-                controller.ChangeAxis(right);
+            {
+                
+                right = player.transform.position.z < transform.position.z+.5f ? false : true;
+                controller.ChangeAxis(right); 
+            }
         }
     }
 }

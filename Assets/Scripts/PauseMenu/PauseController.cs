@@ -1,26 +1,27 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using Delore.Player;
 
 public class PauseController : MonoBehaviour
 {
     public static bool GamePaused = false;
+    public static bool GameEnded = false;
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject settings;
 
 
     private void Start()
     {
+        Time.timeScale = 1;
         canvas.enabled = false;
         settings.SetActive(false);
+        GameEnded = false;
+        GamePaused = false;
     }
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(!GameEnded && Input.GetKeyDown(KeyCode.Escape))
         {
             GamePaused = !GamePaused;
             PauseGame();
@@ -52,25 +53,17 @@ public class PauseController : MonoBehaviour
 
     public void ExitToMenu()
     {
-        SaveSystem.SavePlayerExit(GameObject.FindGameObjectWithTag("Player"));
-        GamePaused = false;
-        Time.timeScale = 1f;
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
     public void ExitGame()
     {
-        SaveSystem.SavePlayerExit(GameObject.FindGameObjectWithTag("Player"));
         Application.Quit();
     }
 
     public void Settings()
     {
         settings.SetActive(!settings.activeInHierarchy);
-    }
-
-    public void Save()
-    {
-        SaveSystem.SavePlayer(GameObject.FindGameObjectWithTag("Player"));
     }
 
 }

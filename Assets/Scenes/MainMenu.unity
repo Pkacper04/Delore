@@ -3301,6 +3301,7 @@ MonoBehaviour:
   infoBox: {fileID: 1284793757}
   unClickableButton: {fileID: 21300000, guid: f863c7ae8b9dc29469a78752260c736b, type: 3}
   animator: {fileID: 13355232}
+  newGameScene: Cutscene
 --- !u!114 &2077406659 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5668136441075926231, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}

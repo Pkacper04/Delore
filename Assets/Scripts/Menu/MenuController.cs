@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using NaughtyAttributes;
 
 public class MenuController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class MenuController : MonoBehaviour
     [SerializeField] private GameObject infoBox;
     [SerializeField] private Sprite unClickableButton;
     [SerializeField] private Animator animator;
+    [Scene]
+    public string newGameScene;
     private int levelIndex;
 
     private void Start()
@@ -59,7 +62,7 @@ public class MenuController : MonoBehaviour
     public void StartNewGame()
     {
         SaveSystem.DeletePlayerSave();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(newGameScene);
     }
 
     public void Settings()

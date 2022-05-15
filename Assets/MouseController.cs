@@ -60,8 +60,12 @@ namespace Delore.Player
 
             MovingToChest = true;
             playerMovement.PickUpMove(navHit.position);
-            object[] parms = new object[2] { navHit.position, item };
-            StartCoroutine("WaitToOpenChest",parms);
+
+            item.OpenChest();
+
+            playerStats.AddItem(item.ItemId, item.ItemName);
+            /*object[] parms = new object[2] { navHit.position, item };
+            StartCoroutine("WaitToOpenChest",parms);*/
 
         }
 

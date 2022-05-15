@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class ChestItem : MonoBehaviour
 {
+    private Transform chestLid;
 
     public string ItemName { get; set; }
     public int ItemId { get; set; }
@@ -15,12 +17,20 @@ public class ChestItem : MonoBehaviour
 
     void Start()
     {
+       foreach(Transform item in GetComponentsInChildren<Transform>())
+        {
+            if(item.name == "Chest_Lid")
+                chestLid = item;
+        }
+        
         if (PickupCore.Continued)
         {
-            Opened = PlayerPrefs.GetInt(gameObject.name); //wywo³ujemy metode do otworzenia skrzyni
+            Opened = PlayerPrefs.GetInt(gameObject.name);
             transform.position = positions[PlayerPrefs.GetInt(gameObject.name+"pos")];
             ItemName = PlayerPrefs.GetString(gameObject.name + "name");
             ItemId = PlayerPrefs.GetInt(gameObject.name + "id");
+            if(Opened == 1)
+                ChestAnimation();
         }
         else
         {
@@ -36,9 +46,6 @@ public class ChestItem : MonoBehaviour
             }
         }
 
-       
-
-
     }
 
     public void OpenChest()
@@ -47,12 +54,24 @@ public class ChestItem : MonoBehaviour
             return;
         Opened = 1;
 
-        // Animacja otwierania skrzyni w osobnej metodzie
+        ChestAnimation();
     }
 
+    private async void ChestAnimation()
+    {
+        for (int i = 0; i < 90; i++)
+        {
+            chestLid.Rotate(-1, 0, 0);
+            await Task.Delay(1);
+        }
+    }
 
     public void SaveChest()
     {
         PlayerPrefs.SetInt(gameObject.name, Opened);
     }
+
+
+
+
 }

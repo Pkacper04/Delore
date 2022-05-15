@@ -6,21 +6,15 @@ public class ChangeCursros : MonoBehaviour
 {
     [SerializeField] private Texture2D activeCursor;
     [SerializeField] private Texture2D[] declineCursors;
-    [SerializeField] private Texture2D attackCursor;
 
 
     [SerializeField] private int numberOfCycles = 2;
     [SerializeField] private float animationTime = 1;
 
-
-
-
-
     static public ChangeCursros instance;
 
     private static Texture2D active;
     private static Texture2D[] decline;
-    private static Texture2D attack;
     private static CursorMode cursorMode;
     private static Vector2 hotSpot;
     private static bool inAnimation = false;
@@ -30,7 +24,6 @@ public class ChangeCursros : MonoBehaviour
     {
         active = activeCursor;
         decline = declineCursors;
-        attack = attackCursor;
         hotSpot =  new Vector2(200, 100);
         cursorMode = CursorMode.Auto;
         instance = this;
@@ -46,14 +39,6 @@ public class ChangeCursros : MonoBehaviour
     {
         Cursor.SetCursor(active, hotSpot, cursorMode);
     }
-
-    public static void AttackCursor()
-    {
-        instance.StopCoroutine("waitForChange");
-        inAnimation = false;
-        Cursor.SetCursor(attack, hotSpot, cursorMode);
-    }
-
 
     IEnumerator waitForChange()
     {

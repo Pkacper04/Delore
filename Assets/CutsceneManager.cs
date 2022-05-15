@@ -60,6 +60,10 @@ public class CutsceneManager : MonoBehaviour
             else
                 currentImage++;
         }
+
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+            ChangeCutscene();
+        
     }
 
     public void ChangeCutscene()

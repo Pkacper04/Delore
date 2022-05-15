@@ -11,6 +11,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] private Button continueButton;
     [SerializeField] private GameObject settings;
     [SerializeField] private GameObject infoBox;
+    [SerializeField] private CreditsController credits;
     [SerializeField] private Sprite unClickableButton;
     [SerializeField] private Animator animator;
     [Scene]
@@ -21,6 +22,7 @@ public class MenuController : MonoBehaviour
     {
         settings.SetActive(false);
         infoBox.SetActive(false);
+        credits.gameObject.SetActive(false);
         PlayerData data = SaveSystem.LoadPlayer();
         if (data == null)
         {
@@ -32,6 +34,17 @@ public class MenuController : MonoBehaviour
             levelIndex = data.levelID;
         
     }
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (credits.gameObject.activeInHierarchy)
+                Credits();
+        }
+    }
+
     public void Continue()
     {
         SceneManager.LoadScene(levelIndex-1);
@@ -73,11 +86,13 @@ public class MenuController : MonoBehaviour
             return;
         if (infoBox.activeInHierarchy)
             return;
+        else if (credits.gameObject.activeInHierarchy)
+            return;
 
         if (settings.activeInHierarchy)
         {
             animator.SetBool("settings", false);
-            StartCoroutine("WaitForAnimation",settings);
+            StartCoroutine(WaitForAnimation(settings));
         }
         else
         {
@@ -89,7 +104,28 @@ public class MenuController : MonoBehaviour
 
     public void Credits()
     {
-        // Przyszle creditsy
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("buttons"))
+            return;
+        if (animator.IsInTransition(0))
+            return;
+        if (infoBox.activeInHierarchy)
+            return;
+        else if (settings.activeInHierarchy)
+            return;
+
+        if (credits.gameObject.activeInHierarchy)
+        {
+            animator.SetBool("credits", false);
+            StartCoroutine(WaitForAnimation(credits.gameObject));
+        }
+        else
+        {
+            animator.SetBool("credits",true);
+            credits.gameObject.SetActive(true);
+            credits.Enable();
+        }
+
+        
     }
 
     public void Exit()

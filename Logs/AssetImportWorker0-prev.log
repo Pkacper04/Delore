@@ -136,3 +136,4 @@ Received Import Request.
 Start importing Assets/Prefabs/MapBuilding/end room.prefab using Guid(86919e928884412499e64c4415e0d560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e39d37ac1ff7c9f3fcfa055bc7d428') in 0.304169 seconds 
   Import took 0.316449 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -10,14 +10,15 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
 
-    [SerializeField] private GameObject container_NPC;
-    [SerializeField] private GameObject container_Player;
-    [SerializeField] private TMP_Text text_NPC;
-    [SerializeField] private TMP_Text[] buttons_text;
+    [SerializeField] private CanvasGroup container_NPC;
+    [SerializeField] private CanvasGroup container_Player;
+    [SerializeField] private TextWriter text_NPC;
+    [SerializeField] private TextWriter text_player;
     [SerializeField] private Image NPC_Sprite;
-    [SerializeField] VIDE_Assign asign;
+    private VIDE_Assign asign;
     [SerializeField] private GameObject GameOverScreen;
     [SerializeField] private Movement gameOverTrigger;
+    [SerializeField] private float dialogueSpeed;
 
 
     private GraphicRaycaster raycaster;
@@ -25,8 +26,8 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         GameOverScreen.SetActive(false);
-        container_NPC.SetActive(false);
-        container_Player.SetActive(false);
+        DisableCanvas(container_NPC);
+        DisableCanvas(container_Player);
         raycaster = GetComponent<GraphicRaycaster>();
     }
 
@@ -35,7 +36,19 @@ public class UIManager : MonoBehaviour
         gameOverTrigger.Triggered += GameOver;
     }
 
+    private void ActivateCanvas(CanvasGroup canvas)
+    {
+        canvas.alpha = 1;
+        canvas.blocksRaycasts = true;
+        canvas.interactable = true;
+    }
 
+    private void DisableCanvas(CanvasGroup canvas)
+    {
+        canvas.alpha = 0;
+        canvas.blocksRaycasts = false;
+        canvas.interactable = false;
+    }
 
     
 
@@ -48,17 +61,21 @@ public class UIManager : MonoBehaviour
         else
             raycaster.enabled = true;
 
-        if(Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
-            if(!VD.isActive)
-            {
-                Begin();
-            }
-            else
+            if (VD.isActive)
             {
                 VD.Next();
             }
         }
+    }
+
+    public void ActivateDialogue(VIDE_Assign videAssign)
+    {
+        asign = videAssign;
+        if (!VD.isActive)
+            Begin();
+        
     }
 
     void Begin()
@@ -70,37 +87,32 @@ public class UIManager : MonoBehaviour
 
     private void UpdateUI(VD.NodeData data)
     {
-        container_NPC.SetActive(false);
-        container_Player.SetActive(false);
-        if(data.isPlayer)
-        {
-            container_Player.SetActive(true);
+        DisableCanvas(container_NPC);
+        DisableCanvas(container_Player);
 
-            for(int i=0; i<buttons_text.Length;i++)
-            {
-                if(i<data.comments.Length)
-                {
-                    buttons_text[i].transform.parent.gameObject.SetActive(true);
-                    buttons_text[i].text = data.comments[i];
-                }
-                else
-                {
-                    buttons_text[i].transform.parent.gameObject.SetActive(false);
-                }
-            }
+
+
+        if (data.isPlayer)
+        {
+            ActivateCanvas(container_Player);
+            text_player.ClearDialogue();
+            text_player.BuildText(data.comments[data.commentIndex],dialogueSpeed);
         }
         else
         {
-            container_NPC.SetActive(true);
+            ActivateCanvas(container_NPC);
+            if (text_NPC.TextIsBuilding)
+                text_NPC.StopBuildingText();
+            text_NPC.ClearDialogue();
             NPC_Sprite.sprite = asign.defaultNPCSprite;
-            text_NPC.text = data.comments[data.commentIndex];
+            text_NPC.BuildText(data.comments[data.commentIndex], dialogueSpeed);
         }
     }
 
     private void End(VD.NodeData data)
     {
-        container_NPC.SetActive(false);
-        container_Player.SetActive(false);
+        DisableCanvas(container_NPC);
+        DisableCanvas(container_Player);
         VD.OnNodeChange -= UpdateUI;
         VD.OnEnd -= End;
         VD.EndDialogue();

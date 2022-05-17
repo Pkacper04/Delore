@@ -15,6 +15,8 @@ public class PickupCore : MonoBehaviour
 
     private void Awake()
     {
+        if (!this.enabled)
+            return;
         PlayerData data = SaveSystem.LoadPlayer();
         if (data != null)
         {

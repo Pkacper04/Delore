@@ -1,25 +1,28 @@
 using UnityEngine;
 using System.Collections;
 using System;
+using Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
 
     [SerializeField] internal float playerOffset = 7f;
     [SerializeField] CmeraSaveLoad cameraSaveSystem;
+    [SerializeField] CinemachineStateDrivenCamera cinemachineCamera;
 
 
     private Transform player;
     private Animator animator;
 
     private bool inTransition = false;
+    private int numberOfCameras = 0;
 
 
     internal Transform mainCamera;
     internal int camNumber = 1;
     internal int camNumberStorage = 0;
     internal int lastCameraId = 0;
-    internal bool xAxis = true;
+    public bool xAxis = true;
 
 
     private void Start()
@@ -27,6 +30,7 @@ public class CameraController : MonoBehaviour
         animator = GetComponent<Animator>();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        numberOfCameras = cinemachineCamera.ChildCameras.Length;
 
         cameraSaveSystem.LoadData(this);
 
@@ -52,9 +56,9 @@ public class CameraController : MonoBehaviour
 
     private void AxisCamera()
     {
-        if (CalculatePlayerOffset() >= playerOffset)
+        if (CalculatePlayerOffset() >= playerOffset && camNumber + 1 <= numberOfCameras )
             camNumber++;
-        else if (CalculatePlayerOffset() <= -playerOffset)
+        else if (CalculatePlayerOffset() <= -playerOffset && camNumber - 1 > 0)
             camNumber--;
 
         UpdateAnimation();

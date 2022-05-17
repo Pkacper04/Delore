@@ -45,7 +45,7 @@ namespace Delore.Player
         {
             RaycastHit hit = GetMousePoint();
 
-            if (hit.collider.tag != "Pickup")
+            if (hit.collider == null || hit.collider.tag != "Pickup")
                 return;
 
             ChestItem item = hit.collider.GetComponent<ChestItem>();

@@ -344,3 +344,36 @@ Received Import Request.
 Start importing Packages/com.unity.shadergraph/Editor/Resources/Styles/TabbedView.uss using Guid(5029dcd30f82c1144a88484f32a2f79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9607ff3b7ff235188b1549cc35e7cd') in 0.014369 seconds 
   Import took 0.019507 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 7505.135785 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Materials/Ember.mat
+  artifactKey: Guid(c14021abfaa46d1498a6155145915532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Materials/Ember.mat using Guid(c14021abfaa46d1498a6155145915532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95e839f152108aec4aefec64461d4a1') in 0.108336 seconds 
+  Import took 0.148758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Materials/Metal_Polished.mat
+  artifactKey: Guid(53ce828af18d0eb46b8e8ede9ab92220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Materials/Metal_Polished.mat using Guid(53ce828af18d0eb46b8e8ede9ab92220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c4e061dfa5b8bf47e2ee878cc2bd05') in 0.014535 seconds 
+  Import took 0.020122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.481445 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_Basic 1.mat
+  artifactKey: Guid(927acf7d5c0b6c645ae8a9670c6619cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_Basic 1.mat using Guid(927acf7d5c0b6c645ae8a9670c6619cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651e27b2663d56c0b220f5e46c9b26fc') in 0.012105 seconds 
+  Import took 0.017937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_BasicdARKER.mat
+  artifactKey: Guid(2cb987137b739894682ccea9106cd69b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_BasicdARKER.mat using Guid(2cb987137b739894682ccea9106cd69b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dbeff053c2bf7e3ecc5a10de4c93fc7') in 0.011279 seconds 
+  Import took 0.017467 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

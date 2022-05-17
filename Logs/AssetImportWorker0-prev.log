@@ -1,0 +1,379 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.28f1 (f5400f52e03f) revision 16072719'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'pl' Physical Memory: 16261 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.28f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ja/Documents/GitHub/Delore
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+1174
+Successfully changed project path to: C:/Users/ja/Documents/GitHub/Delore
+C:/Users/ja/Documents/GitHub/Delore
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 83.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.28f1 (f5400f52e03f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ja/Documents/GitHub/Delore/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.6140
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001628 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 81.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.558 seconds
+Domain Reload Profiling:
+	ReloadAssembly (559ms)
+		BeginReloadAssembly (54ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (441ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (131ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (192ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004448 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 85.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.260 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1261ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (1073ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (302ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (516ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (86ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (335ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3682 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.8 MB.
+System memory in use after: 180.9 MB.
+
+Unloading 148 unused Assets to reduce memory usage. Loaded Objects now: 4122.
+Total: 3.586100 ms (FindLiveObjects: 0.242400 ms CreateObjectMapping: 0.166100 ms MarkObjects: 2.979500 ms  DeleteObjects: 0.197300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/MapBuilding/Library.prefab
+  artifactKey: Guid(4597293ffd975a849ba0a35e95ebc852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapBuilding/Library.prefab using Guid(4597293ffd975a849ba0a35e95ebc852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a16dceb31263010c495da93194e8a0b') in 0.450893 seconds 
+  Import took 0.476312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 383.780000 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_01.fbx
+  artifactKey: Guid(d013d20516a1b334ea8cc0c93b133888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_01.fbx using Guid(d013d20516a1b334ea8cc0c93b133888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3714b4bed566bee7b61a69116c8b9760') in 0.072570 seconds 
+  Import took 0.078989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_05.fbx
+  artifactKey: Guid(2b6c09694d0fd2e4f83fff28492ebac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_05.fbx using Guid(2b6c09694d0fd2e4f83fff28492ebac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34cc9c28ad4a4fb6ec3c03e296770b98') in 0.033629 seconds 
+  Import took 0.038710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_06.fbx
+  artifactKey: Guid(0a61f927980ce964c8b583c1cae04999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_06.fbx using Guid(0a61f927980ce964c8b583c1cae04999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98af8036c44994baa1102328226c3106') in 0.031118 seconds 
+  Import took 0.036371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01_Group.fbx
+  artifactKey: Guid(57cca3de3e7e6e743bdabe96dda0c960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01_Group.fbx using Guid(57cca3de3e7e6e743bdabe96dda0c960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012a69027d2fb6ababd9100a867c7b2f') in 0.034934 seconds 
+  Import took 0.039886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01_L.fbx
+  artifactKey: Guid(4c4369cabbb02404fa2fe740b0a5a151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01_L.fbx using Guid(4c4369cabbb02404fa2fe740b0a5a151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f0bad031d0683350790143fbf6a969') in 0.031171 seconds 
+  Import took 0.036088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_03_Convex.asset
+  artifactKey: Guid(a499e966885370c4a8a89288b45ce1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_03_Convex.asset using Guid(a499e966885370c4a8a89288b45ce1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1195f213108728229be32de4997c09e3') in 0.011904 seconds 
+  Import took 0.017088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_M_Convex.asset
+  artifactKey: Guid(ef4ae6abfef60b04c8ef29ad6face5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_M_Convex.asset using Guid(ef4ae6abfef60b04c8ef29ad6face5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7604aea9765f0d433b77562059ef1062') in 0.010384 seconds 
+  Import took 0.015560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_04_Convex.asset
+  artifactKey: Guid(4667989709c1e214d992ef4c71b96b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_04_Convex.asset using Guid(4667989709c1e214d992ef4c71b96b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede6921bd713a09e904ceed5226b33c0') in 0.012845 seconds 
+  Import took 0.018045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_06_Convex.asset
+  artifactKey: Guid(62047dbb9242f8c43844951970084491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_06_Convex.asset using Guid(62047dbb9242f8c43844951970084491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f79e053e31ae7a5f3441f207e24e7d6') in 0.010287 seconds 
+  Import took 0.015336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_02_Convex.asset
+  artifactKey: Guid(bc4cb0255ff6f334f8a34243ab3e633b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_02_Convex.asset using Guid(bc4cb0255ff6f334f8a34243ab3e633b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67545a541347ff6ad046804fb3a8675e') in 0.014891 seconds 
+  Import took 0.020384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_L_Convex.asset
+  artifactKey: Guid(12b1738a9a390524a850f588a6b87870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_L_Convex.asset using Guid(12b1738a9a390524a850f588a6b87870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42f3f3383ea2fe8d5f86d66b0cd79e29') in 0.011378 seconds 
+  Import took 0.016374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_02.fbx
+  artifactKey: Guid(9f4888494eea10a45a275f0735c1e4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_02.fbx using Guid(9f4888494eea10a45a275f0735c1e4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756a4cbb01ef0eb3a7dca38d58dd6cd2') in 0.032394 seconds 
+  Import took 0.037247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_01_Convex.asset
+  artifactKey: Guid(0d7256764f6e1e34fa4c6390080ed00a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_01_Convex.asset using Guid(0d7256764f6e1e34fa4c6390080ed00a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27672e3db487b7905c6e6cfb9adff590') in 0.011178 seconds 
+  Import took 0.016423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_Convex.asset
+  artifactKey: Guid(e245954e4e9b41a4aae5bb151784d0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_Convex.asset using Guid(e245954e4e9b41a4aae5bb151784d0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213ffc6c45d9776745e269be8e0a8e1d') in 0.011734 seconds 
+  Import took 0.016891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_S_Convex.asset
+  artifactKey: Guid(73b6a77c0658b9d4693135fc67587bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_S_Convex.asset using Guid(73b6a77c0658b9d4693135fc67587bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64c79bafb442c1c8bab82b30bdc8fa0') in 0.012719 seconds 
+  Import took 0.017840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01_M.fbx
+  artifactKey: Guid(fa5fdc85b43731e4cb16bb38909b6a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01_M.fbx using Guid(fa5fdc85b43731e4cb16bb38909b6a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de321bbc982686776e9f949328ab3d69') in 0.030767 seconds 
+  Import took 0.035622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01_S.fbx
+  artifactKey: Guid(b1a0728c8165eba4ab2187a5ac4c0141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01_S.fbx using Guid(b1a0728c8165eba4ab2187a5ac4c0141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '743868fced4881aecf09c3601006012c') in 0.030791 seconds 
+  Import took 0.035560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01.fbx
+  artifactKey: Guid(f982243e09af96b4eb726c8c8aeb2fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beetroot_01.fbx using Guid(f982243e09af96b4eb726c8c8aeb2fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001d737126c7651f611801a65405dc52') in 0.028738 seconds 
+  Import took 0.033608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_05_Convex.asset
+  artifactKey: Guid(57045a324f071124a947360741741448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beehive_05_Convex.asset using Guid(57045a324f071124a947360741741448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdfde97fbf35ab3f1cb2859e49d22f19') in 0.010446 seconds 
+  Import took 0.015710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_04.fbx
+  artifactKey: Guid(8990285dd132a8042ab316873979844e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_04.fbx using Guid(8990285dd132a8042ab316873979844e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e774c360d13e8abd52804a36cb3cde6') in 0.028415 seconds 
+  Import took 0.033525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_Group_Convex.asset
+  artifactKey: Guid(f08680b8c3bc82148b2971cd82142c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Beetroot_01_Group_Convex.asset using Guid(f08680b8c3bc82148b2971cd82142c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad778ac7ac4ec02bcdee9e33015d7bf6') in 0.010731 seconds 
+  Import took 0.015837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_03.fbx
+  artifactKey: Guid(212b963d39ceac04ba5fd2a1f83d9097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Beehive_03.fbx using Guid(212b963d39ceac04ba5fd2a1f83d9097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e0f98178b28087773319dff39cee8d') in 0.028227 seconds 
+  Import took 0.033138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.444411 seconds.
+  path: Assets/CustomAssets/Farm/Models/SM_Prop_Bed_01.fbx
+  artifactKey: Guid(9353fdcc8d9281c42b4a64c9f306c88c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/SM_Prop_Bed_01.fbx using Guid(9353fdcc8d9281c42b4a64c9f306c88c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf79b2763a9b620059e38337d3519d02') in 0.027943 seconds 
+  Import took 0.033018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Bed_01_Convex.asset
+  artifactKey: Guid(360c8d1691365e74f8b4ab60572b33d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Bed_01_Convex.asset using Guid(360c8d1691365e74f8b4ab60572b33d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6bca96c4a20831ef32d700968064fff') in 0.010665 seconds 
+  Import took 0.015786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Bed_01_Convex 1.asset
+  artifactKey: Guid(fd3fae0f2734ed74882575ea16050f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/Farm/Models/CollisionConvex/SM_Prop_Bed_01_Convex 1.asset using Guid(fd3fae0f2734ed74882575ea16050f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258e3edbb9d54fe8480fe33ba6588f77') in 0.014922 seconds 
+  Import took 0.020132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.558949 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Styles/TabbedView.uss
+  artifactKey: Guid(5029dcd30f82c1144a88484f32a2f79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Styles/TabbedView.uss using Guid(5029dcd30f82c1144a88484f32a2f79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9607ff3b7ff235188b1549cc35e7cd') in 0.014369 seconds 
+  Import took 0.019507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7505.135785 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Materials/Ember.mat
+  artifactKey: Guid(c14021abfaa46d1498a6155145915532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Materials/Ember.mat using Guid(c14021abfaa46d1498a6155145915532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95e839f152108aec4aefec64461d4a1') in 0.108336 seconds 
+  Import took 0.148758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Materials/Metal_Polished.mat
+  artifactKey: Guid(53ce828af18d0eb46b8e8ede9ab92220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Materials/Metal_Polished.mat using Guid(53ce828af18d0eb46b8e8ede9ab92220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c4e061dfa5b8bf47e2ee878cc2bd05') in 0.014535 seconds 
+  Import took 0.020122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.481445 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_Basic 1.mat
+  artifactKey: Guid(927acf7d5c0b6c645ae8a9670c6619cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_Basic 1.mat using Guid(927acf7d5c0b6c645ae8a9670c6619cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651e27b2663d56c0b220f5e46c9b26fc') in 0.012105 seconds 
+  Import took 0.017937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_BasicdARKER.mat
+  artifactKey: Guid(2cb987137b739894682ccea9106cd69b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomAssets/1 Main Dungeon assets/Materials/Wood_BasicdARKER.mat using Guid(2cb987137b739894682ccea9106cd69b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dbeff053c2bf7e3ecc5a10de4c93fc7') in 0.011279 seconds 
+  Import took 0.017467 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

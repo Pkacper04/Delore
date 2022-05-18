@@ -15,19 +15,28 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextWriter text_NPC;
     [SerializeField] private TextWriter text_player;
     [SerializeField] private Image NPC_Sprite;
+<<<<<<< HEAD
     private VIDE_Assign asign;
     [SerializeField] private GameObject GameOverScreen;
     [SerializeField] private Movement gameOverTrigger;
     [SerializeField] private float dialogueSpeed;
+=======
+    [SerializeField] VIDE_Assign asign;
+>>>>>>> LevelDesign
 
 
     private GraphicRaycaster raycaster;
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
         GameOverScreen.SetActive(false);
         DisableCanvas(container_NPC);
         DisableCanvas(container_Player);
+=======
+        container_NPC.SetActive(false);
+        container_Player.SetActive(false);
+>>>>>>> LevelDesign
         raycaster = GetComponent<GraphicRaycaster>();
     }
 
@@ -55,13 +64,20 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
 
+=======
+>>>>>>> LevelDesign
         if(PauseController.GamePaused)
             raycaster.enabled = false;
         else
             raycaster.enabled = true;
 
+<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+=======
+        if(Input.GetKeyDown(KeyCode.Return))
+>>>>>>> LevelDesign
         {
             if (VD.isActive)
             {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
+using UnityEngine.Experimental.VFX;
 public class TriggerDialogue : MonoBehaviour
 {
     [SerializeField]
@@ -13,6 +14,7 @@ public class TriggerDialogue : MonoBehaviour
     [Tag]
     public string playerTag;
 
+    
 
     private bool visited = false;
     private void OnTriggerEnter(Collider other)

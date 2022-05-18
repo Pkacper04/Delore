@@ -15,11 +15,11 @@ D:/Experimental unity/Delore
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50477
+62267
 Successfully changed project path to: D:/Experimental unity/Delore
 D:/Experimental unity/Delore
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 141.68 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 143.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.28f1 (f5400f52e03f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002227 seconds.
+Registered in 0.002516 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 115.03 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 137.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.923 seconds
+- Completed reload, in  1.079 seconds
 Domain Reload Profiling:
-	ReloadAssembly (923ms)
-		BeginReloadAssembly (85ms)
+	ReloadAssembly (1080ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (725ms)
-			LoadAssemblies (82ms)
+		EndReloadAssembly (883ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (225ms)
+			SetupTypeCache (214ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (302ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (489ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (115ms)
-				BeforeProcessingInitializeOnLoad (23ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
+				RefreshPlugins (299ms)
+				BeforeProcessingInitializeOnLoad (26ms)
+				ProcessInitializeOnLoadAttributes (119ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005587 seconds.
+Registered in 0.004844 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 137.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 152.00 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.706 seconds
+- Completed reload, in  2.094 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1708ms)
-		BeginReloadAssembly (212ms)
+	ReloadAssembly (2095ms)
+		BeginReloadAssembly (198ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1403ms)
+		EndReloadAssembly (1814ms)
 			LoadAssemblies (140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (450ms)
+			SetupTypeCache (503ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (80ms)
-			SetupLoadedEditorAssemblies (568ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (866ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (137ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (279ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
+				RefreshPlugins (152ms)
+				BeforeProcessingInitializeOnLoad (138ms)
+				ProcessInitializeOnLoadAttributes (545ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3204 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.6 MB.
-System memory in use after: 143.8 MB.
+Unloading 3695 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 169.5 MB.
+System memory in use after: 169.8 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3646.
-Total: 3.202300 ms (FindLiveObjects: 0.240900 ms CreateObjectMapping: 0.202800 ms MarkObjects: 2.688700 ms  DeleteObjects: 0.069000 ms)
+Unloading 145 unused Assets to reduce memory usage. Loaded Objects now: 4127.
+Total: 6.922100 ms (FindLiveObjects: 0.460600 ms CreateObjectMapping: 0.615400 ms MarkObjects: 5.622200 ms  DeleteObjects: 0.222500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,176 +132,16 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Import Request.
   path: Assets/Scenes/Prolog.unity
-  artifactKey: Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Prolog.unity using Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074fd4a5d7fbe871e902b2c5ae02da81') in 0.025375 seconds 
-  Import took 0.031944 seconds .
+  artifactKey: Guid(d8112c717c8397245845ee112ed32a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prolog.unity using Guid(d8112c717c8397245845ee112ed32a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5553ea7a6b788421caca7555c75c05') in 0.017987 seconds 
+  Import took 0.028593 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/CustomAssets/SkyBox.mat
-  artifactKey: Guid(e9d8463edb005224a86bdc99a27139eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/SkyBox.mat using Guid(e9d8463edb005224a86bdc99a27139eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab09fba5296d18ec6b9660c763d0daf') in 0.308831 seconds 
-  Import took 0.315941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.236060 seconds.
-  path: Assets/Scenes/Prolog
-  artifactKey: Guid(cc4c462ba8b02114ca0218fed789c751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Prolog using Guid(cc4c462ba8b02114ca0218fed789c751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628a7e56fb9ef5f2e4896bfc47e49264') in 0.010727 seconds 
-  Import took 0.018058 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.656433 seconds.
-  path: Assets/CustomAssets/ExampleAssets/Prefabs/Props.prefab
-  artifactKey: Guid(85dfab9623c67784fa7894de63cd1604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/ExampleAssets/Prefabs/Props.prefab using Guid(85dfab9623c67784fa7894de63cd1604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe6d0bb78a0b73c58240061b26f90a6') in 2.112521 seconds 
-  Import took 2.122057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000313 seconds.
-  path: Assets/CustomAssets/low poly pack/Light and Reflection/ReflectionProbe-1.exr
-  artifactKey: Guid(18de2bdef7775bd4e8a49eac19ee6e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/low poly pack/Light and Reflection/ReflectionProbe-1.exr using Guid(18de2bdef7775bd4e8a49eac19ee6e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b558f05eda6437b8e386a6d762c167ee') in 0.032542 seconds 
-  Import took 0.041537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-12.exr
-  artifactKey: Guid(227482276db04ed48900182e252cc8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-12.exr using Guid(227482276db04ed48900182e252cc8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360388910b1afb905cf36c56f521d03b') in 0.020863 seconds 
-  Import took 0.029633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-11.exr
-  artifactKey: Guid(cde092168fb9d1f4084a71fd888f103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-11.exr using Guid(cde092168fb9d1f4084a71fd888f103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126b6971eaf115acb4ac53944a5db1f0') in 0.018888 seconds 
-  Import took 0.025483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-3.exr
-  artifactKey: Guid(94b3ab90cd4f74546b82659b185c3e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-3.exr using Guid(94b3ab90cd4f74546b82659b185c3e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ad0de91beb469f4ebb46e7b7dda7d2') in 0.016833 seconds 
-  Import took 0.022097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-9.exr
-  artifactKey: Guid(05092040651cdbc4dae8910155d2987f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-9.exr using Guid(05092040651cdbc4dae8910155d2987f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e889891a085edc05e3f5cf5bd7f98a3c') in 0.018472 seconds 
-  Import took 0.025632 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-13.exr
-  artifactKey: Guid(1028e798b5218fd4fbac9593a8768682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-13.exr using Guid(1028e798b5218fd4fbac9593a8768682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09d49f4fab0366e93613d6af138eb34') in 0.026276 seconds 
-  Import took 0.032088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-7.exr
-  artifactKey: Guid(552066cfc6fc7c142b54e9ad6d134ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-7.exr using Guid(552066cfc6fc7c142b54e9ad6d134ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9854ceeb191e27f02fb343b1e7e2f1c6') in 0.024339 seconds 
-  Import took 0.031797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Assets/ReflectionProbe-1.exr
-  artifactKey: Guid(4bf307618689718478f444af075dfa7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Assets/ReflectionProbe-1.exr using Guid(4bf307618689718478f444af075dfa7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843fe45851fc0df1f07404024d791fb2') in 0.020359 seconds 
-  Import took 0.031690 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-2.exr
-  artifactKey: Guid(df3a9f84f2fd1194da2806494edaa6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-2.exr using Guid(df3a9f84f2fd1194da2806494edaa6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c1c3e0b83bf8f1bb1beceb460588ea') in 0.021725 seconds 
-  Import took 0.031661 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-0.exr
-  artifactKey: Guid(f00d10c3ba5fb6946855abd053241309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-0.exr using Guid(f00d10c3ba5fb6946855abd053241309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093cfe929a8cf83dff85453c69d163f6') in 0.020426 seconds 
-  Import took 0.030112 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Assets/ReflectionProbe-0.exr
-  artifactKey: Guid(4caac7162a49b4440a3e732e8d233ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Assets/ReflectionProbe-0.exr using Guid(4caac7162a49b4440a3e732e8d233ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d519abce7f5cfeb57c98a43819c0bb1') in 0.018523 seconds 
-  Import took 0.025360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-4.exr
-  artifactKey: Guid(314250a1a32793843805b4c9a3099b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-4.exr using Guid(314250a1a32793843805b4c9a3099b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ecea81d2dcc1175d57a3a1586bcfb53') in 0.020258 seconds 
-  Import took 0.027805 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-10.exr
-  artifactKey: Guid(7a1f8a028ee25d749afb90c8f6af8031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-10.exr using Guid(7a1f8a028ee25d749afb90c8f6af8031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31dbc4fef3f058e56622f24dd07012c6') in 0.020827 seconds 
-  Import took 0.027931 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-1.exr
-  artifactKey: Guid(a767825f0e089ae4594153327f4b0f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-1.exr using Guid(a767825f0e089ae4594153327f4b0f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da95f53b5211af19bb351b1cf13cbf1') in 0.017231 seconds 
-  Import took 0.025765 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-8.exr
-  artifactKey: Guid(04fcb9a646f7bc8489fd06fcafa072db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-8.exr using Guid(04fcb9a646f7bc8489fd06fcafa072db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8aeca4d928e3a1e384aafcbab66686') in 0.019340 seconds 
-  Import took 0.025205 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/CustomAssets/low poly pack/Light and Reflection/ReflectionProbe-0.exr
-  artifactKey: Guid(9398028511b0da44e8a0c30a7bd346c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/low poly pack/Light and Reflection/ReflectionProbe-0.exr using Guid(9398028511b0da44e8a0c30a7bd346c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad21a5a6773dc8ca2085b6b22bba2ab') in 0.028152 seconds 
-  Import took 0.035280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-5.exr
-  artifactKey: Guid(3f13787001d36de42be470a921d8cf6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-5.exr using Guid(3f13787001d36de42be470a921d8cf6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58c1fd6db4be90efee0f68c4bb885e3c') in 0.018792 seconds 
-  Import took 0.024323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-6.exr
-  artifactKey: Guid(fe5f945bf7704ca4ca752fc0636c9a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomAssets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo/ReflectionProbe-6.exr using Guid(fe5f945bf7704ca4ca752fc0636c9a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b11293b889cfdec4959769255a7f44') in 0.017793 seconds 
-  Import took 0.024170 seconds .
+  Time since last request: 61.858571 seconds.
+  path: Assets/Scenes/AfterLife.unity
+  artifactKey: Guid(724c192fd1869b643a12023f59b2b578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AfterLife.unity using Guid(724c192fd1869b643a12023f59b2b578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf5622e28702eb622f89bd84c11b66aa') in 0.013059 seconds 
+  Import took 0.022327 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

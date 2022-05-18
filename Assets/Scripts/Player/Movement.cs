@@ -22,6 +22,7 @@ namespace Delore.Player
         private float speed;
         private MouseController mouseController;
         private PlayerStats playerStats;
+        private Rigidbody rigidbody;
 
         private void Awake()
         {
@@ -38,10 +39,13 @@ namespace Delore.Player
             speed = agent.speed;
             mouseController = GetComponent<MouseController>();
             playerStats = GetComponent<PlayerStats>();
+            rigidbody = GetComponent<Rigidbody>();
         }
 
         void Update()
         {
+            if (Mathf.Abs(rigidbody.velocity.x) > 1 || Mathf.Abs(rigidbody.velocity.y) > 1)
+                rigidbody.velocity = new Vector3(0,0,0);
             if (Input.GetMouseButtonDown(1) && !PauseController.GamePaused)
             {
                 MoveToCursor();

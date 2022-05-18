@@ -15,20 +15,17 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextWriter text_NPC;
     [SerializeField] private TextWriter text_player;
     [SerializeField] private Image NPC_Sprite;
-    private VIDE_Assign asign;
+     private VIDE_Assign asign;
     [SerializeField] private GameObject GameOverScreen;
     [SerializeField] private Movement gameOverTrigger;
     [SerializeField] private float dialogueSpeed;
 
-
-    private GraphicRaycaster raycaster;
     // Start is called before the first frame update
     void Start()
     {
         GameOverScreen.SetActive(false);
         DisableCanvas(container_NPC);
         DisableCanvas(container_Player);
-        raycaster = GetComponent<GraphicRaycaster>();
     }
 
     private void OnEnable()
@@ -55,12 +52,6 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if(PauseController.GamePaused)
-            raycaster.enabled = false;
-        else
-            raycaster.enabled = true;
-
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
             if (VD.isActive)

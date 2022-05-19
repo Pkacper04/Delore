@@ -767,7 +767,7 @@ MonoBehaviour:
   dialogOffset: 1
   dialogSpeed: 0.05
   writer: {fileID: 1415971091}
-  afterCutsceneScene: LoadingScreen1
+  afterCutsceneScene: AfterLife
   listOfCutscenes:
     numberOfCutscenes:
     - cutsceneImages:

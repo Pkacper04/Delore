@@ -6,6 +6,7 @@ using VIDE_Data;
 using UnityEngine.UI;
 using Delore.Player;
 using UnityEngine.SceneManagement;
+using NaughtyAttributes;
 
 public class UIManager : MonoBehaviour
 {
@@ -15,16 +16,31 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextWriter text_NPC;
     [SerializeField] private TextWriter text_player;
     [SerializeField] private Image NPC_Sprite;
-    private VIDE_Assign asign;
     [SerializeField] private GameObject GameOverScreen;
     [SerializeField] private Movement gameOverTrigger;
     [SerializeField] private float dialogueSpeed;
+    [SerializeField] private Material playerDissolveMaterial;
+    [SerializeField] private float duration;
+    [SerializeField] private float startingDuration;
+    [SerializeField] private float dialogueDuration;
+    [SerializeField] private CanvasGroup blackScreen;
 
+    [Scene]
+    public string afterLifeScene;
+    [Scene]
+    public string loadingScene;
 
+    private VIDE_Assign asign;
     private GraphicRaycaster raycaster;
+    private bool firstDialogue = true;
+    private Coroutine corutine;
     // Start is called before the first frame update
     void Start()
     {
+        blackScreen.alpha = 1;
+        blackScreen.blocksRaycasts = true;
+        StartCoroutine(SmoothStarting());
+        playerDissolveMaterial.SetFloat("DisolveValue_",0);
         GameOverScreen.SetActive(false);
         DisableCanvas(container_NPC);
         DisableCanvas(container_Player);
@@ -76,6 +92,7 @@ public class UIManager : MonoBehaviour
         if (!VD.isActive)
             Begin();
         
+        
     }
 
     void Begin()
@@ -90,22 +107,28 @@ public class UIManager : MonoBehaviour
         DisableCanvas(container_NPC);
         DisableCanvas(container_Player);
 
-
-
-        if (data.isPlayer)
-        {
-            ActivateCanvas(container_Player);
-            text_player.ClearDialogue();
-            text_player.BuildText(data.comments[data.commentIndex],dialogueSpeed);
-        }
+        if (firstDialogue)
+            StartCoroutine(EnableDialogue(data));
         else
         {
-            ActivateCanvas(container_NPC);
-            if (text_NPC.TextIsBuilding)
-                text_NPC.StopBuildingText();
-            text_NPC.ClearDialogue();
-            NPC_Sprite.sprite = asign.defaultNPCSprite;
-            text_NPC.BuildText(data.comments[data.commentIndex], dialogueSpeed);
+
+            if (data.isPlayer)
+            {
+                ActivateCanvas(container_Player);
+                if (text_player.TextIsBuilding)
+                    text_player.StopBuildingText();
+                text_player.ClearDialogue();
+                text_player.BuildText(data.comments[data.commentIndex], dialogueSpeed);
+            }
+            else
+            {
+                ActivateCanvas(container_NPC);
+                if (text_NPC.TextIsBuilding)
+                    text_NPC.StopBuildingText();
+                text_NPC.ClearDialogue();
+                NPC_Sprite.sprite = asign.defaultNPCSprite;
+                text_NPC.BuildText(data.comments[data.commentIndex], dialogueSpeed);
+            }
         }
     }
 
@@ -116,14 +139,12 @@ public class UIManager : MonoBehaviour
         VD.OnNodeChange -= UpdateUI;
         VD.OnEnd -= End;
         VD.EndDialogue();
+        if (SceneManager.GetActiveScene().name == afterLifeScene)
+            StartCoroutine(PlayerDissolver());
     }
 
     private void OnDisable()
     {
-        if (container_NPC != null)
-            End(null);
-
-
         gameOverTrigger.Triggered -= GameOver;
     }
 
@@ -149,5 +170,84 @@ public class UIManager : MonoBehaviour
         PauseController.GameEnded = true;
     }
 
+    private IEnumerator PlayerDissolver()
+    {
+        yield return new WaitForSeconds(.5f);
+        float disolve = 0;
 
+        while (disolve < 1f)
+        {
+            disolve += Time.deltaTime / duration;
+            disolve = Mathf.Clamp01(disolve); 
+            playerDissolveMaterial.SetFloat("DisolveValue_", disolve);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(1);
+        
+        if (SceneManager.GetActiveScene().name == afterLifeScene)
+        {
+            gameOverTrigger.gameObject.SetActive(false);
+            playerDissolveMaterial.SetFloat("DisolveValue_", 0);
+            PauseController.GamePaused = false;
+            PauseController.BlockPauseMenu = false;
+            SceneManager.LoadScene(loadingScene);
+        }
+        else
+        {
+            GameOver();
+        }
+    }
+
+    private IEnumerator SmoothStarting()
+    {
+        float blackAlpha = 1;
+        while(blackScreen.alpha > 0)
+        {
+            blackAlpha -= Time.deltaTime / startingDuration;
+            blackAlpha = Mathf.Clamp01(blackAlpha);
+            blackScreen.alpha = blackAlpha;
+            yield return null;
+        }
+        blackScreen.blocksRaycasts = false;
+    }
+
+    private IEnumerator EnableDialogue(VD.NodeData data)
+    {
+        firstDialogue = false;
+        float alpha = 0;
+
+        if (data.isPlayer)
+        {
+            while(container_Player.alpha < 1)
+            {
+                alpha += Time.deltaTime / dialogueDuration;
+                alpha = Mathf.Clamp01(alpha);
+                container_Player.alpha = alpha;
+                yield return null;
+            }
+
+            ActivateCanvas(container_Player);
+            if (text_player.TextIsBuilding)
+                text_player.StopBuildingText();
+            text_player.ClearDialogue();
+            text_player.BuildText(data.comments[data.commentIndex], dialogueSpeed);
+        }
+        else
+        {
+            while (container_NPC.alpha < 1)
+            {
+                alpha += Time.deltaTime / dialogueDuration;
+                alpha = Mathf.Clamp01(alpha);
+                container_NPC.alpha = alpha;
+                yield return null;
+            }
+            ActivateCanvas(container_NPC);
+            if (text_NPC.TextIsBuilding)
+                text_NPC.StopBuildingText();
+            text_NPC.ClearDialogue();
+            NPC_Sprite.sprite = asign.defaultNPCSprite;
+            text_NPC.BuildText(data.comments[data.commentIndex], dialogueSpeed);
+        }
+    }
 }

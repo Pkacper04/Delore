@@ -6,6 +6,7 @@ public class PauseController : MonoBehaviour
 {
     public static bool GamePaused = false;
     public static bool GameEnded = false;
+    public static bool BlockPauseMenu = false;
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject settings;
 
@@ -21,7 +22,7 @@ public class PauseController : MonoBehaviour
     
     void Update()
     {
-        if(!GameEnded && Input.GetKeyDown(KeyCode.Escape))
+        if(!GameEnded && !BlockPauseMenu && Input.GetKeyDown(KeyCode.Escape))
         {
             GamePaused = !GamePaused;
             PauseGame();
@@ -30,6 +31,7 @@ public class PauseController : MonoBehaviour
 
     private void PauseGame()
     {
+
         if(GamePaused)
         {
             Time.timeScale = 0f;

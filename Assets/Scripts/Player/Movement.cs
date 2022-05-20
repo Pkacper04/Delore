@@ -13,6 +13,7 @@ namespace Delore.Player
 
         public NavMeshAgent agent;
         [SerializeField] private CapsuleCollider capsuleCollider;
+        [SerializeField] float slowingSpeed = 1.5f;
 
         public event Action Triggered;
 
@@ -44,12 +45,15 @@ namespace Delore.Player
 
         void Update()
         {
+            rigidbody.velocity = new Vector3(0,0,0);
+            rigidbody.angularVelocity = new Vector3(0, 0, 0);
             if (Mathf.Abs(rigidbody.velocity.x) > 1 || Mathf.Abs(rigidbody.velocity.y) > 1)
                 rigidbody.velocity = new Vector3(0,0,0);
             if (Input.GetMouseButtonDown(1) && !PauseController.GamePaused)
             {
                 MoveToCursor();
             }
+
             UpdateAnimations();
         }
 

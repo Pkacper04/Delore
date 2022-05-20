@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System;
 using Cinemachine;
+using System.Collections.Generic;
 
 public class CameraController : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] internal float playerOffset = 7f;
     [SerializeField] CmeraSaveLoad cameraSaveSystem;
     [SerializeField] CinemachineStateDrivenCamera cinemachineCamera;
+    
+    
 
 
     private Transform player;
@@ -17,10 +20,9 @@ public class CameraController : MonoBehaviour
     private bool inTransition = false;
     private int numberOfCameras = 0;
 
-
+    internal int camNumberStorage;
     internal Transform mainCamera;
     internal int camNumber = 1;
-    internal int camNumberStorage = 0;
     internal int lastCameraId = 0;
     public bool xAxis = true;
 
@@ -91,7 +93,7 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    public void ChangeAxis(bool Axis)
+    public void ChangeAxis(bool Axis, int cameraIdX, int cameraIdZ)
     {
         this.xAxis = Axis;
 
@@ -99,15 +101,16 @@ public class CameraController : MonoBehaviour
         {
             if (Axis)
             {
-                camNumber = camNumberStorage;
                 animator.SetInteger("CameraNumberZ", 0);
-                animator.SetInteger("CameraNumberX", camNumber);
+                animator.SetInteger("CameraNumberX", cameraIdX);
+                camNumber = cameraIdX;
+                StartCoroutine(WaitForTransition());
             }
             else
             {
-                animator.SetInteger("CameraNumberZ", 1);
-                camNumberStorage = camNumber;
-                camNumber = 1;
+                animator.SetInteger("CameraNumberZ", cameraIdZ);
+                animator.SetInteger("CameraNumberX", 0);
+                camNumber = cameraIdZ;
                 StartCoroutine(WaitForTransition());
                 
             }

@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NaughtyAttributes;
 
 public class CameraChanging : MonoBehaviour
 {
     [SerializeField] private bool changeAxis = false;
+    [SerializeField, ShowIf("changeAxis")] private int cameraIdX;
+    [SerializeField, ShowIf("changeAxis")] private int cameraIdZ;
     
     private CameraController controller;
     private bool right = false;
@@ -34,14 +37,20 @@ public class CameraChanging : MonoBehaviour
         {
             if (!changeAxis)
             {
-                right = player.transform.position.x > transform.position.x ? false : true;
-                controller.ChangeCamera(right);
+                if (controller.xAxis)
+                {
+                    right = player.transform.position.x > transform.position.x ? false : true;
+                    controller.ChangeCamera(right);
+                }
+                else
+                { 
+                    right = player.transform.position.z < transform.position.z + .5f ? false : true;
+                    controller.ChangeCamera(right);
+                }
             }
             else
             {
-                
-                right = player.transform.position.z < transform.position.z+.5f ? false : true;
-                controller.ChangeAxis(right); 
+                controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
             }
         }
     }

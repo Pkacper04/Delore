@@ -60,7 +60,7 @@ public class CameraController : MonoBehaviour
     {
         if (CalculatePlayerOffset() >= playerOffset && camNumber + 1 <= numberOfCameras )
             camNumber++;
-        else if (CalculatePlayerOffset() <= -playerOffset && camNumber - 1 > 0)
+        else if (CalculatePlayerOffset() <= -playerOffset)
             camNumber--;
 
         UpdateAnimation();

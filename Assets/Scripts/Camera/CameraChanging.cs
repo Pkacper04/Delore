@@ -44,7 +44,7 @@ public class CameraChanging : MonoBehaviour
                 }
                 else
                 { 
-                    right = player.transform.position.z < transform.position.z + .5f ? false : true;
+                    right = player.transform.position.z > transform.position.z ? false : true;
                     controller.ChangeCamera(right);
                 }
             }

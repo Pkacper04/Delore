@@ -11,6 +11,20 @@ namespace Delore.Player
         private PlayerStats playerStats;
         private PickupCore core;
         private Movement playerMovement;
+        [SerializeField]
+        private float appearDelay = 2f;
+        [SerializeField]
+        private float duration = 2f;
+        [SerializeField]
+        private ParticleSystem particle;
+        [SerializeField]
+        private SkinnedMeshRenderer[] playerRenderers;
+        [SerializeField]
+        private AudioTrigger audioSFX;
+        [SerializeField]
+        private AudioClip appearAudio;
+
+        [SerializeField] private Material playerDissolveMaterial;
 
         public bool MovingToChest { get; set; }
         // Start is called before the first frame update
@@ -20,6 +34,13 @@ namespace Delore.Player
             playerMovement = GetComponent<Movement>();
             playerStats = GetComponent<PlayerStats>();
             core = GetComponent<PickupCore>();
+            foreach (var item in playerRenderers)
+            {
+                item.enabled = false;
+            }
+            PauseController.GamePaused = true;
+            PauseController.BlockPauseMenu = true;
+            StartCoroutine(PlayerAppear());
         }
 
         private void Update()
@@ -110,7 +131,32 @@ namespace Delore.Player
             }
         }
 
+        IEnumerator PlayerAppear()
+        {
+            yield return new WaitForSeconds(appearDelay);
+            audioSFX.playOneTime(appearAudio);
+            particle.Play();
+            float disolve = 1;
+            yield return new WaitForSeconds(.5f);
+            
+            while (disolve > 0)
+            {
+                PauseController.GamePaused = true;
+                PauseController.BlockPauseMenu = true;
+                disolve -= Time.deltaTime / duration;
+                disolve = Mathf.Clamp01(disolve);
+                playerDissolveMaterial.SetFloat("DisolveValue_", disolve);
+                foreach (var item in playerRenderers)
+                {
+                    item.enabled = true;
+                }
+                yield return null;
+                
+            }
 
+            PauseController.GamePaused = false;
+            PauseController.BlockPauseMenu = false;
+        }
 
 
     }

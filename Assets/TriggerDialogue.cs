@@ -23,7 +23,17 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField]
     private float duration = 5;
 
-    
+    [SerializeField]
+    private AudioTrigger sfxTrigger;
+
+    [SerializeField]
+    private AudioClip deathVoice;
+
+    [SerializeField]
+    private AudioClip portalAudio;
+
+    [SerializeField]
+    private AudioClip deathAmbient;
 
 
     private void Start()
@@ -51,6 +61,8 @@ public class TriggerDialogue : MonoBehaviour
     {
         PauseController.GamePaused = true;
         effect.Play();
+        sfxTrigger.playOneTime(portalAudio);
+        sfxTrigger.PlayAmbientLoop(deathAmbient);
         yield return new WaitForSeconds(2);
 
         float disolve = 1;
@@ -65,5 +77,6 @@ public class TriggerDialogue : MonoBehaviour
         
         yield return new WaitForSeconds(1);
         uiManager.ActivateDialogue(assign);
+        sfxTrigger.PlayLoop(deathVoice);
     }
 }

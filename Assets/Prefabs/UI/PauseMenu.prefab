@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 8745596434702325817}
   - component: {fileID: 8745596434702325816}
   - component: {fileID: 8745596434702325799}
+  - component: {fileID: 1989507188}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -362,6 +363,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1989507188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745596434702325818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: PlayHighlightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: StopHighlightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: clickedButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8745596435009556948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1180,7 @@ GameObject:
   - component: {fileID: 8745596435937271886}
   - component: {fileID: 8745596435937271873}
   - component: {fileID: 8745596435937271872}
+  - component: {fileID: 1989507181}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -1207,6 +1270,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1989507181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745596435937271874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e43d5604af34d649af73e97664e3329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
+  highlightClip: {fileID: 8300000, guid: 9479476788bf1ef4b8c4f60273510b60, type: 3}
+  clikedClip: {fileID: 8300000, guid: 5745dfc65b16f70478ef8262ed7bfd22, type: 3}
 --- !u!1 &8745596436100226106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,6 +1509,7 @@ GameObject:
   - component: {fileID: 8745596436149872819}
   - component: {fileID: 8745596436149872818}
   - component: {fileID: 8745596436149872817}
+  - component: {fileID: 1989507189}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -1571,6 +1650,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1989507189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745596436149872820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: PlayHighlightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: StopHighlightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: clickedButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8745596436185960217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1723,6 +1863,7 @@ GameObject:
   - component: {fileID: 8745596436204881675}
   - component: {fileID: 8745596436204881674}
   - component: {fileID: 8745596436204881673}
+  - component: {fileID: 1989507187}
   m_Layer: 5
   m_Name: ExitToMenu
   m_TagString: Untagged
@@ -1863,6 +2004,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1989507187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745596436204881676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: PlayHighlightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: StopHighlightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: clickedButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8745596436270712412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,6 +2078,7 @@ GameObject:
   - component: {fileID: 8745596436270712411}
   - component: {fileID: 8745596436270712410}
   - component: {fileID: 8745596436270712409}
+  - component: {fileID: 1989507186}
   m_Layer: 5
   m_Name: ExitGame
   m_TagString: Untagged
@@ -2016,6 +2219,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1989507186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745596436270712412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: PlayHighlightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: StopHighlightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: clickedButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8745596436298701870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,6 +2628,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8745596436420635771}
+    - target: {fileID: 1678420971, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SaveVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 1795902759, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
       propertyPath: m_UpdateMode
       value: 2
@@ -2392,6 +2660,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5668136439790785697, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: SFXMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: d37ad02a13985d24b886be505cc380ef, type: 2}
     - target: {fileID: 5668136439790785697, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
       propertyPath: musicAudio
       value: 
@@ -2491,6 +2763,34 @@ PrefabInstance:
     - target: {fileID: 5668136440272894579, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136440588911412, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136440588911412, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136440588911412, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_MinValue
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136440588911412, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136440588911412, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateMusicSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136440588911412, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 4032935604440648676}
+    - target: {fileID: 5668136440588911412, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Slider, UnityEngine.UI
       objectReference: {fileID: 0}
     - target: {fileID: 5668136440951979876, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
       propertyPath: m_Pivot.x
@@ -2593,18 +2893,98 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5668136441075926231, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136441075926231, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136441075926231, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_MinValue
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136441075926231, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136441075926231, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateSound
+      value: UpdateSFXSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668136441075926231, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 4032935605029374983}
+    - target: {fileID: 5668136441075926231, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Slider, UnityEngine.UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
---- !u!1 &4032935604066564021 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5668136440951979877, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
-  m_PrefabInstance: {fileID: 8745596436173424848}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4032935604066564020 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5668136440951979876, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
   m_PrefabInstance: {fileID: 8745596436173424848}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4032935605470163911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5668136439537793815, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+  m_PrefabInstance: {fileID: 8745596436173424848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4032935604440648676 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5668136440588911412, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+  m_PrefabInstance: {fileID: 8745596436173424848}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4032935604066564021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5668136440951979877, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+  m_PrefabInstance: {fileID: 8745596436173424848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4032935605029374983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5668136441075926231, guid: 15efd44a68a0e054dbbd306615934fb4, type: 3}
+  m_PrefabInstance: {fileID: 8745596436173424848}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989507177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032935605470163911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1989507181}
+          m_TargetAssemblyTypeName: ButtonEventHandler, Assembly-CSharp
+          m_MethodName: clickedButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

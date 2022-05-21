@@ -41,6 +41,7 @@ public class CutsceneManager : MonoBehaviour
     private int currentImage = 0;
     private bool canChange = true;
     private bool startCutscene = false;
+    private bool canSkip = false;
 
     private void Start()
     {
@@ -51,7 +52,7 @@ public class CutsceneManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+        if (canSkip && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)))
             ChangeCutscene();
         if(startCutscene && canChange)
         {
@@ -67,7 +68,10 @@ public class CutsceneManager : MonoBehaviour
     public void ChangeCutscene()
     {
         if (currentCutscene + 1 == listOfCutscenes.numberOfCutscenes.Count)
-            SceneManager.LoadScene(afterCutsceneScene);
+        {
+            StartCoroutine(EndScreen());
+            return;
+        }
         currentCutscene++;
         StopAllCoroutines();
         canChange = false;
@@ -84,6 +88,7 @@ public class CutsceneManager : MonoBehaviour
 
     public IEnumerator waitForCutsceneChange()
     {
+        canSkip = false;
         while(cutscenePlace.color != new Color(0,0,0))
         {
             cutscenePlace.color -= new Color(cutsceneChangeSpeed, cutsceneChangeSpeed, cutsceneChangeSpeed,0);
@@ -115,7 +120,7 @@ public class CutsceneManager : MonoBehaviour
             }
             yield return null;
         }
-
+        canSkip = true;
         yield return new WaitForSeconds(dialogOffset);
 
         while (dialoguePlace.color != new Color(1,1,1,.7f))
@@ -142,6 +147,25 @@ public class CutsceneManager : MonoBehaviour
         ChangeCutscene();
     }
 
+    IEnumerator EndScreen()
+    {
+        while (cutscenePlace.color != new Color(0, 0, 0))
+        {
+            cutscenePlace.color -= new Color(cutsceneChangeSpeed, cutsceneChangeSpeed, cutsceneChangeSpeed, 0);
+            dialoguePlace.color -= new Color(0, 0, 0, cutsceneChangeSpeed);
+            if (cutscenePlace.color.r < 0)
+            {
+                cutscenePlace.color = new Color(0, 0, 0, 1);
+                dialoguePlace.color = new Color(1, 1, 1, 0);
+            }
+            yield return null;
+        }
+        buttonCanvas.alpha = 0;
+        if (writer.TextIsBuilding)
+            writer.StopBuildingText();
+        writer.ClearDialogue();
+        SceneManager.LoadScene(afterCutsceneScene);
+    }
     private void ChangeImage()
     {
         cutscenePlace.sprite = listOfCutscenes.numberOfCutscenes[currentCutscene].cutsceneImages[currentImage];

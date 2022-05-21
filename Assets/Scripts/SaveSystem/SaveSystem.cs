@@ -57,7 +57,7 @@ public class SaveSystem : MonoBehaviour
         formatter.Serialize(fs, data);
         fs.Close();
 
-        await Task.Delay(1000);
+        await Task.Delay(5000);
         saveIcon.SetBool("Saving", false);
 
     }

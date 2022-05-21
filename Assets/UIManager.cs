@@ -33,7 +33,6 @@ public class UIManager : MonoBehaviour
     private VIDE_Assign asign;
     private GraphicRaycaster raycaster;
     private bool firstDialogue = true;
-    private Coroutine corutine;
     // Start is called before the first frame update
     void Start()
     {
@@ -191,7 +190,7 @@ public class UIManager : MonoBehaviour
             playerDissolveMaterial.SetFloat("DisolveValue_", 0);
             PauseController.GamePaused = false;
             PauseController.BlockPauseMenu = false;
-            SceneManager.LoadScene(loadingScene);
+            StartCoroutine(SmoothEnding());
         }
         else
         {
@@ -204,12 +203,26 @@ public class UIManager : MonoBehaviour
         float blackAlpha = 1;
         while(blackScreen.alpha > 0)
         {
-            blackAlpha -= Time.deltaTime / startingDuration;
+            blackAlpha -= Time.unscaledDeltaTime / startingDuration;
             blackAlpha = Mathf.Clamp01(blackAlpha);
             blackScreen.alpha = blackAlpha;
             yield return null;
         }
         blackScreen.blocksRaycasts = false;
+    }
+
+    private IEnumerator SmoothEnding()
+    {
+        float blackAlpha = 0;
+        while (blackScreen.alpha < 1)
+        {
+            blackAlpha += Time.unscaledDeltaTime / startingDuration;
+            blackAlpha = Mathf.Clamp01(blackAlpha);
+            blackScreen.alpha = blackAlpha;
+            yield return null;
+        }
+        blackScreen.blocksRaycasts = true;
+        SceneManager.LoadScene(loadingScene);
     }
 
     private IEnumerator EnableDialogue(VD.NodeData data)

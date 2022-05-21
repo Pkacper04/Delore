@@ -13,6 +13,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] private GameObject infoBox;
     [SerializeField] private Sprite unClickableButton;
     [SerializeField] private Animator animator;
+
     [Scene]
     public string newGameScene;
     private int levelIndex;
@@ -102,7 +103,5 @@ public class MenuController : MonoBehaviour
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsTag("end") == true);
         panel.SetActive(false);
     }
-
-
 
 }

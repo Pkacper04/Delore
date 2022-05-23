@@ -34,13 +34,13 @@ namespace Delore.Player
             playerMovement = GetComponent<Movement>();
             playerStats = GetComponent<PlayerStats>();
             core = GetComponent<PickupCore>();
-            foreach (var item in playerRenderers)
+            /*foreach (var item in playerRenderers)
             {
                 item.enabled = false;
             }
             PauseController.GamePaused = true;
             PauseController.BlockPauseMenu = true;
-            StartCoroutine(PlayerAppear());
+            StartCoroutine(PlayerAppear());*/
         }
 
         private void Update()
@@ -145,7 +145,7 @@ namespace Delore.Player
                 PauseController.BlockPauseMenu = true;
                 disolve -= Time.deltaTime / duration;
                 disolve = Mathf.Clamp01(disolve);
-                playerDissolveMaterial.SetFloat("DisolveValue_", disolve);
+                playerDissolveMaterial.SetFloat("_Dissolve", disolve);
                 foreach (var item in playerRenderers)
                 {
                     item.enabled = true;

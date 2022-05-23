@@ -81,6 +81,7 @@ namespace Delore.Player
             {
                 agent.destination = hit.point;
                 mouseController.MovingToChest = false;
+                Debug.Log(Vector3.Angle((hit.point - transform.position), transform.forward));
             }
             else
                 ChangeCursros.DeclineCursor();
@@ -88,6 +89,9 @@ namespace Delore.Player
 
         private void UpdateAnimations()
         {
+
+
+
             Vector3 velocity = agent.velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;

@@ -16,9 +16,13 @@ public class CameraController : MonoBehaviour
 
     private Transform player;
     private Animator animator;
+    private OverrideOffset newOffset;
 
     private bool inTransition = false;
     private int numberOfCameras = 0;
+    private float storageOffset;
+    private bool blockOffseIncrement;
+    private bool blockOffsetDectrement;
 
     internal int camNumberStorage;
     internal Transform mainCamera;
@@ -29,6 +33,7 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
+        storageOffset = playerOffset;
         animator = GetComponent<Animator>();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -53,15 +58,21 @@ public class CameraController : MonoBehaviour
 
         if (!animator.IsInTransition(0) && !inTransition)
             AxisCamera();
-        
+        else
+            OverrideOffset();
+
     }
 
     private void AxisCamera()
     {
-        if (CalculatePlayerOffset() >= playerOffset && camNumber + 1 <= numberOfCameras )
+        if (!blockOffseIncrement && CalculatePlayerOffset() >= playerOffset && camNumber + 1 <= numberOfCameras)
+        {
             camNumber++;
-        else if (CalculatePlayerOffset() <= -playerOffset)
+        }
+        else if (!blockOffsetDectrement && CalculatePlayerOffset() <= -playerOffset)
+        {
             camNumber--;
+        }
 
         UpdateAnimation();
 
@@ -90,6 +101,7 @@ public class CameraController : MonoBehaviour
         {
             camNumber = right ? camNumber + 1 : camNumber - 1;
             animator.SetInteger("CameraNumberX", camNumber);
+            OverrideOffset();
         }
     }
 
@@ -124,5 +136,23 @@ public class CameraController : MonoBehaviour
         yield return new WaitUntil(() => animator.IsInTransition(0));
         inTransition = false;
     }
+
+private void OverrideOffset()
+{
+    
+    if (cinemachineCamera.LiveChild.VirtualCameraGameObject.TryGetComponent<OverrideOffset>(out newOffset))
+    {
+        if(newOffset.newOffset != -1)
+            playerOffset = newOffset.newOffset;
+        blockOffseIncrement = newOffset.blockOffseIncrement;
+        blockOffsetDectrement = newOffset.blockOffsetDectrement;
+    }
+    else
+    {
+        playerOffset = storageOffset;
+        blockOffseIncrement = false;
+        blockOffsetDectrement = false;
+    }
+}
 
 }

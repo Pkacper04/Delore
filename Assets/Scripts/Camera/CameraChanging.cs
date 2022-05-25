@@ -10,24 +10,18 @@ public class CameraChanging : MonoBehaviour
     [SerializeField, ShowIf("changeAxis")] private int cameraIdZ;
     
     private CameraController controller;
+    [SerializeField]
     private bool right = false;
     private GameObject player;
+    private Vector3 enterPosition;
+    private float rotation;
+
 
     void Start()
     {
         controller = GameObject.FindGameObjectWithTag("CameraController").GetComponent<CameraController>();
         player = GameObject.FindWithTag("Player");
-        if (!changeAxis)
-        {
-            if (player.transform.position.x > transform.position.x)
-                right = true;
-        }
-        else
-        {
-            if (player.transform.position.z > transform.position.z)
-                right = true;
-
-        }
+        rotation = Mathf.Round(transform.eulerAngles.y);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,23 +29,73 @@ public class CameraChanging : MonoBehaviour
 
         if (other.tag == "Player" && !other.isTrigger)
         {
-            if (!changeAxis)
+           
+            enterPosition = other.transform.position;
+        }
+    }
+
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player" && !other.isTrigger)
+        {
+            Debug.Log("otation: "+rotation);
+
+            if (controller.xAxis)
             {
-                if (controller.xAxis)
+                if (changeAxis && rotation == 90)
                 {
-                    right = player.transform.position.x > transform.position.x ? false : true;
-                    controller.ChangeCamera(right);
+                    Debug.Log("xAxis and change: "+Mathf.Abs((enterPosition.z - other.transform.position.z)));
+                    if (Mathf.Abs((enterPosition.z - other.transform.position.z)) < 0.2)
+                        return;
+                    controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
                 }
-                else
-                { 
-                    right = player.transform.position.z > transform.position.z ? false : true;
-                    controller.ChangeCamera(right);
+                else {
+                    Debug.Log("xAxis: " + Mathf.Abs((enterPosition.x - other.transform.position.x)));
+                    if (Mathf.Abs((enterPosition.x - other.transform.position.x)) < 0.2)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        right = !right;
+                        if (changeAxis)
+                            controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
+                        else
+                            controller.ChangeCamera(right);
+                    }
                 }
+
             }
             else
             {
-                controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
+                if (changeAxis && rotation == 0)
+                {
+                    Debug.Log("zAxis and change: " + Mathf.Abs((enterPosition.x - other.transform.position.x)));
+                    if (Mathf.Abs((enterPosition.x - other.transform.position.x)) < 0.2)
+                        return;
+                    controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
+                }
+                else
+                {
+                    Debug.Log("zAxis: " + Mathf.Abs((enterPosition.z - other.transform.position.z)));
+                    if (Mathf.Abs((enterPosition.z - other.transform.position.z)) < 0.2)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        right = !right;
+                        if (changeAxis)
+                            controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
+                        else
+                            controller.ChangeCamera(right);
+                    }
+                }
             }
         }
     }
+
+
+
 }

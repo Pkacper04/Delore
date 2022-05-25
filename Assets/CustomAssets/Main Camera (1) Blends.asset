@@ -13,8 +13,19 @@ MonoBehaviour:
   m_Name: Main Camera (1) Blends
   m_EditorClassIdentifier: 
   m_CustomBlends:
-  - m_From: PlayerCameraX2
-    m_To: PlayerCameraX3
+  - m_From: PlayerCameraX6
+    m_To: PlayerCameraX7
+    m_Blend:
+      m_Style: 1
+      m_Time: 0.5
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: PlayerCameraX7
+    m_To: PlayerCameraX6
     m_Blend:
       m_Style: 1
       m_Time: 0.5

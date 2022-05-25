@@ -19,6 +19,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_a1a26f587abd4ae19e1add219b4b5b33:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture_:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -79,6 +87,9 @@ Material:
     - DisolveValue_: 0
     - NoiseScale_: 30
     - OutlineWidth_: 0.01
+    - Vector1_8463b1a40d64411f87fd39b55d2b6758: 0
+    - Vector1_972ae76c2fca4821818e4a2effb7cb19: 0
+    - Vector1_c300ca9e5cc74636aa328e34cf9a05f2: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -106,8 +117,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_358a89be56f645569260dfd7295f75db: {r: 1, g: 1, b: 1, a: 0}
+    - Color_358a89be56f645569260dfd7295f75db: {r: 0, g: 0, b: 0, a: 1}
+    - Color_a0861a27dd7c45af9b557f11083dd1e4: {r: 0, g: 0, b: 0, a: 1}
     - OutlineColor_: {r: 0.1434886, g: 0, b: 0.5188679, a: 0}
+    - Vector2_8a1f8fd02a67447d96e0649a674f1238: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_e90eb626e1504437a1cf19b78458ecba: {r: 1, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

@@ -59,7 +59,7 @@ namespace Delore.Player
             rigidbody.angularVelocity = new Vector3(0, 0, 0);
             if (Mathf.Abs(rigidbody.velocity.x) > 1 || Mathf.Abs(rigidbody.velocity.y) > 1)
                 rigidbody.velocity = new Vector3(0,0,0);
-            if (Input.GetMouseButtonDown(1) && !PauseController.GamePaused)
+            if (Input.GetMouseButton(1) && !PauseController.GamePaused)
             {
                 MoveToCursor();
             }
@@ -81,7 +81,6 @@ namespace Delore.Player
             {
                 agent.destination = hit.point;
                 mouseController.MovingToChest = false;
-                Debug.Log(Vector3.Angle((hit.point - transform.position), transform.forward));
             }
             else
                 ChangeCursros.DeclineCursor();

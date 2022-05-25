@@ -18,7 +18,9 @@ public class TriggerDialogue : MonoBehaviour
     public VisualEffect effect;
 
     [SerializeField]
-    private MeshRenderer meshRenderer;
+    private MeshRenderer meshRenderer1;
+    [SerializeField]
+    private MeshRenderer meshRenderer2;
 
     [SerializeField]
     private float duration = 5;
@@ -38,7 +40,8 @@ public class TriggerDialogue : MonoBehaviour
 
     private void Start()
     {
-        meshRenderer.material.SetFloat("DisolveValue_", 1);
+        meshRenderer1.material.SetFloat("DisolveValue_", 1);
+        meshRenderer2.material.SetFloat("DisolveValue_", 1);
         effect.Stop();
     }
 
@@ -71,7 +74,8 @@ public class TriggerDialogue : MonoBehaviour
         {
             disolve -= Time.deltaTime / duration;
             disolve = Mathf.Clamp01(disolve);
-            meshRenderer.material.SetFloat("DisolveValue_", disolve);
+            meshRenderer1.material.SetFloat("DisolveValue_", disolve);
+            meshRenderer2.material.SetFloat("DisolveValue_", disolve);
             yield return null;
         }
         

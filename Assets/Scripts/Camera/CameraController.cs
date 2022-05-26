@@ -155,4 +155,12 @@ private void OverrideOffset()
     }
 }
 
+
+    public void DisableLooking()
+    {
+        cinemachineCamera.LookAt = null;
+        cinemachineCamera.LiveChild.LookAt = null;
+        blockOffseIncrement = true;
+        blockOffsetDectrement = true;
+    }
 }

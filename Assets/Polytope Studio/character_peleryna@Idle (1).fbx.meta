@@ -529,482 +529,597 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: character_peleryna(Clone)
+    - name: KAPTUR(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: PT_Medieval_Male_Peasant_01_upper
-      parentName: character_peleryna(Clone)
-      position: {x: 2.7755576e-17, y: -0.00000035459166, z: 0.000000014526904}
-      rotation: {x: 0.00000008518563, y: -0.00000004371139, z: 3.1589215e-15, w: 1}
-      scale: {x: 1, y: 1, z: 0.9999999}
     - name: PT_Medieval_Male_Peasant_01_lower
-      parentName: character_peleryna(Clone)
-      position: {x: 2.7755576e-17, y: -0.00000035459166, z: 0.000000014526904}
-      rotation: {x: 0.00000008518563, y: -0.00000004371139, z: 3.1589215e-15, w: 1}
-      scale: {x: 1, y: 1, z: 0.9999999}
+      parentName: KAPTUR(Clone)
+      position: {x: -0.0000000667572, y: -0.00000011617309, z: 0.0000000033510559}
+      rotation: {x: 0.000000088941334, y: -0.000000034747405, z: 0.0000000018626476, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999997}
+    - name: PT_Medieval_Male_Peasant_01_upper
+      parentName: KAPTUR(Clone)
+      position: {x: -0.0000000667572, y: -0.00000011617309, z: 0.0000000033510559}
+      rotation: {x: 0.000000088941334, y: -0.000000034747405, z: 0.0000000018626476, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999997}
     - name: PT_Medieval_Male_Peasant_01_head
-      parentName: character_peleryna(Clone)
-      position: {x: 2.7755576e-17, y: -0.00000035459166, z: 0.000000014526904}
-      rotation: {x: 0.00000008518563, y: -0.00000004371139, z: 3.1589215e-15, w: 1}
-      scale: {x: 1, y: 1, z: 0.9999999}
+      parentName: KAPTUR(Clone)
+      position: {x: -0.0000000667572, y: -0.00000011617309, z: 0.0000000033510559}
+      rotation: {x: 0.000000088941334, y: -0.000000034747405, z: 0.0000000018626476, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999997}
     - name: PT_Medieval_Male_Peasant_01_e
-      parentName: character_peleryna(Clone)
+      parentName: KAPTUR(Clone)
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      rotation: {x: 0.000000081460335, y: -0.000000043711385, z: 2.3882977e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Hips
       parentName: PT_Medieval_Male_Peasant_01_e
-      position: {x: -0, y: 1.0312519, z: 0.018636018}
-      rotation: {x: 7.1054274e-15, y: 0, z: -0, w: 1}
+      position: {x: -2.8654786e-16, y: 1.0312519, z: 0.018636018}
+      rotation: {x: 1.4210855e-14, y: 5.04871e-29, z: -5.293956e-23, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_LeftUpLeg
       parentName: PT_Medieval_Male_Hips
-      position: {x: -0.073511444, y: -0.09832764, z: -0.011281572}
-      rotation: {x: -0.24335699, y: 0.04351225, z: 0.9616456, w: 0.1188354}
-      scale: {x: 0.9999993, y: 1.0000007, z: 1.0000001}
+      position: {x: -0.073511444, y: -0.09832764, z: -0.011281571}
+      rotation: {x: -0.24335663, y: 0.043512046, z: 0.9616458, w: 0.118834846}
+      scale: {x: 1.000004, y: 1.000001, z: 1.0000004}
     - name: PT_Medieval_Male_LeftLeg
       parentName: PT_Medieval_Male_LeftUpLeg
-      position: {x: -0.07319419, y: 0.41233164, z: -0.037916373}
-      rotation: {x: -0.03996072, y: -0.485056, z: 0.13282627, w: 0.86341244}
-      scale: {x: 1.0000001, y: 1.000001, z: 1.0000004}
+      position: {x: -0.07319402, y: 0.41233185, z: -0.037916344}
+      rotation: {x: -0.039960742, y: -0.48505542, z: 0.13282555, w: 0.8634129}
+      scale: {x: 1.0000008, y: 1.0000013, z: 1.0000002}
     - name: PT_Medieval_Male_LeftFoot
       parentName: PT_Medieval_Male_LeftLeg
-      position: {x: 0.0000000035762786, y: 0.40447277, z: -0.0000000023841857}
-      rotation: {x: 0.4527903, y: 0.22713698, z: -0.12154089, w: 0.853591}
-      scale: {x: 1.0000024, y: 1.0000002, z: 1.0000001}
+      position: {x: -0.0000000035762786, y: 0.4044728, z: -0.0000000047683715}
+      rotation: {x: 0.45278972, y: 0.22713858, z: -0.121541224, w: 0.8535908}
+      scale: {x: 0.9999979, y: 1.0000029, z: 1.0000027}
     - name: PT_Medieval_Male_LeftToe
       parentName: PT_Medieval_Male_LeftFoot
-      position: {x: 0.000000011730007, y: 0.14408496, z: 0.00000006400049}
-      rotation: {x: 0.35083464, y: 0.090867035, z: -0.026385356, w: 0.9316448}
-      scale: {x: 0.99999946, y: 1.000001, z: 0.9999985}
+      position: {x: -0.0000000078184526, y: 0.14408495, z: 0.000000107362865}
+      rotation: {x: 0.35083544, y: 0.090866365, z: -0.02638508, w: 0.9316446}
+      scale: {x: 0.99999994, y: 1.0000018, z: 0.9999986}
     - name: PT_Medieval_Male_LeftToe_end
       parentName: PT_Medieval_Male_LeftToe
-      position: {x: -0, y: 0.14408493, z: 0}
+      position: {x: 0.000000023841856, y: 0.14408487, z: -0.0000000500679}
+      rotation: {x: -0.00000026822087, y: -0.00000026822087, z: -0.000000014901159, w: 1}
+      scale: {x: 1.0000008, y: 1.0000004, z: 1.0000006}
+    - name: PT_Medieval_Male_LeftToe_end_end
+      parentName: PT_Medieval_Male_LeftToe_end
+      position: {x: -0, y: 0.14408499, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Sheat_slot
       parentName: PT_Medieval_Male_LeftUpLeg
-      position: {x: 0.07319419, y: 0.10467414, z: 0.037916377}
-      rotation: {x: -0.35681263, y: -0.20382313, z: -0.89137286, w: -0.19129917}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1.000001}
+      position: {x: 0.07319405, y: 0.104674034, z: 0.037916336}
+      rotation: {x: -0.35681388, y: -0.20382576, z: -0.8913722, w: -0.19129722}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000008}
     - name: PT_Medieval_Male_Sheat_slot_end
       parentName: PT_Medieval_Male_Sheat_slot
-      position: {x: -0, y: 0.2768631, z: 0}
+      position: {x: -0, y: 0.27686304, z: 0.0000000029057263}
+      rotation: {x: 0.000000022351744, y: 0.000001564622, z: 0.000000029802326, w: 1}
+      scale: {x: 0.9999996, y: 0.99999994, z: 0.9999998}
+    - name: PT_Medieval_Male_Sheat_slot_end_end
+      parentName: PT_Medieval_Male_Sheat_slot_end
+      position: {x: -0, y: 0.27686316, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_RightUpLeg
       parentName: PT_Medieval_Male_Hips
-      position: {x: 0.07351143, y: -0.09832733, z: -0.010343338}
-      rotation: {x: 0.58903295, y: 0.16502267, z: 0.79106975, w: -0.004055157}
-      scale: {x: 1.0000013, y: 1.0000004, z: 1.0000021}
+      position: {x: 0.07351143, y: -0.09832733, z: -0.0103433365}
+      rotation: {x: 0.5890324, y: 0.16502453, z: 0.79106975, w: -0.004057022}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000005}
     - name: PT_Medieval_Male_RightLeg
       parentName: PT_Medieval_Male_RightUpLeg
-      position: {x: -0.07516929, y: 0.40441862, z: -0.08710972}
-      rotation: {x: -0.18794587, y: 0.760955, z: -0.038900148, w: 0.61976653}
-      scale: {x: 1.0000002, y: 1.000001, z: 1.0000002}
+      position: {x: -0.075169355, y: 0.40441874, z: -0.087109804}
+      rotation: {x: -0.18794751, y: 0.76095366, z: -0.0389031, w: 0.6197675}
+      scale: {x: 1, y: 1.0000008, z: 1.0000002}
     - name: PT_Medieval_Male_RightFoot
       parentName: PT_Medieval_Male_RightLeg
-      position: {x: 0.0000000011920929, y: 0.40448183, z: 0.0000000023841857}
-      rotation: {x: 0.4548036, y: -0.21419847, z: 0.11455751, w: 0.8568251}
-      scale: {x: 1.0000006, y: 1.0000023, z: 0.9999997}
+      position: {x: 0.0000000023841857, y: 0.404482, z: 0.0000000011920929}
+      rotation: {x: 0.45480332, y: -0.21419765, z: 0.11455802, w: 0.8568254}
+      scale: {x: 0.9999998, y: 1.0000007, z: 0.99999994}
     - name: PT_Medieval_Male_RightToe
       parentName: PT_Medieval_Male_RightFoot
-      position: {x: 4.4237822e-10, y: 0.14409067, z: -0.000000049099324}
-      rotation: {x: 0.35159758, y: -0.09049171, z: 0.02789291, w: 0.93134975}
-      scale: {x: 1.0000021, y: 1.0000005, z: 1.0000011}
+      position: {x: -0.000000010151416, y: 0.14409071, z: 0.0000000036507843}
+      rotation: {x: 0.35159802, y: -0.09049192, z: 0.02789297, w: 0.9313496}
+      scale: {x: 1.0000018, y: 1.0000017, z: 1.0000001}
     - name: PT_Medieval_Male_RightToe_end
       parentName: PT_Medieval_Male_RightToe
-      position: {x: -0, y: 0.14409083, z: 0}
+      position: {x: -0.0000000166893, y: 0.14409088, z: -0.000000044107438}
+      rotation: {x: 0.0000001490116, y: -0.0000001490116, z: 0.000000029802319, w: 1}
+      scale: {x: 1.0000017, y: 1.0000011, z: 1.0000017}
+    - name: PT_Medieval_Male_RightToe_end_end
+      parentName: PT_Medieval_Male_RightToe_end
+      position: {x: -0, y: 0.14409095, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Second_Weapon_slot
       parentName: PT_Medieval_Male_RightUpLeg
-      position: {x: 0.07516928, y: 0.010527887, z: 0.08710972}
-      rotation: {x: 0.71939796, y: -0.0019701158, z: -0.32157573, w: -0.6156718}
-      scale: {x: 1.000001, y: 1.0000005, z: 1.0000008}
+      position: {x: 0.07516934, y: 0.010527742, z: 0.08710982}
+      rotation: {x: 0.71939933, y: -0.001971064, z: -0.32157534, w: -0.61567044}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.000001}
     - name: PT_Medieval_Male_Second_Weapon_slot_end
       parentName: PT_Medieval_Male_Second_Weapon_slot
-      position: {x: -0, y: 0.2680038, z: 0}
+      position: {x: -0.000000009536743, y: 0.2680039, z: 0.000000009536743}
+      rotation: {x: 0.0000001490116, y: 0.00000012130475, z: -0.000000079045996, w: 1}
+      scale: {x: 1.0000008, y: 1.0000006, z: 1.0000007}
+    - name: PT_Medieval_Male_Second_Weapon_slot_end_end
+      parentName: PT_Medieval_Male_Second_Weapon_slot_end
+      position: {x: -0, y: 0.26800403, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Spine
       parentName: PT_Medieval_Male_Hips
-      position: {x: -0, y: 0.083521955, z: -0.007203152}
-      rotation: {x: -0.06767653, y: 0.00000000766579, z: 5.199863e-10, w: 0.99770737}
+      position: {x: -9.119119e-17, y: 0.083521955, z: -0.00720315}
+      rotation: {x: -0.06767652, y: 0.0000000039787658, z: -0.0000000053308886, w: 0.99770737}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Spine2
       parentName: PT_Medieval_Male_Spine
-      position: {x: -0, y: 0.11777662, z: 0}
-      rotation: {x: -0.056811422, y: 1.1546318e-14, z: 1.4988009e-15, w: 0.9983849}
+      position: {x: -9.817321e-24, y: 0.11777665, z: -5.9604643e-10}
+      rotation: {x: -0.05681151, y: 1.3322675e-15, z: 1.0269562e-15, w: 0.9983849}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Spine3
       parentName: PT_Medieval_Male_Spine2
-      position: {x: -0, y: 0.09280976, z: -0.0000000023841857}
-      rotation: {x: -0.50063246, y: -0.012477633, z: 0.09964673, w: 0.8598151}
-      scale: {x: 1, y: 1.0000002, z: 1.0000004}
+      position: {x: -1.0946241e-23, y: 0.09280978, z: -0.0000000023841857}
+      rotation: {x: -0.50063246, y: -0.012477649, z: 0.09964676, w: 0.8598151}
+      scale: {x: 1, y: 1.0000005, z: 1.0000005}
     - name: PT_Medieval_Male_LeftShoulder
       parentName: PT_Medieval_Male_Spine3
-      position: {x: -0.05244511, y: 0.03982892, z: 0.06569877}
-      rotation: {x: 0.64495975, y: -0.7385631, z: 0.09570633, w: 0.1714409}
-      scale: {x: 1.0000013, y: 1.0000012, z: 1.0000011}
+      position: {x: -0.052445106, y: 0.039828856, z: 0.06569886}
+      rotation: {x: 0.6449597, y: -0.73856306, z: 0.095706135, w: 0.17144102}
+      scale: {x: 0.9999996, y: 0.99999964, z: 0.9999997}
     - name: PT_Medieval_Male_LeftArm
       parentName: PT_Medieval_Male_LeftShoulder
-      position: {x: 0.000000001490116, y: 0.12039992, z: 0.0000000077486035}
-      rotation: {x: 0.008778868, y: 0.009337051, z: 0.019554341, w: 0.99972665}
-      scale: {x: 0.9999998, y: 1, z: 0.9999996}
+      position: {x: 7.45058e-10, y: 0.12039993, z: 0.0000000077486035}
+      rotation: {x: 0.0087789735, y: 0.009336985, z: 0.019554464, w: 0.99972665}
+      scale: {x: 1.000001, y: 1.0000014, z: 1.0000006}
     - name: PT_Medieval_Male_LeftForeArm
       parentName: PT_Medieval_Male_LeftArm
-      position: {x: -0.000000005364418, y: 0.27197665, z: -0.00000001899898}
-      rotation: {x: -0.038534857, y: -0.01098834, z: -0.04359947, w: 0.99824524}
-      scale: {x: 1.0000006, y: 1.0000006, z: 0.9999998}
+      position: {x: 0.000000037550926, y: 0.27197656, z: -0.000000410676}
+      rotation: {x: -0.03853476, y: -0.010988246, z: -0.043599613, w: 0.9982452}
+      scale: {x: 1, y: 1.0000005, z: 1.0000001}
     - name: PT_Medieval_Male_Large_Shield_slot
       parentName: PT_Medieval_Male_LeftForeArm
-      position: {x: -0.004764402, y: 0.38616276, z: -0.0026871765}
-      rotation: {x: 0.65792006, y: 0.6826509, z: 0.28525627, w: -0.14056253}
-      scale: {x: 1.0000008, y: 1.0000008, z: 0.99999994}
+      position: {x: -0.0047644065, y: 0.38616264, z: -0.002686801}
+      rotation: {x: 0.65791994, y: 0.68265104, z: 0.2852563, w: -0.14056265}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
     - name: PT_Medieval_Male_Large_Shield_slot_end
       parentName: PT_Medieval_Male_Large_Shield_slot
+      position: {x: 0.0000000027008353, y: 0.3433966, z: -0.0000000500679}
+      rotation: {x: -0, y: -0.00000010430811, z: 0.000000029802315, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000006}
+    - name: PT_Medieval_Male_Large_Shield_slot_end_end
+      parentName: PT_Medieval_Male_Large_Shield_slot_end
       position: {x: -0, y: 0.34339648, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Left_Hand_Weapon_slot
       parentName: PT_Medieval_Male_LeftForeArm
-      position: {x: 0.015042379, y: 0.36513224, z: 0.014010886}
-      rotation: {x: -0.17607437, y: 0.19716144, z: 0.7151022, w: 0.64711213}
-      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000005}
+      position: {x: 0.015042366, y: 0.3651322, z: 0.0140112145}
+      rotation: {x: -0.17607437, y: 0.19716132, z: 0.7151023, w: 0.647112}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000006}
     - name: PT_Medieval_Male_Left_Hand_Weapon_slot_end
       parentName: PT_Medieval_Male_Left_Hand_Weapon_slot
-      position: {x: -0, y: 0.34339646, z: 0}
+      position: {x: 0.00000006198883, y: 0.3433966, z: -0.000000019073486}
+      rotation: {x: 0.000000089406946, y: 0.00000011920926, z: -0.00000006332992, w: 1}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000002}
+    - name: PT_Medieval_Male_Left_Hand_Weapon_slot_end_end
+      parentName: PT_Medieval_Male_Left_Hand_Weapon_slot_end
+      position: {x: -0, y: 0.3433965, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_LeftHand
       parentName: PT_Medieval_Male_LeftForeArm
-      position: {x: 0.0037032485, y: 0.2621754, z: 0.0064836824}
-      rotation: {x: 0.002950392, y: 0.011732939, z: 0.032605287, w: 0.99939513}
-      scale: {x: 1.000001, y: 1.0000006, z: 1}
+      position: {x: 0.003703258, y: 0.26217547, z: 0.0064838994}
+      rotation: {x: 0.002950392, y: 0.011732751, z: 0.032605246, w: 0.99939513}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000001}
     - name: PT_Medieval_Male_LeftHandIndex1
       parentName: PT_Medieval_Male_LeftHand
-      position: {x: 0.03005155, y: 0.094129406, z: -0.0051565105}
-      rotation: {x: 0.05076004, y: 0.0078015886, z: -0.04584598, w: 0.99762756}
-      scale: {x: 1.0000002, y: 1.0000014, z: 1.0000006}
+      position: {x: 0.030051526, y: 0.094129436, z: -0.005156269}
+      rotation: {x: 0.050759844, y: 0.00780168, z: -0.045845885, w: 0.99762756}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000001}
     - name: PT_Medieval_Male_LeftHandIndex2
       parentName: PT_Medieval_Male_LeftHandIndex1
-      position: {x: -0.0000000080466265, y: 0.042774882, z: 0.00000005915761}
-      rotation: {x: 0.03502892, y: 0.02258682, z: 0.006604118, w: 0.9991092}
-      scale: {x: 1.0000006, y: 1.0000012, z: 1.0000004}
+      position: {x: -0, y: 0.042774983, z: -0.00000001758337}
+      rotation: {x: 0.035029102, y: 0.022586681, z: 0.0066035017, w: 0.99910927}
+      scale: {x: 1.000001, y: 1.0000019, z: 1.0000006}
     - name: PT_Medieval_Male_LeftHandIndex3
       parentName: PT_Medieval_Male_LeftHandIndex2
-      position: {x: -0.000000014454126, y: 0.03691598, z: -0.00000001983717}
-      rotation: {x: 0.037355572, y: -0.015843129, z: -0.0050929193, w: 0.9991635}
-      scale: {x: 0.99999994, y: 1.0000014, z: 0.9999997}
+      position: {x: 1.3038516e-10, y: 0.036915902, z: 8.9406965e-10}
+      rotation: {x: 0.037359, y: -0.015843213, z: -0.0050940476, w: 0.9991634}
+      scale: {x: 1, y: 1.0000015, z: 1}
     - name: PT_Medieval_Male_LeftHandIndex3_end
       parentName: PT_Medieval_Male_LeftHandIndex3
+      position: {x: -0.000000004172325, y: 0.036915943, z: -0.000000072866676}
+      rotation: {x: 0.0000021681185, y: 0.000000048428763, z: 0.0000004636821, w: 1}
+      scale: {x: 1.0000008, y: 1.0000007, z: 1.0000007}
+    - name: PT_Medieval_Male_LeftHandIndex3_end_end
+      parentName: PT_Medieval_Male_LeftHandIndex3_end
       position: {x: -0, y: 0.03691598, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_LeftHandMiddle1
       parentName: PT_Medieval_Male_LeftHand
-      position: {x: 0.00233219, y: 0.10582295, z: -0.0047245463}
-      rotation: {x: 0.05727818, y: 0.031070571, z: -0.03508579, w: 0.9972577}
-      scale: {x: 1, y: 1.000001, z: 1.0000007}
+      position: {x: 0.0023321873, y: 0.10582297, z: -0.004724469}
+      rotation: {x: 0.057278425, y: 0.03107053, z: -0.035085738, w: 0.99725765}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000002}
     - name: PT_Medieval_Male_LeftHandMiddle2
       parentName: PT_Medieval_Male_LeftHandMiddle1
-      position: {x: -0.0000000043958424, y: 0.04309619, z: 0.0000000166893}
-      rotation: {x: 0.031665977, y: 0.0022320617, z: 0.0042032828, w: 0.9994873}
-      scale: {x: 1, y: 1.0000012, z: 1}
+      position: {x: 0.000000007152557, y: 0.04309607, z: 0.000000010728836}
+      rotation: {x: 0.031668235, y: 0.0022323974, z: 0.0042049573, w: 0.99948716}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
     - name: PT_Medieval_Male_LeftHandMiddle3
       parentName: PT_Medieval_Male_LeftHandMiddle2
-      position: {x: 5.9604643e-10, y: 0.03626034, z: 0.000000054985282}
-      rotation: {x: -0.033558875, y: -0.027191633, z: -0.022821166, w: 0.99880606}
-      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000005}
+      position: {x: 0.0000000047683715, y: 0.036260538, z: -0.000000019073486}
+      rotation: {x: -0.033559613, y: -0.02719185, z: -0.022821752, w: 0.9988061}
+      scale: {x: 1.0000012, y: 1.0000004, z: 1}
     - name: PT_Medieval_Male_LeftHandMiddle3_end
       parentName: PT_Medieval_Male_LeftHandMiddle3
+      position: {x: -0, y: 0.03626035, z: -0.00000006020069}
+      rotation: {x: -0.0000010058282, y: 0.000000061467276, z: -0.00000006752087, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000008}
+    - name: PT_Medieval_Male_LeftHandMiddle3_end_end
+      parentName: PT_Medieval_Male_LeftHandMiddle3_end
       position: {x: -0, y: 0.03626032, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_LeftHandPinky1
       parentName: PT_Medieval_Male_LeftHand
-      position: {x: -0.046628375, y: 0.09322774, z: 0.00019404187}
-      rotation: {x: 0.042027988, y: 0.046163205, z: 0.04436359, w: 0.9970629}
-      scale: {x: 1, y: 1.0000008, z: 1.0000005}
+      position: {x: -0.046628416, y: 0.09322752, z: 0.00019444764}
+      rotation: {x: 0.04202789, y: 0.04616342, z: 0.04436374, w: 0.9970629}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000001}
     - name: PT_Medieval_Male_LeftHandPinky2
       parentName: PT_Medieval_Male_LeftHandPinky1
-      position: {x: 0.0000000011920929, y: 0.02998241, z: 0.00000001538545}
-      rotation: {x: 0.036605433, y: -0.056193564, z: -0.018637603, w: 0.9975745}
-      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000015}
+      position: {x: -0, y: 0.029982572, z: -0.000000014305114}
+      rotation: {x: 0.036607023, y: -0.05619436, z: -0.018642083, w: 0.9975744}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000005}
     - name: PT_Medieval_Male_LeftHandPinky3
       parentName: PT_Medieval_Male_LeftHandPinky2
-      position: {x: 0.0000000023841857, y: 0.025099805, z: 0.000000021234154}
-      rotation: {x: 0.028592316, y: 0.03341194, z: 0.029727887, w: 0.99859023}
-      scale: {x: 1.0000001, y: 1.0000015, z: 0.99999994}
+      position: {x: 0.0000000047683715, y: 0.025099691, z: -0.0000000035762786}
+      rotation: {x: 0.028590953, y: 0.033412848, z: 0.02972506, w: 0.9985903}
+      scale: {x: 1.0000005, y: 1.0000011, z: 1.0000004}
     - name: PT_Medieval_Male_LeftHandPinky3_end
       parentName: PT_Medieval_Male_LeftHandPinky3
+      position: {x: 0.0000000047683715, y: 0.025099825, z: 0.000000009536743}
+      rotation: {x: 0.000002235174, y: -0.00000023096797, z: 0.00000020116565, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: PT_Medieval_Male_LeftHandPinky3_end_end
+      parentName: PT_Medieval_Male_LeftHandPinky3_end
       position: {x: -0, y: 0.025099775, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_LeftHandRing1
       parentName: PT_Medieval_Male_LeftHand
-      position: {x: -0.024741901, y: 0.10043888, z: -0.0071125044}
-      rotation: {x: 0.05850231, y: 0.07830217, z: -0.0030855213, w: 0.9952069}
-      scale: {x: 1.0000005, y: 1.0000019, z: 1.0000006}
+      position: {x: -0.024741933, y: 0.10043884, z: -0.0071123648}
+      rotation: {x: 0.05850127, y: 0.07830223, z: -0.0030857073, w: 0.99520695}
+      scale: {x: 1.0000011, y: 1.0000011, z: 1.0000007}
     - name: PT_Medieval_Male_LeftHandRing2
       parentName: PT_Medieval_Male_LeftHandRing1
-      position: {x: 0.0000000047683715, y: 0.040338088, z: -0.0000000011920929}
-      rotation: {x: 0.03802392, y: -0.023815827, z: 0.0018358921, w: 0.9989914}
-      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000004}
+      position: {x: -0.000000011920928, y: 0.04033827, z: 0.0000000500679}
+      rotation: {x: 0.038026165, y: -0.023816988, z: 0.0018345527, w: 0.99899125}
+      scale: {x: 1.0000005, y: 1.000001, z: 0.9999998}
     - name: PT_Medieval_Male_LeftHandRing3
       parentName: PT_Medieval_Male_LeftHandRing2
-      position: {x: -0.000000005960464, y: 0.037050247, z: 0.00000007599592}
-      rotation: {x: 0.0008993067, y: -0.059029635, z: -0.041301195, w: 0.99740106}
-      scale: {x: 1.0000006, y: 1.0000007, z: 1.0000005}
+      position: {x: -0.0000000047683715, y: 0.037050243, z: 0.000000009536743}
+      rotation: {x: 0.00090262614, y: -0.059027437, z: -0.041300833, w: 0.99740124}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000006}
     - name: PT_Medieval_Male_LeftHandRing3_end
       parentName: PT_Medieval_Male_LeftHandRing3
-      position: {x: -0, y: 0.03705019, z: 0}
+      position: {x: 0.000000023841856, y: 0.037050106, z: 0.000000057220458}
+      rotation: {x: -0.0000013554235, y: -0.0000009648501, z: -0.00000093769984, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: PT_Medieval_Male_LeftHandRing3_end_end
+      parentName: PT_Medieval_Male_LeftHandRing3_end
+      position: {x: -0, y: 0.0370502, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_LeftHandThumb1
       parentName: PT_Medieval_Male_LeftHand
-      position: {x: 0.038986497, y: 0.033253506, z: 0.016799552}
-      rotation: {x: 0.0771725, y: -0.092028, z: -0.380875, w: 0.9167931}
-      scale: {x: 1.0000008, y: 1.0000004, z: 1.0000007}
+      position: {x: 0.038986467, y: 0.033253457, z: 0.016799804}
+      rotation: {x: 0.07717279, y: -0.09202794, z: -0.38087553, w: 0.9167928}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000008}
     - name: PT_Medieval_Male_LeftHandThumb2
       parentName: PT_Medieval_Male_LeftHandThumb1
-      position: {x: -0, y: 0.06397662, z: -0.0000000047683715}
-      rotation: {x: -0.0071995878, y: 0.32976604, z: 0.031519905, w: 0.9435089}
-      scale: {x: 0.9999996, y: 1.0000021, z: 1.0000017}
+      position: {x: -0.00000012040138, y: 0.06397673, z: -0.00000006020069}
+      rotation: {x: -0.007200836, y: 0.32976568, z: 0.031523485, w: 0.94350886}
+      scale: {x: 1.0000005, y: 0.99999875, z: 0.9999997}
     - name: PT_Medieval_Male_LeftHandThumb3
       parentName: PT_Medieval_Male_LeftHandThumb2
-      position: {x: -0.0000000047683715, y: 0.039669346, z: 0.000000047683713}
-      rotation: {x: -0.008384955, y: -0.19631569, z: -0.03455427, w: 0.97989583}
-      scale: {x: 0.9999998, y: 0.99999934, z: 1.0000008}
+      position: {x: 0.0000000500679, y: 0.039669428, z: 0.000000022649765}
+      rotation: {x: -0.008384125, y: -0.19631605, z: -0.034559317, w: 0.97989565}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000008}
     - name: PT_Medieval_Male_LeftHandThumb3_end
       parentName: PT_Medieval_Male_LeftHandThumb3
+      position: {x: 0.0000000047683715, y: 0.039669357, z: -8.9406965e-10}
+      rotation: {x: 0.000000029802319, y: -0.00000004470348, z: -0.000000018160788, w: 1}
+      scale: {x: 1.0000004, y: 1.0000008, z: 1.0000012}
+    - name: PT_Medieval_Male_LeftHandThumb3_end_end
+      parentName: PT_Medieval_Male_LeftHandThumb3_end
       position: {x: -0, y: 0.03966934, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Medium_Shield_slot
       parentName: PT_Medieval_Male_LeftForeArm
-      position: {x: -0.0025422382, y: 0.35647595, z: -0.012397985}
-      rotation: {x: 0.7066854, y: 0.6949856, z: 0.13132349, w: 0.018574389}
-      scale: {x: 1.0000012, y: 1.0000005, z: 1}
+      position: {x: -0.0025422429, y: 0.35647595, z: -0.0123977205}
+      rotation: {x: 0.70668536, y: 0.6949857, z: 0.13132343, w: 0.018574497}
+      scale: {x: 1.000002, y: 1.0000008, z: 1.0000006}
     - name: PT_Medieval_Male_Medium_Shield_slot_end
       parentName: PT_Medieval_Male_Medium_Shield_slot
-      position: {x: -0, y: 0.34339646, z: 0}
+      position: {x: -0.000000085830685, y: 0.3433965, z: 0.000000035762785}
+      rotation: {x: -0.000000014901159, y: 0.000000058673315, z: 0.000000059604638, w: 1}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1.0000002}
+    - name: PT_Medieval_Male_Medium_Shield_slot_end_end
+      parentName: PT_Medieval_Male_Medium_Shield_slot_end
+      position: {x: -0, y: 0.3433965, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Small_Shield_slot
       parentName: PT_Medieval_Male_LeftForeArm
-      position: {x: -0.011438992, y: 0.34585625, z: -0.0054093874}
-      rotation: {x: 0.70852983, y: 0.70007783, z: 0.0634162, w: -0.062087964}
-      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000001}
+      position: {x: -0.011439006, y: 0.3458563, z: -0.005409132}
+      rotation: {x: 0.70852965, y: 0.70007795, z: 0.06341633, w: -0.062087886}
+      scale: {x: 1.0000002, y: 0.99999934, z: 0.9999998}
     - name: PT_Medieval_Male_Small_Shield_slot_end
       parentName: PT_Medieval_Male_Small_Shield_slot
-      position: {x: -0, y: 0.3433964, z: 0}
+      position: {x: -0.000000007152557, y: 0.34339657, z: 0.000000030994414}
+      rotation: {x: -0, y: -0.000000029802315, z: -0.00000005960463, w: 1}
+      scale: {x: 1.0000012, y: 1.0000006, z: 0.99999994}
+    - name: PT_Medieval_Male_Small_Shield_slot_end_end
+      parentName: PT_Medieval_Male_Small_Shield_slot_end
+      position: {x: -0, y: 0.34339648, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Long_Bow_slot
       parentName: PT_Medieval_Male_Spine3
-      position: {x: -0.08481725, y: 0.14843807, z: -0.0765585}
-      rotation: {x: 0.34217897, y: 0.02251618, z: 0.90672815, w: -0.24546027}
-      scale: {x: 1.0000012, y: 1.0000004, z: 1.0000012}
+      position: {x: -0.084817216, y: 0.14843807, z: -0.07655835}
+      rotation: {x: 0.342179, y: 0.02251597, z: 0.90672815, w: -0.24546026}
+      scale: {x: 1.0000004, y: 1, z: 1.0000001}
     - name: PT_Medieval_Male_Long_Bow_slot_end
       parentName: PT_Medieval_Male_Long_Bow_slot
+      position: {x: 5.9604643e-10, y: 0.14458555, z: 0.0000000023841857}
+      rotation: {x: -0.000000029802319, y: 0.00000015459953, z: -0.0000000745058, w: 1}
+      scale: {x: 0.99999994, y: 0.9999996, z: 0.99999994}
+    - name: PT_Medieval_Male_Long_Bow_slot_end_end
+      parentName: PT_Medieval_Male_Long_Bow_slot_end
       position: {x: -0, y: 0.1445855, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Medium_Bow_slot
       parentName: PT_Medieval_Male_Spine3
-      position: {x: -0.046905775, y: 0.15152545, z: -0.07564514}
-      rotation: {x: -0.29320803, y: 0.87867606, z: -0.042986274, w: -0.3743124}
-      scale: {x: 1.0000013, y: 1.000001, z: 1.0000011}
+      position: {x: -0.046905756, y: 0.15152545, z: -0.07564512}
+      rotation: {x: -0.29320788, y: 0.878676, z: -0.04298627, w: -0.37431237}
+      scale: {x: 0.99999976, y: 0.99999917, z: 1}
     - name: PT_Medieval_Male_Medium_Bow_slot_end
       parentName: PT_Medieval_Male_Medium_Bow_slot
-      position: {x: -0, y: 0.1445855, z: 0}
+      position: {x: -0.000000019371509, y: 0.14458553, z: 0.000000014305114}
+      rotation: {x: 0.000000007450581, y: -0.00000011920929, z: -0.000000029802322, w: 1}
+      scale: {x: 1.0000004, y: 1, z: 1.0000001}
+    - name: PT_Medieval_Male_Medium_Bow_slot_end_end
+      parentName: PT_Medieval_Male_Medium_Bow_slot_end
+      position: {x: -0, y: 0.14458552, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Neck
       parentName: PT_Medieval_Male_Spine3
-      position: {x: 0.022777766, y: 0.050676566, z: 0.11769194}
-      rotation: {x: 0.7018955, y: -0.013141345, z: -0.09956138, w: 0.70516497}
-      scale: {x: 1, y: 1.0000002, z: 0.9999999}
+      position: {x: 0.022777779, y: 0.0506765, z: 0.11769198}
+      rotation: {x: 0.7018956, y: -0.013141358, z: -0.09956142, w: 0.70516485}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
     - name: Plane
       parentName: PT_Medieval_Male_Neck
-      position: {x: 0.01203054, y: -0.0793448, z: -0.43394402}
-      rotation: {x: -0.79355687, y: -0.000000035164504, z: 0.0000000106701386, w: 0.6084961}
-      scale: {x: 14.127163, y: 27.732977, z: 14.127168}
+      position: {x: 0.012030542, y: -0.0793449, z: -0.43394402}
+      rotation: {x: -0.79355687, y: -0.00000003516452, z: 0.00000001067014, w: 0.6084961}
+      scale: {x: 14.127163, y: 27.73298, z: 14.127167}
     - name: PT_Medieval_Male_Head
       parentName: PT_Medieval_Male_Neck
-      position: {x: -3.1352003e-15, y: 0.09442818, z: 0.0000000023841857}
-      rotation: {x: -0.09506798, y: 0.000000013969839, z: 0.00000002514571, w: 0.9954708}
-      scale: {x: 1, y: 1, z: 0.9999999}
+      position: {x: -0.000000007437727, y: 0.09442792, z: 0.0000000667572}
+      rotation: {x: -0.09506805, y: 0.000000020489095, z: 0.000000029103827, w: 0.99547076}
+      scale: {x: 0.9999999, y: 0.9999995, z: 0.9999999}
     - name: PT_Medieval_Male_HeadTop
       parentName: PT_Medieval_Male_Head
-      position: {x: 3.5860204e-16, y: 0.2037306, z: 0.000000007152557}
-      rotation: {x: -0.03601445, y: -0.0000000016133919, z: 0.000000006922522, w: 0.9993513}
-      scale: {x: 1, y: 0.9999998, z: 1.0000002}
+      position: {x: -3.1974422e-16, y: 0.20373079, z: -0.000000028610229}
+      rotation: {x: -0.036014464, y: -0.000000007091269, z: 0.00000000704779, w: 0.99935126}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.9999999}
     - name: PT_Medieval_Male_HeadTop_end
       parentName: PT_Medieval_Male_HeadTop
+      position: {x: -9.769963e-16, y: 0.20373054, z: -0.0000000011030695}
+      rotation: {x: 0.000000029802319, y: 0.0000000016755461, z: 0.000000001539882, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: PT_Medieval_Male_HeadTop_end_end
+      parentName: PT_Medieval_Male_HeadTop_end
       position: {x: -0, y: 0.20373054, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Quiver_slot
       parentName: PT_Medieval_Male_Spine3
-      position: {x: 0.08512661, y: 0.147116, z: -0.08096134}
-      rotation: {x: -0.15644747, y: 0.341616, z: -0.11580169, w: 0.9194633}
-      scale: {x: 1.0000002, y: 1.0000008, z: 1.0000007}
+      position: {x: 0.08512664, y: 0.14711602, z: -0.08096128}
+      rotation: {x: -0.15644728, y: 0.34161615, z: -0.11580166, w: 0.9194632}
+      scale: {x: 1, y: 0.99999994, z: 0.99999964}
     - name: PT_Medieval_Male_Quiver_slot_end
       parentName: PT_Medieval_Male_Quiver_slot
-      position: {x: -0, y: 0.14458553, z: 0}
+      position: {x: -0.000000011920928, y: 0.14458558, z: -0.000000014305114}
+      rotation: {x: -0.000000044703484, y: -0.00000014901161, z: -0.000000059604645, w: 1}
+      scale: {x: 1, y: 1.0000005, z: 1.0000001}
+    - name: PT_Medieval_Male_Quiver_slot_end_end
+      parentName: PT_Medieval_Male_Quiver_slot_end
+      position: {x: -0, y: 0.14458556, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_RightShoulder
       parentName: PT_Medieval_Male_Spine3
-      position: {x: 0.076263726, y: 0.018961037, z: 0.049774203}
-      rotation: {x: 0.7376785, y: 0.6419894, z: -0.19919953, w: 0.06324224}
-      scale: {x: 1.0000011, y: 1.0000008, z: 1.0000008}
+      position: {x: 0.076263726, y: 0.018960988, z: 0.049774315}
+      rotation: {x: 0.73767847, y: 0.64198965, z: -0.19919884, w: 0.06324292}
+      scale: {x: 1.0000001, y: 0.9999997, z: 0.99999994}
     - name: PT_Medieval_Male_RightArm
       parentName: PT_Medieval_Male_RightShoulder
-      position: {x: 0.000000008195639, y: 0.120399974, z: 0.00000003695488}
-      rotation: {x: 0.008785962, y: -0.009338035, z: -0.019556312, w: 0.99972653}
-      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000002}
+      position: {x: 2.2351741e-10, y: 0.120400034, z: 0.0000000017881393}
+      rotation: {x: 0.0087864725, y: -0.00933808, z: -0.019556401, w: 0.99972653}
+      scale: {x: 1.0000001, y: 1.0000011, z: 1.0000002}
     - name: PT_Medieval_Male_RightForeArm
       parentName: PT_Medieval_Male_RightArm
-      position: {x: 0.0000000016391277, y: 0.2719766, z: -0.000000016391278}
-      rotation: {x: -0.026545832, y: 0.02004696, z: 0.050291747, w: 0.9981804}
-      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000008}
+      position: {x: -0.000000002980232, y: 0.2719767, z: -0.000000013709068}
+      rotation: {x: -0.026546014, y: 0.020046873, z: 0.050291914, w: 0.9981804}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000004}
     - name: PT_Medieval_Male_RightHand
       parentName: PT_Medieval_Male_RightForeArm
-      position: {x: 0.0000000047683715, y: 0.2622817, z: -0.0000000053830442}
-      rotation: {x: 0.014256881, y: -0.0025041886, z: -0.023349017, w: 0.99962264}
-      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000001}
+      position: {x: 0.000000007152557, y: 0.26228154, z: -0.000000042021274}
+      rotation: {x: 0.014256244, y: -0.0025039443, z: -0.02334881, w: 0.99962264}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000008}
     - name: PT_Medieval_Male_Right_Hand_Weapon_slot
       parentName: PT_Medieval_Male_RightHand
-      position: {x: -0.013965059, y: 0.100866824, z: 0.019380875}
-      rotation: {x: -0.6153653, y: 0.7490832, z: -0.21211629, w: -0.12331512}
-      scale: {x: 1.0000017, y: 1.0000001, z: 1.000001}
+      position: {x: -0.013965041, y: 0.100866914, z: 0.019381033}
+      rotation: {x: -0.6153652, y: 0.7490838, z: -0.2121152, w: -0.12331436}
+      scale: {x: 1.0000015, y: 1.0000008, z: 1.0000004}
     - name: PT_Medieval_Male_Right_Hand_Weapon_slot_end
       parentName: PT_Medieval_Male_Right_Hand_Weapon_slot
-      position: {x: -0, y: 0.09506772, z: 0}
+      position: {x: -0.00000006556511, y: 0.095067844, z: -0.000000039339064}
+      rotation: {x: -0.000000014901156, y: -0.000000007450578, z: -0.000000029802312, w: 1}
+      scale: {x: 1.0000004, y: 0.9999998, z: 1.0000006}
+    - name: PT_Medieval_Male_Right_Hand_Weapon_slot_end_end
+      parentName: PT_Medieval_Male_Right_Hand_Weapon_slot_end
+      position: {x: -0, y: 0.095067754, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_RightHandIndex1
       parentName: PT_Medieval_Male_RightHand
-      position: {x: -0.026747087, y: 0.09467349, z: -0.010565357}
-      rotation: {x: 0.026791124, y: -0.026183106, z: 0.031051159, w: 0.99881554}
-      scale: {x: 1.0000001, y: 1.0000008, z: 1.0000004}
+      position: {x: -0.026747093, y: 0.094673604, z: -0.010565333}
+      rotation: {x: 0.026791964, y: -0.026183302, z: 0.03105098, w: 0.9988156}
+      scale: {x: 1.000001, y: 1.0000001, z: 1.0000001}
     - name: PT_Medieval_Male_RightHandIndex2
       parentName: PT_Medieval_Male_RightHandIndex1
-      position: {x: 0.000000004470348, y: 0.04277425, z: -0.00000001847744}
-      rotation: {x: -0.03502857, y: 0.022590218, z: 0.006603772, w: -0.99910915}
-      scale: {x: 1.0000005, y: 0.99999994, z: 1.0000001}
+      position: {x: 0.000000047683713, y: 0.042774294, z: 0.00000005275011}
+      rotation: {x: -0.035024576, y: 0.022590514, z: 0.006604796, w: -0.9991093}
+      scale: {x: 0.9999996, y: 0.99999946, z: 1.0000001}
     - name: PT_Medieval_Male_RightHandIndex3
       parentName: PT_Medieval_Male_RightHandIndex2
-      position: {x: -0.0000000047683715, y: 0.036916293, z: 0.000000024735927}
-      rotation: {x: 0.037356164, y: 0.01584296, z: 0.005091262, w: 0.9991635}
-      scale: {x: 1.0000002, y: 1.0000014, z: 1.0000007}
+      position: {x: -0.00000009361654, y: 0.036916118, z: 0.00000012904405}
+      rotation: {x: 0.03736076, y: 0.015842957, z: 0.0050929803, w: 0.99916327}
+      scale: {x: 0.99999994, y: 1, z: 1.0000005}
     - name: PT_Medieval_Male_RightHandIndex3_end
       parentName: PT_Medieval_Male_RightHandIndex3
+      position: {x: 0.000000004172325, y: 0.036916364, z: -0.0000000090897085}
+      rotation: {x: -0.000000007450578, y: 0.0000000018626445, z: 0.000000004656611, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: PT_Medieval_Male_RightHandIndex3_end_end
+      parentName: PT_Medieval_Male_RightHandIndex3_end
       position: {x: -0, y: 0.03691627, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_RightHandMiddle1
       parentName: PT_Medieval_Male_RightHand
-      position: {x: 0.0013054787, y: 0.10550942, z: -0.009609628}
-      rotation: {x: 0.03314676, y: -0.049787607, z: 0.020955317, w: 0.99798965}
-      scale: {x: 1.0000004, y: 1.0000014, z: 1.0000008}
+      position: {x: 0.0013055146, y: 0.10550973, z: -0.009609492}
+      rotation: {x: 0.03314959, y: -0.04978783, z: 0.020955779, w: 0.9979896}
+      scale: {x: 1.0000005, y: 1.0000001, z: 0.99999994}
     - name: PT_Medieval_Male_RightHandMiddle2
       parentName: PT_Medieval_Male_RightHandMiddle1
-      position: {x: 0.000000005662441, y: 0.043096017, z: 0.00000002771616}
-      rotation: {x: -0.031664263, y: 0.0022287332, z: 0.0042025475, w: -0.9994873}
-      scale: {x: 1.0000007, y: 1.000001, z: 1.0000007}
+      position: {x: 0.0000000047683715, y: 0.04309598, z: -0.0000000047683715}
+      rotation: {x: -0.031663597, y: 0.002228919, z: 0.0042029056, w: -0.9994873}
+      scale: {x: 1.0000006, y: 1.0000011, z: 1.0000007}
     - name: PT_Medieval_Male_RightHandMiddle3
       parentName: PT_Medieval_Male_RightHandMiddle2
-      position: {x: -0.0000000047683715, y: 0.036260366, z: -0.000000006854534}
-      rotation: {x: -0.033560853, y: 0.027190266, z: 0.022820536, w: 0.9988061}
-      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000006}
+      position: {x: -0.000000012516975, y: 0.036260158, z: 0.000000044107438}
+      rotation: {x: -0.033558168, y: 0.027191129, z: 0.02282069, w: 0.9988061}
+      scale: {x: 1.0000013, y: 1.0000012, z: 1.0000008}
     - name: PT_Medieval_Male_RightHandMiddle3_end
       parentName: PT_Medieval_Male_RightHandMiddle3
-      position: {x: -0, y: 0.0362604, z: 0}
+      position: {x: -0.0000000047683715, y: 0.03626047, z: -0.000000010728836}
+      rotation: {x: -0.0000018812714, y: -0.0000008177011, z: -0.00000030582302, w: 1}
+      scale: {x: 1.0000012, y: 1.000001, z: 1.0000006}
+    - name: PT_Medieval_Male_RightHandMiddle3_end_end
+      parentName: PT_Medieval_Male_RightHandMiddle3_end
+      position: {x: -0, y: 0.036260407, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_RightHandPinky1
       parentName: PT_Medieval_Male_RightHand
-      position: {x: 0.049614996, y: 0.09164539, z: -0.00226382}
-      rotation: {x: 0.019147096, y: -0.06645401, z: -0.0583827, w: 0.9958959}
-      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000004}
+      position: {x: 0.049615074, y: 0.091645576, z: -0.002263646}
+      rotation: {x: 0.019147879, y: -0.066454016, z: -0.05838308, w: 0.9958959}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000004}
     - name: PT_Medieval_Male_RightHandPinky2
       parentName: PT_Medieval_Male_RightHandPinky1
-      position: {x: -0.000000005960464, y: 0.029982349, z: -0.000000046640633}
-      rotation: {x: -0.03660961, y: -0.056195073, z: -0.018638454, w: -0.9975743}
-      scale: {x: 0.99999994, y: 1.0000007, z: 1.0000007}
+      position: {x: -0, y: 0.029982341, z: -0.000000023841856}
+      rotation: {x: -0.03660975, y: -0.056195773, z: -0.018638661, w: -0.9975742}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000007}
     - name: PT_Medieval_Male_RightHandPinky3
       parentName: PT_Medieval_Male_RightHandPinky2
-      position: {x: -0.0000000015646219, y: 0.025099877, z: 0.000000043064354}
-      rotation: {x: 0.028593745, y: -0.03341124, z: -0.02972892, w: 0.9985902}
-      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000006}
+      position: {x: 0.0000000023841857, y: 0.025099864, z: -0.000000039339064}
+      rotation: {x: 0.02858948, y: -0.03341257, z: -0.029730251, w: 0.99859023}
+      scale: {x: 1.0000001, y: 1.0000008, z: 1.0000001}
     - name: PT_Medieval_Male_RightHandPinky3_end
       parentName: PT_Medieval_Male_RightHandPinky3
+      position: {x: 0.0000000047683715, y: 0.02510004, z: -0.0000000500679}
+      rotation: {x: 0.0000047571953, y: 0.000000771135, z: -0.00000019988508, w: 1}
+      scale: {x: 0.99999994, y: 0.9999996, z: 0.9999998}
+    - name: PT_Medieval_Male_RightHandPinky3_end_end
+      parentName: PT_Medieval_Male_RightHandPinky3_end
       position: {x: -0, y: 0.025099933, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_RightHandRing1
       parentName: PT_Medieval_Male_RightHand
-      position: {x: 0.028258292, y: 0.099183336, z: -0.010718382}
-      rotation: {x: 0.03425859, y: -0.09770825, z: -0.009881942, w: 0.9945762}
-      scale: {x: 1.0000001, y: 1.000001, z: 1.0000007}
+      position: {x: 0.028258331, y: 0.099183545, z: -0.010718314}
+      rotation: {x: 0.03426158, y: -0.09770805, z: -0.009881316, w: 0.9945761}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1}
     - name: PT_Medieval_Male_RightHandRing2
       parentName: PT_Medieval_Male_RightHandRing1
-      position: {x: -0.0000000047683715, y: 0.04033798, z: 0.000000015646219}
-      rotation: {x: -0.03803083, y: -0.023811875, z: 0.001837166, w: -0.99899113}
-      scale: {x: 1.0000014, y: 1.0000014, z: 1.0000008}
+      position: {x: 0.000000009536743, y: 0.04033802, z: 0.0000000023841857}
+      rotation: {x: -0.038027987, y: -0.023811568, z: 0.0018364384, w: -0.99899125}
+      scale: {x: 1.0000008, y: 1.000001, z: 1.0000011}
     - name: PT_Medieval_Male_RightHandRing3
       parentName: PT_Medieval_Male_RightHandRing2
-      position: {x: 0.0000000035762786, y: 0.037050106, z: 0.00000003680587}
-      rotation: {x: 0.0009050593, y: 0.05903239, z: 0.041301094, w: 0.997401}
-      scale: {x: 1.0000008, y: 1.0000019, z: 1.0000008}
+      position: {x: 0.0000000047683715, y: 0.037050188, z: 0.00000005483627}
+      rotation: {x: 0.0009089296, y: 0.059033602, z: 0.041301962, w: 0.9974008}
+      scale: {x: 1.0000001, y: 0.999999, z: 1}
     - name: PT_Medieval_Male_RightHandRing3_end
       parentName: PT_Medieval_Male_RightHandRing3
+      position: {x: -0.0000000047683715, y: 0.03705004, z: -0.000000021457671}
+      rotation: {x: -0.000001769047, y: -0.00000094249833, z: -0.00000026710038, w: 1}
+      scale: {x: 0.9999997, y: 0.9999998, z: 0.99999934}
+    - name: PT_Medieval_Male_RightHandRing3_end_end
+      parentName: PT_Medieval_Male_RightHandRing3_end
       position: {x: -0, y: 0.037050094, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_RightHandThumb1
       parentName: PT_Medieval_Male_RightHand
-      position: {x: -0.038466644, y: 0.03519289, z: 0.013776366}
-      rotation: {x: 0.050323803, y: 0.08236079, z: 0.36537915, w: 0.92584145}
-      scale: {x: 1.0000006, y: 1.000001, z: 1.0000005}
+      position: {x: -0.03846667, y: 0.035193, z: 0.013776401}
+      rotation: {x: 0.05032428, y: 0.082360014, z: 0.36537948, w: 0.9258413}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.000001}
     - name: PT_Medieval_Male_RightHandThumb2
       parentName: PT_Medieval_Male_RightHandThumb1
-      position: {x: -0, y: 0.06397656, z: 0.0000000023841857}
-      rotation: {x: -0.007200946, y: -0.32976592, z: -0.03152046, w: 0.9435089}
-      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000004}
+      position: {x: 0.000000037550926, y: 0.063976645, z: -0.00000002503395}
+      rotation: {x: -0.007196148, y: -0.3297653, z: -0.031518225, w: 0.9435093}
+      scale: {x: 0.99999994, y: 0.9999991, z: 0.99999934}
     - name: PT_Medieval_Male_RightHandThumb3
       parentName: PT_Medieval_Male_RightHandThumb2
-      position: {x: 0.000000009536743, y: 0.03966941, z: -0.0000000023841857}
-      rotation: {x: -0.00838302, y: 0.19631733, z: 0.03455186, w: 0.97989565}
-      scale: {x: 0.9999998, y: 0.9999992, z: 1.0000002}
+      position: {x: -0.0000000667572, y: 0.039669387, z: -0.00000041365624}
+      rotation: {x: -0.008386857, y: 0.19631648, z: 0.03455141, w: 0.97989583}
+      scale: {x: 1.0000005, y: 1.0000001, z: 0.999999}
     - name: PT_Medieval_Male_RightHandThumb3_end
       parentName: PT_Medieval_Male_RightHandThumb3
-      position: {x: -0, y: 0.039669417, z: 0}
+      position: {x: -0.0000000047683715, y: 0.039669476, z: 0.000000020116568}
+      rotation: {x: -0.000000026077029, y: 0.00000044703478, z: 0.00000018673015, w: 1}
+      scale: {x: 0.9999997, y: 1.0000002, z: 1.0000004}
+    - name: PT_Medieval_Male_RightHandThumb3_end_end
+      parentName: PT_Medieval_Male_RightHandThumb3_end
+      position: {x: -0, y: 0.039669435, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PT_Medieval_Male_Peasant_01_e_1
       parentName: PT_Medieval_Male_Peasant_01_e
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 7.1054274e-15, y: 0, z: -0, w: 1}
+      rotation: {x: 1.4210855e-14, y: 5.04871e-29, z: -5.293956e-23, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Empty
-      parentName: character_peleryna(Clone)
+      parentName: KAPTUR(Clone)
       position: {x: -0.14506416, y: 1.4665403, z: -0.053131226}
-      rotation: {x: 0.05992872, y: -0.6891853, z: 0.084572725, w: 0.71713287}
+      rotation: {x: 0.059928767, y: -0.6891853, z: 0.08457272, w: 0.7171329}
       scale: {x: 9.317182, y: 9.317183, z: 9.317182}
     - name: Empty.001
-      parentName: character_peleryna(Clone)
+      parentName: KAPTUR(Clone)
       position: {x: 0.14911675, y: 1.4645901, z: -0.060780205}
-      rotation: {x: 0.0985427, y: 0.71999097, z: -0.09725964, w: 0.68003154}
+      rotation: {x: 0.09854272, y: 0.71999097, z: -0.09725964, w: 0.68003154}
       scale: {x: 9.317183, y: 9.317183, z: 9.3171835}
-    armTwist: 0.494
+    armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
     legTwist: 0.5
@@ -1016,7 +1131,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: aaf0d4faa0260114b835cabd823ccfd3, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e5b7c8c8d9af3da4fb453c2cba4336e0, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using NaughtyAttributes;
-
+using Delore.AI;
 
 namespace Delore.Player
 {
@@ -12,30 +12,32 @@ namespace Delore.Player
     {
 
         public NavMeshAgent agent;
+        public bool dead = false;
         [SerializeField] private CapsuleCollider capsuleCollider;
         [SerializeField] float slowingSpeed = 1.5f;
         [SerializeField] AudioSource playerSFX;
         [SerializeField] AudioClip steps;
+        [SerializeField] float duration;
+        [SerializeField] ParticleSystem deathParticle;
+        [SerializeField] CameraController controller;
         private float stepDelay = .4f;
         private float conDelay;
 
         public event Action Triggered;
-
-        public bool crouch;
-
+        [SerializeField]
         private Animator animator;
         private float speed;
         private MouseController mouseController;
         private PlayerStats playerStats;
         private Rigidbody rigidbody;
-        private Vector3 lastPosition;
-        private bool isMoving = false;
         private float cooldown = 0;
+
+        [AnimatorParam("animator")]
+        public string deathParam;
 
         private void Awake()
         {
             conDelay = stepDelay;
-            lastPosition = transform.position;
             PlayerData data = SaveSystem.LoadPlayer();
             if (data != null)
             {
@@ -45,16 +47,21 @@ namespace Delore.Player
 
         void Start()
         {
-            animator = GetComponent<Animator>();
             speed = agent.speed;
             mouseController = GetComponent<MouseController>();
             playerStats = GetComponent<PlayerStats>();
             rigidbody = GetComponent<Rigidbody>();
-            isMoving = true;
         }
 
         void Update()
         {
+            if (dead)
+            {
+                rigidbody.velocity = new Vector3(0, -.2f, 0);
+                rigidbody.angularVelocity = new Vector3(0, -.2f, 0);
+                return;
+            }
+
             rigidbody.velocity = new Vector3(0,0,0);
             rigidbody.angularVelocity = new Vector3(0, 0, 0);
             if (Mathf.Abs(rigidbody.velocity.x) > 1 || Mathf.Abs(rigidbody.velocity.y) > 1)
@@ -100,7 +107,6 @@ namespace Delore.Player
             {
                 PlayStepSound();
             }
-            lastPosition = transform.position;
         }
 
 
@@ -120,14 +126,14 @@ namespace Delore.Player
         }
 
 
-        private void OnTriggerEnter(Collider other)
+/*        private void OnTriggerEnter(Collider other)
         {
             if (other.transform.position.y > 4 && other.transform.position.y < 4.65f)
                 Crouch();
-        }
+        }*/
 
 
-        private void Crouch()
+        /*private void Crouch()
         {
             crouch = !animator.GetBool("Crouch");
 
@@ -155,7 +161,7 @@ namespace Delore.Player
             capsuleCollider.center = new Vector3(capsuleCollider.center.x, pos_y, capsuleCollider.center.z);
             capsuleCollider.height = height;
             agent.height = agentHeight;
-        }
+        }*/
 
         private void PlayStepSound()
         {
@@ -167,12 +173,12 @@ namespace Delore.Player
             }
         }
 
-        private void OnTriggerExit(Collider other)
+/*        private void OnTriggerExit(Collider other)
         {
             if (animator.GetBool("Crouch"))
                 if (other.transform.position.y > 4 && other.transform.position.y < 4.65f)
                     Crouch();
-        }
+        }*/
 
 
 
@@ -181,10 +187,11 @@ namespace Delore.Player
 
         private void OnCollisionEnter(Collision collision)
         {
-
             if(collision.transform.tag == "Enemy")
             {
-                Triggered?.Invoke();
+                collision.transform.GetComponent<AIMovement>().waiting = false;
+                dead = true;
+                StartCoroutine(DeathAnimation());            
             }
 
             /*if (collision.transform.tag == "Pickup")
@@ -196,6 +203,27 @@ namespace Delore.Player
 
         }
 
+        private IEnumerator DeathAnimation()
+        {
+            animator.SetBool(deathParam,true);
+            controller.DisableLooking();
+            rigidbody.isKinematic = true;
+            float height = 0;
+            while (agent.baseOffset > -.8f)
+            {
+                height -= Time.unscaledDeltaTime / duration;
+                agent.baseOffset = height;
+                yield return null;
+            }
+            deathParticle.Play();
+            yield return new WaitForSeconds(deathParticle.main.duration - .5f);
+            capsuleCollider.enabled = false;
+            rigidbody.isKinematic = false;
+            agent.enabled = false;
+            yield return new WaitForSeconds(2f);
+
+            Triggered?.Invoke();
+        }
 
     }
 }

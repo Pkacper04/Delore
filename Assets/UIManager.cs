@@ -29,6 +29,10 @@ public class UIManager : MonoBehaviour
     public string afterLifeScene;
     [Scene]
     public string loadingScene;
+    [Scene]
+    public string restartScene;
+    [Scene]
+    public string mainMenuScene;
 
     private VIDE_Assign asign;
     private GraphicRaycaster raycaster;
@@ -158,7 +162,13 @@ public class UIManager : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(restartScene);
+    }
+
+    public void ExitGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(mainMenuScene);
     }
 
 

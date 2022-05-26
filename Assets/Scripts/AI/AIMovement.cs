@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using NaughtyAttributes;
-
+using Delore.Player;
 
 namespace Delore.AI
 {
@@ -18,7 +18,9 @@ namespace Delore.AI
 
         float timer;
         bool isChasing = false;
-        bool waiting = false;
+        public bool waiting = false;
+        Movement playerMovement;
+       
 
         public AIType aiType;
 
@@ -27,6 +29,12 @@ namespace Delore.AI
         [SerializeField] List<Vector3> patrolPoints = new List<Vector3>();
         [SerializeField] List<float> patrolRotations= new List<float>();
         [SerializeField] float rotationSpeed = 10f;
+        [SerializeField] float chasingSpeed = 3f;
+        [SerializeField] float patrolSpeed = 2f;
+        [SerializeField] Animator animator;
+
+        [AnimatorParam("animator")]
+        public string speedAnimator;
 
         [SerializeField]
         float timeOfChasing = 3f;
@@ -44,23 +52,43 @@ namespace Delore.AI
             detection = GetComponent<AIDetection>();
             speed = agent.speed;
             patrolPointsNumber = patrolPoints.Count;
+            playerMovement = player.GetComponent<Movement>();
         }
 
         void Update()
         {
+            if(playerMovement.dead && !waiting)
+            {
+                Debug.Log("dziala");
+                agent.isStopped = true;
+                isChasing = false;
+                StartCoroutine(Patrol());
+                UpdateAnimation();
+                return;
+            }
+            else if (playerMovement.dead)
+            {
+                isChasing = false;
+                UpdateAnimation();
+                return;
+            }
+            
+
             if (detection.FieldOfView() || isChasing)
                 Mover();
                 
             if (!isChasing && !waiting)
                 StartCoroutine(Patrol());
+
+            UpdateAnimation();
         }
 
         private void Mover()
         {
+            agent.speed = chasingSpeed;
+            agent.updateRotation = true;
             if (detection.FieldOfView())
             {
-                if (speed != agent.speed)
-                    agent.speed += 1f;
                 agent.isStopped = false;
                 timer = timeOfChasing;
                 agent.destination = AIType.Aggressive == aiType ? player.transform.position : RunningDirection();
@@ -80,16 +108,26 @@ namespace Delore.AI
         }
 
 
-
+        private void UpdateAnimation()
+        {
+            Vector3 velocity = agent.velocity;
+            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+            float speed = localVelocity.z;
+            float endSpeed = speed / agent.speed;
+            if (!isChasing)
+                endSpeed /= 2;
+            animator.SetFloat(speedAnimator, endSpeed);
+        }
         private IEnumerator Patrol()
         {
+            agent.speed = patrolSpeed;
             agent.updateRotation = true;
             waiting = true;
             if (agent.isStopped)
                 agent.isStopped = false;
 
             agent.destination = patrolPoints[currentPoint];
-            
+            Debug.Log("new destination: "+agent.destination);
 
             yield return new WaitUntil(() => Vector3.Distance(transform.position,patrolPoints[currentPoint]) <= 1f);
 

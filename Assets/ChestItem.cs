@@ -22,7 +22,7 @@ public class ChestItem : MonoBehaviour
             if(item.name == "Chest_Lid")
                 chestLid = item;
         }
-        
+        Debug.Log(chestLid.name);
         if (PickupCore.Continued)
         {
             Opened = PlayerPrefs.GetInt(gameObject.name);
@@ -59,6 +59,7 @@ public class ChestItem : MonoBehaviour
 
     private async void ChestAnimation()
     {
+        Debug.Log("animation");
         for (int i = 0; i < 90; i++)
         {
             chestLid.Rotate(-1, 0, 0);

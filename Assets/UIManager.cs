@@ -19,11 +19,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject GameOverScreen;
     [SerializeField] private Movement gameOverTrigger;
     [SerializeField] private float dialogueSpeed;
-    [SerializeField] private Material playerDissolveMaterial;
     [SerializeField] private float duration;
+    [SerializeField] private float deathduration;
     [SerializeField] private float startingDuration;
     [SerializeField] private float dialogueDuration;
     [SerializeField] private CanvasGroup blackScreen;
+    [SerializeField] private MouseController mouseController;
 
     [Scene]
     public string afterLifeScene;
@@ -43,7 +44,6 @@ public class UIManager : MonoBehaviour
         blackScreen.alpha = 1;
         blackScreen.blocksRaycasts = true;
         StartCoroutine(SmoothStarting());
-        playerDissolveMaterial.SetFloat("DisolveValue_",0);
         GameOverScreen.SetActive(false);
         DisableCanvas(container_NPC);
         DisableCanvas(container_Player);
@@ -143,7 +143,8 @@ public class UIManager : MonoBehaviour
         VD.OnEnd -= End;
         VD.EndDialogue();
         if (SceneManager.GetActiveScene().name == afterLifeScene)
-            StartCoroutine(PlayerDissolver());
+            StartCoroutine(mouseController.StartProlog());
+            
     }
 
     private void OnDisable()
@@ -174,41 +175,10 @@ public class UIManager : MonoBehaviour
 
     private void GameOver()
     {
-        GameOverScreen.SetActive(true);
-        Time.timeScale = 0;
-        PauseController.GameEnded = true;
+        StartCoroutine(SmoothEnding(false));
     }
 
-    private IEnumerator PlayerDissolver()
-    {
-        yield return new WaitForSeconds(.5f);
-        float disolve = 0;
-
-        while (disolve < 1f)
-        {
-            disolve += Time.deltaTime / duration;
-            disolve = Mathf.Clamp01(disolve); 
-            playerDissolveMaterial.SetFloat("DisolveValue_", disolve);
-            yield return null;
-        }
-
-        yield return new WaitForSeconds(1);
-        
-        if (SceneManager.GetActiveScene().name == afterLifeScene)
-        {
-            gameOverTrigger.gameObject.SetActive(false);
-            playerDissolveMaterial.SetFloat("DisolveValue_", 0);
-            PauseController.GamePaused = false;
-            PauseController.BlockPauseMenu = false;
-            StartCoroutine(SmoothEnding());
-        }
-        else
-        {
-            GameOver();
-        }
-    }
-
-    private IEnumerator SmoothStarting()
+    public IEnumerator SmoothStarting()
     {
         float blackAlpha = 1;
         while(blackScreen.alpha > 0)
@@ -221,19 +191,31 @@ public class UIManager : MonoBehaviour
         blackScreen.blocksRaycasts = false;
     }
 
-    private IEnumerator SmoothEnding()
+    public IEnumerator SmoothEnding(bool changescene = true)
     {
         float blackAlpha = 0;
         while (blackScreen.alpha < 1)
         {
-            blackAlpha += Time.unscaledDeltaTime / startingDuration;
+            if(changescene)
+                blackAlpha += Time.unscaledDeltaTime / startingDuration;
+            else
+                blackAlpha += Time.unscaledDeltaTime / deathduration;
             blackAlpha = Mathf.Clamp01(blackAlpha);
             blackScreen.alpha = blackAlpha;
             yield return null;
         }
         blackScreen.blocksRaycasts = true;
-        SceneManager.LoadScene(loadingScene);
+        if(changescene)
+            SceneManager.LoadScene(loadingScene);
+        else
+        {
+            GameOverScreen.SetActive(true);
+            Time.timeScale = 0;
+            PauseController.GameEnded = true;
+        }
     }
+
+
 
     private IEnumerator EnableDialogue(VD.NodeData data)
     {

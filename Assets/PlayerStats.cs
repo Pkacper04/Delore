@@ -31,9 +31,15 @@ public class PlayerStats : MonoBehaviour
         PickedUpItems.Add(itemId,itemName);
     }
 
-    public void DeleteItem(int itemId, string itemName)
+    public void DeleteItem(int itemId)
     {
+        UsedItems.Add(itemId, PickedUpItems[itemId]);
         PickedUpItems.Remove(itemId);
-        UsedItems.Add(itemId,itemName);
+        
+    }
+
+    public bool CheckItem(int itemID)
+    {
+        return PickedUpItems.Keys.Contains(itemID);
     }
 }

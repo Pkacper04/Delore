@@ -3,7 +3,32 @@ guid: aaf0d4faa0260114b835cabd823ccfd3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 2f2dd0136ef698d45aa600e566655f47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PT_Medieval_Eyes_mat
+    second: {fileID: 2100000, guid: c2baac48974d275439a9828201a6fdd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PT_Medieval_Hair_mat
+    second: {fileID: 2100000, guid: db4a11164cf5e304d936e6c3b6f8dc83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PT_Medieval_Skin_mat
+    second: {fileID: 2100000, guid: 3053a1f99da379f4fa4b5d4034ac9f82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PT_Medieval_mat
+    second: {fileID: 2100000, guid: 82508c688ef636342b9383d42d526e97, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -76,6 +101,7 @@ ModelImporter:
   - 537babbea65707b45988ace5b02d55a1
   - 479b83c7a833a8d4bb6f5468fe41cc07
   - 0f01c4c7fd3fd1a4aa40d78d3023e6ea
+  - 73cf8ad98fef3134c85f242c39dab2b2
   - c30d602bc048ce845925609faa76c689
   importAnimation: 1
   humanDescription:

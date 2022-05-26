@@ -32,6 +32,8 @@ namespace Delore.AI
         [SerializeField] float chasingSpeed = 3f;
         [SerializeField] float patrolSpeed = 2f;
         [SerializeField] Animator animator;
+        [SerializeField] AudioTrigger audioTrigger;
+        [SerializeField] AudioClip spotedClip;
 
         [AnimatorParam("animator")]
         public string speedAnimator;
@@ -62,7 +64,8 @@ namespace Delore.AI
                 Debug.Log("dziala");
                 agent.isStopped = true;
                 isChasing = false;
-                StartCoroutine(Patrol());
+                if(patrolPoints.Count != 0)
+                    StartCoroutine(Patrol());
                 UpdateAnimation();
                 return;
             }
@@ -77,7 +80,7 @@ namespace Delore.AI
             if (detection.FieldOfView() || isChasing)
                 Mover();
                 
-            if (!isChasing && !waiting)
+            if (!isChasing && !waiting && patrolPoints.Count != 0)
                 StartCoroutine(Patrol());
 
             UpdateAnimation();
@@ -85,6 +88,11 @@ namespace Delore.AI
 
         private void Mover()
         {
+            if(!isChasing)
+            {
+                Debug.Log("dzwiek");
+                audioTrigger.playOneTime(spotedClip,.6f);
+            }
             agent.speed = chasingSpeed;
             agent.updateRotation = true;
             if (detection.FieldOfView())

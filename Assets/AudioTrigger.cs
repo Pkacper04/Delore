@@ -14,11 +14,16 @@ public class AudioTrigger : MonoBehaviour
     [SerializeField, ShowIf("haveAmbient")]
     private AudioSource ambientSound;
 
-    public void playOneTime(AudioClip clip)
+    public void playOneTime(AudioClip clip, float volume = -1)
     {
         source.loop = false;
         source.clip = clip;
         source.Play();
+        if (volume != -1)
+        {
+            source.volume = volume;
+            StartCoroutine(WaitToChangeVolume());
+        }
     }
 
     public void PlayLoop(AudioClip clip)
@@ -62,5 +67,11 @@ public class AudioTrigger : MonoBehaviour
         source.Play();
     }
 
+
+    private IEnumerator WaitToChangeVolume()
+    {
+        yield return new WaitUntil(() => source.isPlaying == false);
+        source.volume = 1;
+    }
 
 }

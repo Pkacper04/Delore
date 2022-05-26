@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlayerDissolve
+  m_Shader: {fileID: -6465566751694194690, guid: 4f5aaa93f1259d44283ffcc9a1bbd37f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_303260840b6a42ca880871fb8d2937d7:
+        m_Texture: {fileID: 2800000, guid: 093505a5d838d4149a9f207bf3c33662, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_c42ef8e5f2b7493daf41282d34fd13cc:
+        m_Texture: {fileID: 2800000, guid: 093505a5d838d4149a9f207bf3c33662, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_c7650ba5131c4591b1aa9d30b802d795:
+        m_Texture: {fileID: 2800000, guid: a42dbb1cb50b40c4eb5413a146579045, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - DissolveAmount_: 0
+    - Vector1_00dd12ded1cc457f9698446ac348a30f: 0
+    - Vector1_1ae851a4225c43a9aba1d7f7627ca86d: 0
+    - Vector1_3cf20b109b63460db11cb4ba057f529c: 0.0003
+    - Vector1_8391bd7314db4a57b08acf65c3c7bfff: 0
+    - Vector1_83cbc27400464fc8a82900761ac4588e: 0
+    - Vector1_b9c02df869104e9089a7a82d1754b96e: 100000
+    m_Colors:
+    - Color_32798d1f4058416c8f4e3a7a330dbcfc: {r: 1, g: 1, b: 1, a: 1}
+    - Color_d4e4ae8cb86c4772b95c8c65516ea952: {r: 0.7397338, g: 0, b: 4.472027, a: 0}
+  m_BuildTextureStacks: []

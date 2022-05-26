@@ -17,8 +17,8 @@ namespace Delore.Player
         [SerializeField] float slowingSpeed = 1.5f;
         [SerializeField] AudioSource playerSFX;
         [SerializeField] AudioClip steps;
+        [SerializeField] AudioClip death;
         [SerializeField] float duration;
-        [SerializeField] ParticleSystem deathParticle;
         [SerializeField] CameraController controller;
         private float stepDelay = .4f;
         private float conDelay;
@@ -26,7 +26,7 @@ namespace Delore.Player
         public event Action Triggered;
         [SerializeField]
         private Animator animator;
-        private float speed;
+        public float speed;
         private MouseController mouseController;
         private PlayerStats playerStats;
         private Rigidbody rigidbody;
@@ -82,6 +82,8 @@ namespace Delore.Player
 
         private void MoveToCursor()
         {
+            if (agent.isStopped)
+                agent.isStopped = false;
             RaycastHit hit = mouseController.GetMousePoint();
 
             if (CanMove(hit.point))
@@ -100,9 +102,10 @@ namespace Delore.Player
 
             Vector3 velocity = agent.velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-            float speed = localVelocity.z;
-            animator.SetFloat("Forward", speed / agent.speed);
-            stepDelay = conDelay * ((conDelay*2) / (conDelay + ((speed / agent.speed) * conDelay)));
+            speed = localVelocity.z;
+            speed = speed / agent.speed;
+            animator.SetFloat("Forward", speed);
+            stepDelay = conDelay * ((conDelay*2) / (conDelay + (speed * conDelay)));
             if (speed / agent.speed > 0)
             {
                 PlayStepSound();
@@ -191,6 +194,9 @@ namespace Delore.Player
             {
                 collision.transform.GetComponent<AIMovement>().waiting = false;
                 dead = true;
+                playerSFX.Stop();
+                playerSFX.clip = death;
+                playerSFX.Play();
                 StartCoroutine(DeathAnimation());            
             }
 
@@ -208,20 +214,13 @@ namespace Delore.Player
             animator.SetBool(deathParam,true);
             controller.DisableLooking();
             rigidbody.isKinematic = true;
-            float height = 0;
-            while (agent.baseOffset > -.8f)
-            {
-                height -= Time.unscaledDeltaTime / duration;
-                agent.baseOffset = height;
-                yield return null;
-            }
-            deathParticle.Play();
-            yield return new WaitForSeconds(deathParticle.main.duration - .5f);
             capsuleCollider.enabled = false;
-            rigidbody.isKinematic = false;
             agent.enabled = false;
-            yield return new WaitForSeconds(2f);
 
+            yield return new WaitForSeconds(3f);
+            
+            yield return new WaitForSeconds(2f);
+            
             Triggered?.Invoke();
         }
 

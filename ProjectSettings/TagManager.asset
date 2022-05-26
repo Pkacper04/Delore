@@ -8,6 +8,7 @@ TagManager:
   - CameraController
   - Pickup
   - NPC
+  - Door
   layers:
   - Default
   - TransparentFX

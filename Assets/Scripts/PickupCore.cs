@@ -6,12 +6,11 @@ public class PickupCore : MonoBehaviour
 {
     public static bool Continued { get; set; }
 
-    [SerializeField]
-    private List<ChestItem> chests = new List<ChestItem>();
-    [SerializeField]
-    private List<string> itemsNames = new List<string>();
-    [SerializeField]
-    private List<int> itemsId = new List<int>();
+    public List<ChestItem> chests = new List<ChestItem>();
+
+    public List<string> itemsNames = new List<string>();
+
+    public List<int> itemsId = new List<int>();
 
     private void Awake()
     {
@@ -27,11 +26,8 @@ public class PickupCore : MonoBehaviour
             Continued = false;
             for(int i=0;i<chests.Count;i++)
             {
-                int item = Random.Range(0, itemsId.Count);
-                chests[i].ItemId = itemsId[item];
-                chests[i].ItemName = itemsNames[item];
-                itemsId.RemoveAt(item);
-                itemsNames.RemoveAt(item);
+                chests[i].ItemId = itemsId[i];
+                chests[i].ItemName = itemsNames[i];
             }
         }
     }

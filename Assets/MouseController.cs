@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using NaughtyAttributes;
+using UnityEngine.VFX;
+using UnityEngine.SceneManagement;
 namespace Delore.Player
 {
     public class MouseController : MonoBehaviour
@@ -16,31 +18,61 @@ namespace Delore.Player
         [SerializeField]
         private float duration = 2f;
         [SerializeField]
-        private ParticleSystem particle;
+        private VisualEffect effect;
+        [SerializeField]
+        private ParticleSystem light;
         [SerializeField]
         private SkinnedMeshRenderer[] playerRenderers;
+        [SerializeField]
+        private MeshRenderer[] playerMeshes;
         [SerializeField]
         private AudioTrigger audioSFX;
         [SerializeField]
         private AudioClip appearAudio;
+        [SerializeField]
+        private UIManager manager;
+        [SerializeField]
+        private Animator animator;
+        [AnimatorParam("animator")]
+        public string startParam;
+        [AnimatorParam("animator")]
+        public string blockStartParam;
 
-        [SerializeField] private Material playerDissolveMaterial;
+        [Scene]
+        public string prologScene;
+        [Scene]
+        public string afterlifeScene;
 
         public bool MovingToChest { get; set; }
+
+        private Coroutine coroutine = null;
         // Start is called before the first frame update
 
         private void Start()
         {
+            effect.Stop();
             playerMovement = GetComponent<Movement>();
             playerStats = GetComponent<PlayerStats>();
             core = GetComponent<PickupCore>();
-            /*foreach (var item in playerRenderers)
+            
+            if (SceneManager.GetActiveScene().name == prologScene)
             {
-                item.enabled = false;
+                foreach (var item in playerRenderers)
+                {
+                    item.enabled = false;
+                }
+                foreach (var item in playerMeshes)
+                {
+                    item.enabled = false;
+                }
+                PauseController.GamePaused = true;
+                PauseController.BlockPauseMenu = true;
+                StartCoroutine(PlayerAppear());
             }
-            PauseController.GamePaused = true;
-            PauseController.BlockPauseMenu = true;
-            StartCoroutine(PlayerAppear());*/
+            else
+            {
+                animator.SetBool(blockStartParam,true);
+            }
         }
 
         private void Update()
@@ -56,7 +88,6 @@ namespace Delore.Player
 
             if (PauseController.GamePaused)
                 return;
-            CheckForAttack();
 
             if (Input.GetMouseButtonDown(0))
                 PickUpItem();
@@ -66,32 +97,44 @@ namespace Delore.Player
         {
             RaycastHit hit = GetMousePoint();
 
-            if (hit.collider == null || hit.collider.tag != "Pickup")
+            if (hit.collider == null)
                 return;
+            if (hit.collider.tag == "Pickup")
+            {
+                ChestItem item = hit.collider.GetComponent<ChestItem>();
 
-            ChestItem item = hit.collider.GetComponent<ChestItem>();
+                if (item.Opened == 1)
+                    return;
 
-            if (item.Opened == 1)
-                return;
+                NavMeshPath path = new NavMeshPath();
 
-            NavMeshPath path = new NavMeshPath();
+                NavMeshHit navHit;
+                NavMesh.SamplePosition(hit.transform.position, out navHit, 20f, -1);
 
-            NavMeshHit navHit;
-            NavMesh.SamplePosition(hit.transform.position, out navHit, 20f, -1);
+                MovingToChest = true;
+                playerMovement.PickUpMove(navHit.position);
 
-            MovingToChest = true;
-            playerMovement.PickUpMove(navHit.position);
+                coroutine = StartCoroutine(WaitToOpenChest(navHit.position, item));
+            }
+            else if(hit.collider.tag == "Door")
+            {
+                LockedDoor door = hit.collider.GetComponent<LockedDoor>();
 
-            item.OpenChest();
+                playerMovement.PickUpMove(hit.transform.position);
 
-            playerStats.AddItem(item.ItemId, item.ItemName);
-            /*object[] parms = new object[2] { navHit.position, item };
-            StartCoroutine("WaitToOpenChest",parms);*/
+                coroutine = StartCoroutine(WaitToOpenDoor(hit.transform.position, door));
+                
+            }
 
         }
 
         public RaycastHit GetMousePoint()
         {
+            if(coroutine != null)
+            {
+                StopCoroutine(coroutine);
+                coroutine = null;
+            }
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -99,65 +142,75 @@ namespace Delore.Player
             return hit;
         }
 
-        public void CheckForAttack()
+        private IEnumerator WaitToOpenChest(Vector3 position, ChestItem item)
         {
-            RaycastHit hit = GetMousePoint();
-            if (hit.collider == null)
-                return;
-
-            if(hit.collider.tag == "Pickup")
-            {
-                Debug.Log("na przedmiocie");
-            }
-
+            
+            yield return new WaitUntil(() => Vector3.Distance(transform.position, position) < .3f);
+            playerMovement.agent.isStopped = true;
+            item.OpenChest();
+            playerStats.AddItem(item.ItemId, item.ItemName);
+            coroutine = null;
+            
         }
 
-        private IEnumerator WaitToOpenChest(object[] parms)
+        private IEnumerator WaitToOpenDoor(Vector3 position, LockedDoor door)
         {
-
-            Vector3 targetPosition = (Vector3)parms[0];
-
-            Debug.Log("test");
-            yield return new WaitUntil(() => MovingToChest == false);
-            Debug.Log(playerMovement.agent.destination);
-            Debug.Log((Vector3)parms[0]);
-            if (playerMovement.agent.destination == (Vector3)parms[0])
-            {
-                ChestItem item = (ChestItem)parms[1];
-
-                item.OpenChest();
-
-                playerStats.AddItem(item.ItemId, item.ItemName);
-            }
+            yield return new WaitUntil(() => Vector3.Distance(transform.position, position) < door.stoppingDistance);
+            playerMovement.agent.isStopped = true;
+            door.OpenDoor();
+            coroutine = null;
         }
 
         IEnumerator PlayerAppear()
         {
             yield return new WaitForSeconds(appearDelay);
-            audioSFX.playOneTime(appearAudio);
-            particle.Play();
-            float disolve = 1;
+            effect.Play();
+            light.Play();
             yield return new WaitForSeconds(.5f);
-            
-            while (disolve > 0)
+            audioSFX.playOneTime(appearAudio);
+            yield return new WaitForSeconds(1f);
+            animator.SetBool(startParam, true);
+            foreach(SkinnedMeshRenderer renderer in playerRenderers)
             {
-                PauseController.GamePaused = true;
-                PauseController.BlockPauseMenu = true;
-                disolve -= Time.deltaTime / duration;
-                disolve = Mathf.Clamp01(disolve);
-                playerDissolveMaterial.SetFloat("_Dissolve", disolve);
-                foreach (var item in playerRenderers)
-                {
-                    item.enabled = true;
-                }
-                yield return null;
-                
+                renderer.enabled = true;
             }
+            foreach (var item in playerMeshes)
+            {
+                item.enabled = true;
+            }
+            effect.Stop();
+            light.Stop();
 
+
+            StartCoroutine(WaitForEndAnimation());
+        }
+
+        public IEnumerator StartProlog()
+        {
+            yield return new WaitForSeconds(appearDelay);
+            effect.Play();
+            light.Play();
+            yield return new WaitForSeconds(1f);
+            foreach (SkinnedMeshRenderer renderer in playerRenderers)
+            {
+                renderer.enabled = false;
+            }
+            foreach (var item in playerMeshes)
+            {
+                item.enabled = false;
+            }
+            effect.Stop();
+            light.Stop();
+            yield return new WaitForSeconds(2);
+            StartCoroutine(manager.SmoothEnding());
+
+        }
+
+        private IEnumerator WaitForEndAnimation()
+        {
+            yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Movement"));
             PauseController.GamePaused = false;
             PauseController.BlockPauseMenu = false;
         }
-
-
     }
 }

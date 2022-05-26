@@ -10,8 +10,7 @@ public class PauseController : MonoBehaviour
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject settings;
 
-
-    private void Start()
+    private void Awake()
     {
         Time.timeScale = 1;
         canvas.enabled = false;

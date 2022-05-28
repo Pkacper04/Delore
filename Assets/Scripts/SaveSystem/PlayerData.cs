@@ -18,14 +18,22 @@ public class PlayerData
     public int levelID;
     public SortedList<int, string> pickedUpItems = new SortedList<int, string>();
     public SortedList<int, string> usedItems = new SortedList<int, string>();
+    public List<bool> changesRight = new List<bool>();
     
     public PlayerData(GameObject player)
     {
+        Debug.Log(player.name);
         CameraController controller = GameObject.FindGameObjectWithTag("CameraController").GetComponent<CameraController>();
+
+        changesRight = GameObject.FindObjectOfType<GetCameraChanges>().ReturnCameraRights();
 
         position_x = player.transform.position.x;
         position_y = player.transform.position.y;
         position_z = player.transform.position.z;
+
+        Debug.Log("pos x: "+position_x);
+        Debug.Log("pos y: "+position_y);
+        Debug.Log("pos z: "+position_z);
 
         camNumber = controller.camNumber;
         xAxis = controller.xAxis;
@@ -36,6 +44,15 @@ public class PlayerData
 
         PlayerStats stats = player.GetComponent<PlayerStats>();
         pickedUpItems = stats.PickedUpItems;
+        foreach(int keyId in pickedUpItems.Keys)
+        {
+            Debug.Log("Saved keys id: "+keyId);
+        }
+
+        foreach (string keyName in pickedUpItems.Values)
+        {
+            Debug.Log("Saved keys name: " + keyName);
+        }
         usedItems = stats.UsedItems;
     }
 

@@ -12,6 +12,7 @@ public class PickupCore : MonoBehaviour
 
     public List<int> itemsId = new List<int>();
 
+
     private void Awake()
     {
         if (!this.enabled)
@@ -20,6 +21,7 @@ public class PickupCore : MonoBehaviour
         if (data != null)
         {
             Continued = true;
+                    
         }
         else
         {

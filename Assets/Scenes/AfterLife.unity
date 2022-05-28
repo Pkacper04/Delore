@@ -24463,6 +24463,18 @@ PrefabInstance:
       propertyPath: blockStartParam
       value: WithoutStart
       objectReference: {fileID: 0}
+    - target: {fileID: 1191243023099082057, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: chests.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191243023099082057, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: itemsId.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191243023099082057, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: itemsNames.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1658059458453867283, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
       propertyPath: m_RootOrder
       value: 18

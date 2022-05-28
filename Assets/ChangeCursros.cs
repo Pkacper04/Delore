@@ -5,6 +5,7 @@ using NaughtyAttributes;
 public class ChangeCursros : MonoBehaviour
 {
     [SerializeField] private Texture2D activeCursor;
+    [SerializeField] private Texture2D pickUpCursor;
     [SerializeField] private Texture2D[] declineCursors;
 
 
@@ -18,6 +19,7 @@ public class ChangeCursros : MonoBehaviour
     static public ChangeCursros instance;
 
     private static Texture2D active;
+    private static Texture2D pickUp;
     private static Texture2D[] decline;
     private static CursorMode cursorMode;
     private static Vector2 hotSpot;
@@ -27,6 +29,7 @@ public class ChangeCursros : MonoBehaviour
     void Start()
     {
         active = activeCursor;
+        pickUp = pickUpCursor;
         decline = declineCursors;
         hotSpot =  new Vector2(200, 100);
         cursorMode = CursorMode.Auto;
@@ -42,6 +45,11 @@ public class ChangeCursros : MonoBehaviour
     public static void ActiveCursor()
     {
         Cursor.SetCursor(active, hotSpot, cursorMode);
+    }
+
+    public static void PickUpCursor()
+    {
+        Cursor.SetCursor(pickUp, hotSpot, cursorMode);
     }
 
     IEnumerator waitForChange()

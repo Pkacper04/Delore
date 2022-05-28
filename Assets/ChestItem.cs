@@ -12,8 +12,12 @@ public class ChestItem : MonoBehaviour
 
     public int Opened { get; set; }
 
+
     [SerializeField]
-    private Vector3[] positions;
+    private AudioTrigger trigger;
+
+    [SerializeField]
+    private AudioClip openSound;
 
     void Start()
     {
@@ -26,11 +30,10 @@ public class ChestItem : MonoBehaviour
         if (PickupCore.Continued)
         {
             Opened = PlayerPrefs.GetInt(gameObject.name);
-            transform.position = positions[PlayerPrefs.GetInt(gameObject.name+"pos")];
             ItemName = PlayerPrefs.GetString(gameObject.name + "name");
             ItemId = PlayerPrefs.GetInt(gameObject.name + "id");
-            if(Opened == 1)
-                ChestAnimation();
+            if (Opened == 1)
+                ChestOpened();
         }
         else
         {
@@ -38,12 +41,6 @@ public class ChestItem : MonoBehaviour
             PlayerPrefs.SetInt(gameObject.name+"id", ItemId);
             PlayerPrefs.SetString(gameObject.name + "name", ItemName);
             Opened = 0;
-            if (positions.Length != 0)
-            {
-                int pos = Random.Range(0, positions.Length);
-                PlayerPrefs.SetInt(gameObject.name+"pos", pos);
-                transform.position = positions[pos];
-            }
         }
 
     }
@@ -59,14 +56,20 @@ public class ChestItem : MonoBehaviour
 
     private async void ChestAnimation()
     {
+        trigger.playOneTime(openSound);
         Debug.Log("animation");
-        for (int i = 0; i < 90; i++)
+        for (int i = 0; i < 45; i++)
         {
-            chestLid.Rotate(-1, 0, 0);
+            chestLid.Rotate(-2, 0, 0);
             await Task.Delay(1);
         }
+        SaveChest();
     }
 
+    private void ChestOpened()
+    {
+        chestLid.Rotate(-90,0,0);
+    }
     public void SaveChest()
     {
         PlayerPrefs.SetInt(gameObject.name, Opened);

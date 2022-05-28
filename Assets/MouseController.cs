@@ -46,6 +46,7 @@ namespace Delore.Player
         public bool MovingToChest { get; set; }
 
         private Coroutine coroutine = null;
+        private ChangeColor objectScript;
         // Start is called before the first frame update
 
         private void Start()
@@ -54,7 +55,12 @@ namespace Delore.Player
             playerMovement = GetComponent<Movement>();
             playerStats = GetComponent<PlayerStats>();
             core = GetComponent<PickupCore>();
-            
+            PlayerData data = SaveSystem.LoadPlayer();
+            if (data != null)
+            {
+                animator.SetBool(blockStartParam, true);
+                return;
+            }
             if (SceneManager.GetActiveScene().name == prologScene)
             {
                 foreach (var item in playerRenderers)
@@ -71,7 +77,7 @@ namespace Delore.Player
             }
             else
             {
-                animator.SetBool(blockStartParam,true);
+                animator.SetBool(blockStartParam, true);
             }
         }
 
@@ -91,6 +97,35 @@ namespace Delore.Player
 
             if (Input.GetMouseButtonDown(0))
                 PickUpItem();
+            else
+            {
+                MouseHover();
+            }
+        }
+
+
+        private void MouseHover()
+        {
+            if (SceneManager.GetActiveScene().name == afterlifeScene)
+                return;
+            RaycastHit hit = GetMousePoint(false);
+
+            if (hit.transform.tag == "Pickup" || hit.transform.tag == "Door" || hit.transform.tag == "CheckPoint")
+            {
+                ChangeObjColor(hit);
+                ChangeCursros.PickUpCursor();
+            }
+            else
+            {
+                if (objectScript == null)
+                    return;
+                objectScript.OutHover();
+                objectScript = null;
+                ChangeCursros.ActiveCursor();
+
+            }
+
+
         }
 
         private void PickUpItem()
@@ -106,31 +141,33 @@ namespace Delore.Player
                 if (item.Opened == 1)
                     return;
 
-                NavMeshPath path = new NavMeshPath();
-
-                NavMeshHit navHit;
-                NavMesh.SamplePosition(hit.transform.position, out navHit, 20f, -1);
-
                 MovingToChest = true;
-                playerMovement.PickUpMove(navHit.position);
-
-                coroutine = StartCoroutine(WaitToOpenChest(navHit.position, item));
+                playerMovement.PickUpMove(hit.transform.position);
+                coroutine = StartCoroutine(WaitToOpenChest(hit.transform.position, item));
             }
-            else if(hit.collider.tag == "Door")
+            else if (hit.collider.tag == "Door")
             {
                 LockedDoor door = hit.collider.GetComponent<LockedDoor>();
+
+                if (!door.Locked)
+                    return;
 
                 playerMovement.PickUpMove(hit.transform.position);
 
                 coroutine = StartCoroutine(WaitToOpenDoor(hit.transform.position, door));
-                
+
+            }
+            else if(hit.collider.tag == "CheckPoint")
+            {
+                playerMovement.PickUpMove(hit.transform.position);
+                coroutine = StartCoroutine(WaitToSaveGame(hit.transform.position));
             }
 
         }
 
-        public RaycastHit GetMousePoint()
+        public RaycastHit GetMousePoint(bool stopCoroutine = false)
         {
-            if(coroutine != null)
+            if (stopCoroutine && coroutine != null)
             {
                 StopCoroutine(coroutine);
                 coroutine = null;
@@ -144,13 +181,24 @@ namespace Delore.Player
 
         private IEnumerator WaitToOpenChest(Vector3 position, ChestItem item)
         {
-            
-            yield return new WaitUntil(() => Vector3.Distance(transform.position, position) < .3f);
+            yield return new WaitUntil(() => CheckChest(position));
             playerMovement.agent.isStopped = true;
             item.OpenChest();
             playerStats.AddItem(item.ItemId, item.ItemName);
             coroutine = null;
-            
+
+        }
+
+        private bool CheckChest(Vector3 position)
+        {
+            if (Mathf.Abs(transform.position.x - position.x) > 1f)
+                return false;
+            else if (Mathf.Abs(transform.position.y - position.y) > .3f)
+                return false;
+            else if (Mathf.Abs(transform.position.z - position.z) > 1f)
+                return false;
+            else
+                return true;
         }
 
         private IEnumerator WaitToOpenDoor(Vector3 position, LockedDoor door)
@@ -161,6 +209,14 @@ namespace Delore.Player
             coroutine = null;
         }
 
+
+        private IEnumerator WaitToSaveGame(Vector3 position)
+        {
+            yield return new WaitUntil(() => Vector3.Distance(transform.position, position) < 2f);
+            playerMovement.agent.isStopped = true;
+            SaveSystem.SavePlayer(gameObject);
+            coroutine = null;
+        }
         IEnumerator PlayerAppear()
         {
             yield return new WaitForSeconds(appearDelay);
@@ -170,7 +226,7 @@ namespace Delore.Player
             audioSFX.playOneTime(appearAudio);
             yield return new WaitForSeconds(1f);
             animator.SetBool(startParam, true);
-            foreach(SkinnedMeshRenderer renderer in playerRenderers)
+            foreach (SkinnedMeshRenderer renderer in playerRenderers)
             {
                 renderer.enabled = true;
             }
@@ -212,5 +268,23 @@ namespace Delore.Player
             PauseController.GamePaused = false;
             PauseController.BlockPauseMenu = false;
         }
+
+
+
+        private void ChangeObjColor(RaycastHit hit)
+        {
+            if (objectScript != null && objectScript.transform == hit.transform)
+                return;
+
+            if (objectScript != null)
+                objectScript.OutHover();
+
+            objectScript = hit.transform.GetComponent<ChangeColor>();
+            objectScript.OnHover();
+        }
+
     }
+
+    
+
 }

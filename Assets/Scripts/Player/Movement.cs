@@ -13,6 +13,7 @@ namespace Delore.Player
 
         public NavMeshAgent agent;
         public bool dead = false;
+        public bool end = false;
         [SerializeField] private CapsuleCollider capsuleCollider;
         [SerializeField] float slowingSpeed = 1.5f;
         [SerializeField] AudioSource playerSFX;
@@ -20,6 +21,7 @@ namespace Delore.Player
         [SerializeField] AudioClip death;
         [SerializeField] float duration;
         [SerializeField] CameraController controller;
+
         private float stepDelay = .4f;
         private float conDelay;
 
@@ -41,7 +43,12 @@ namespace Delore.Player
             PlayerData data = SaveSystem.LoadPlayer();
             if (data != null)
             {
+                agent.enabled = false;
+                Debug.Log("pos x: " + data.position_x);
+                Debug.Log("pos y: " + data.position_y);
+                Debug.Log("pos z: " + data.position_z);
                 transform.position = new Vector3(data.position_x, data.position_y, data.position_z);
+                agent.enabled = true;
             }
         }
 
@@ -61,6 +68,7 @@ namespace Delore.Player
                 rigidbody.angularVelocity = new Vector3(0, -.2f, 0);
                 return;
             }
+
 
             rigidbody.velocity = new Vector3(0,0,0);
             rigidbody.angularVelocity = new Vector3(0, 0, 0);
@@ -84,7 +92,7 @@ namespace Delore.Player
         {
             if (agent.isStopped)
                 agent.isStopped = false;
-            RaycastHit hit = mouseController.GetMousePoint();
+            RaycastHit hit = mouseController.GetMousePoint(true);
 
             if (CanMove(hit.point))
             {
@@ -104,6 +112,8 @@ namespace Delore.Player
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             speed = localVelocity.z;
             speed = speed / agent.speed;
+            if (end)
+                speed = speed / 2;
             animator.SetFloat("Forward", speed);
             stepDelay = conDelay * ((conDelay*2) / (conDelay + (speed * conDelay)));
             if (speed / agent.speed > 0)
@@ -222,6 +232,14 @@ namespace Delore.Player
             yield return new WaitForSeconds(2f);
             
             Triggered?.Invoke();
+        }
+
+        public void MoveToPoint(Vector3 position, float walkingSpeed)
+        {
+            agent.isStopped = true;
+            agent.isStopped = false;
+            agent.speed = walkingSpeed;
+            agent.destination = position;
         }
 
     }

@@ -24,6 +24,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private float startingDuration;
     [SerializeField] private float dialogueDuration;
     [SerializeField] private CanvasGroup blackScreen;
+    [SerializeField] private CanvasGroup thanksForPlaying;
+    [SerializeField] private SimpleAnimation simpleAnimation;
     [SerializeField] private MouseController mouseController;
 
     [Scene]
@@ -35,12 +37,17 @@ public class UIManager : MonoBehaviour
     [Scene]
     public string mainMenuScene;
 
+    private bool GameFinished = false;
+
     private VIDE_Assign asign;
     private GraphicRaycaster raycaster;
     private bool firstDialogue = true;
     // Start is called before the first frame update
     void Start()
     {
+        thanksForPlaying.alpha = 0;
+        thanksForPlaying.blocksRaycasts = false;
+        thanksForPlaying.interactable = false;
         blackScreen.alpha = 1;
         blackScreen.blocksRaycasts = true;
         StartCoroutine(SmoothStarting());
@@ -74,6 +81,13 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameFinished)
+        {
+            if(Input.anyKeyDown)
+            {
+                SceneManager.LoadScene(mainMenuScene);
+            }
+        }
 
         if(PauseController.GamePaused)
             raycaster.enabled = false;
@@ -215,6 +229,31 @@ public class UIManager : MonoBehaviour
         }
     }
 
+
+    public IEnumerator SmoothEndingGame()
+    {
+        float blackAlpha = 0;
+        while (blackScreen.alpha < 1)
+        {
+            blackAlpha += Time.unscaledDeltaTime / deathduration;
+            blackAlpha = Mathf.Clamp01(blackAlpha);
+            blackScreen.alpha = blackAlpha;
+            yield return null;
+        }
+        blackAlpha = 0;
+        simpleAnimation.startAnimation = true;
+        Debug.Log("ending");
+        while (thanksForPlaying.alpha < 1)
+        {
+            blackAlpha += Time.unscaledDeltaTime / deathduration;
+            blackAlpha = Mathf.Clamp01(blackAlpha);
+            thanksForPlaying.alpha = blackAlpha;
+            Debug.Log("alpha: "+thanksForPlaying.alpha);
+            yield return null;
+        }
+        thanksForPlaying.blocksRaycasts = true;
+        GameFinished = true;
+    }
 
 
     private IEnumerator EnableDialogue(VD.NodeData data)

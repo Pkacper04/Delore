@@ -937,6 +937,7 @@ GameObject:
   - component: {fileID: 1191243022796658260}
   - component: {fileID: 1191243022796658259}
   - component: {fileID: 1191243022796658258}
+  - component: {fileID: 1191243023099082057}
   m_Layer: 6
   m_Name: PlayerNew
   m_TagString: Player
@@ -1026,6 +1027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e212b44b66d634a8fed8aa5af480d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doors: []
 --- !u!114 &1191243022796658260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,8 +1052,10 @@ MonoBehaviour:
   - {fileID: 525144989879945564}
   audioSFX: {fileID: 0}
   appearAudio: {fileID: 8300000, guid: 108a9a42e7ec37e4bb97d8c201ad8a1e, type: 3}
+  manager: {fileID: 0}
   animator: {fileID: 4747551151612973417}
   startParam: Start
+  blockStartParam: 
   prologScene: Prolog
   afterlifeScene: AfterLife
 --- !u!114 &1191243022796658259
@@ -1068,6 +1072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1191243022796658258}
   dead: 0
+  end: 0
   capsuleCollider: {fileID: 1191243022796658256}
   slowingSpeed: 1.5
   playerSFX: {fileID: 0}
@@ -1076,6 +1081,7 @@ MonoBehaviour:
   duration: 3.5
   controller: {fileID: 0}
   animator: {fileID: 4747551151612973417}
+  speed: 0
   deathParam: Death
 --- !u!195 &1191243022796658258
 NavMeshAgent:
@@ -1099,6 +1105,41 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1191243023099082057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038244859087606185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88dbecf9652e964cb983454a300b4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chests:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  itemsNames:
+  - Old Key
+  - Library Key
+  - Cave Key
+  - Chamber Key
+  - Cell Key
+  - Torture Chamber Key
+  - Odd Cell Key
+  - Mossy Key
+  - Dry Key
+  - Skeleton Key
+  itemsId: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
 --- !u!1 &2125555793602645190
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,10 +8,16 @@ public class CameraChanging : MonoBehaviour
     [SerializeField] private bool changeAxis = false;
     [SerializeField, ShowIf("changeAxis")] private int cameraIdX;
     [SerializeField, ShowIf("changeAxis")] private int cameraIdZ;
+
+    [SerializeField]
+    private bool circle = false;
+    [SerializeField, ShowIf("circle")]
+    private CameraCircle cameraCircle;
+
     
     private CameraController controller;
-    [SerializeField]
-    private bool right = false;
+
+    public bool right = false;
     private GameObject player;
     private Vector3 enterPosition;
     private float rotation;
@@ -48,6 +54,8 @@ public class CameraChanging : MonoBehaviour
                     Debug.Log("xAxis and change: "+Mathf.Abs((enterPosition.z - other.transform.position.z)));
                     if (Mathf.Abs((enterPosition.z - other.transform.position.z)) < 0.2)
                         return;
+                    if (circle)
+                        cameraCircle.ChangeRight();
                     controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
                 }
                 else {
@@ -60,7 +68,11 @@ public class CameraChanging : MonoBehaviour
                     {
                         right = !right;
                         if (changeAxis)
+                        {
+                            if (circle)
+                                cameraCircle.ChangeRight();
                             controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
+                        }
                         else
                             controller.ChangeCamera(right);
                     }
@@ -74,6 +86,8 @@ public class CameraChanging : MonoBehaviour
                     Debug.Log("zAxis and change: " + Mathf.Abs((enterPosition.x - other.transform.position.x)));
                     if (Mathf.Abs((enterPosition.x - other.transform.position.x)) < 0.2)
                         return;
+                    if (circle)
+                        cameraCircle.ChangeRight();
                     controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
                 }
                 else
@@ -87,7 +101,11 @@ public class CameraChanging : MonoBehaviour
                     {
                         right = !right;
                         if (changeAxis)
+                        {
+                            if (circle)
+                                cameraCircle.ChangeRight();
                             controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
+                        }
                         else
                             controller.ChangeCamera(right);
                     }

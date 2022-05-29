@@ -12,42 +12,37 @@ public class PickupCore : MonoBehaviour
 
     public List<int> itemsId = new List<int>();
 
+    [SerializeField]
+    private PlayerStats stats;
 
     private void Awake()
     {
         if (!this.enabled)
             return;
-        PlayerData data = SaveSystem.LoadPlayer();
-        if (data != null)
+        for(int i=0;i<chests.Count;i++)
         {
-            Continued = true;
-                    
+            chests[i].ItemId = itemsId[i];
+            chests[i].ItemName = itemsNames[i];
         }
-        else
+        
+    }
+
+
+    private void Start()
+    {
+        foreach (ChestItem chest in chests)
         {
-            Continued = false;
-            for(int i=0;i<chests.Count;i++)
+            if (stats.PickedUpItems.ContainsKey(chest.ItemId))
             {
-                chests[i].ItemId = itemsId[i];
-                chests[i].ItemName = itemsNames[i];
+                chest.ChestOpened();
+            }
+            else if (stats.UsedItems.ContainsKey(chest.ItemId))
+            {
+                chest.ChestOpened();
             }
         }
     }
 
 
 
-
-    public void SaveChests()
-    {
-        foreach (ChestItem chest in chests)
-        {
-            chest.SaveChest();
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

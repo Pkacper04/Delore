@@ -55,7 +55,10 @@ public class CameraChanging : MonoBehaviour
                     if (Mathf.Abs((enterPosition.z - other.transform.position.z)) < 0.2)
                         return;
                     if (circle)
+                    {
                         cameraCircle.ChangeRight();
+                        cameraCircle.SetCamerasToZero();
+                    }
                     controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
                 }
                 else {
@@ -103,7 +106,10 @@ public class CameraChanging : MonoBehaviour
                         if (changeAxis)
                         {
                             if (circle)
+                            {
                                 cameraCircle.ChangeRight();
+                                cameraCircle.SetCamerasToOne();
+                            }
                             controller.ChangeAxis(!controller.xAxis, cameraIdX, cameraIdZ);
                         }
                         else

@@ -10,6 +10,11 @@ public class LockedDoor : MonoBehaviour
     [SerializeField] float rotateSize = 120;
     public float stoppingDistance = 2;
     public bool Locked = true;
+    public int enableQuestId;
+    public int disableQuestId;
+
+    [SerializeField]
+    private NotebookScript notebook;
 
     [SerializeField]
     private bool doubleDoor = false;
@@ -26,8 +31,8 @@ public class LockedDoor : MonoBehaviour
     private string checkPosition;
 
 
-    [SerializeField]
-    private bool LastDoor = false;
+
+    public bool LastDoor = false;
 
     [SerializeField, ShowIf("LastDoor")]
     private EndGame endGame;
@@ -39,7 +44,6 @@ public class LockedDoor : MonoBehaviour
     private AudioClip openSound;
 
     private PlayerStats stats;
-    private PickupCore core;
     private MeshCollider meshCollider;
 
     private void Start()
@@ -50,17 +54,20 @@ public class LockedDoor : MonoBehaviour
             secondDoorCollider.enabled = true;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         stats = player.GetComponent<PlayerStats>();
-        core = player.GetComponent<PickupCore>();
     }
     public void OpenDoor()
     {
         if (!Locked)
             return;
+
+        
         if (stats.CheckItem(keyId))
         {
+            
             stats.DeleteItem(keyId);
             if (doubleDoor)
             {
+
                 Locked = false;
                 secondDoor.Locked = false;
                 if(safeOpen)
@@ -92,10 +99,7 @@ public class LockedDoor : MonoBehaviour
                 Opening();
             }
         }
-        else
-        {
-            Debug.Log("Potrzebujesz klucza o nazwie: "+core.itemsNames[keyId]);
-        }
+        notebook.UpdateNotebook(this);
     }
 
     public async void Opening()

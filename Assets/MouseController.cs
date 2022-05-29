@@ -29,6 +29,12 @@ namespace Delore.Player
         private AudioTrigger audioSFX;
         [SerializeField]
         private AudioClip appearAudio;
+
+        [SerializeField]
+        private AudioSource audioUI;
+        [SerializeField]
+        private AudioClip SaveAudio;
+
         [SerializeField]
         private UIManager manager;
         [SerializeField]
@@ -37,6 +43,19 @@ namespace Delore.Player
         public string startParam;
         [AnimatorParam("animator")]
         public string blockStartParam;
+
+
+        [SerializeField]
+        private QuestSystem quests;
+        [SerializeField]
+        private NotebookScript notebook;
+
+
+        [SerializeField]
+        private AudioSource[] soundsToFade;
+
+        [SerializeField]
+        private float fadeDuration;
 
         [Scene]
         public string prologScene;
@@ -78,6 +97,7 @@ namespace Delore.Player
             else
             {
                 animator.SetBool(blockStartParam, true);
+                StartCoroutine(DelayAfterlife());
             }
         }
 
@@ -86,7 +106,6 @@ namespace Delore.Player
             #region DO WYRZUCENIA
             if (Input.GetKeyDown(KeyCode.M))
             {
-                core.SaveChests();
                 SaveSystem.SavePlayer(gameObject);
             }
 
@@ -109,6 +128,8 @@ namespace Delore.Player
             if (SceneManager.GetActiveScene().name == afterlifeScene)
                 return;
             RaycastHit hit = GetMousePoint(false);
+
+            Debug.Log(hit);
 
             if (hit.transform.tag == "Pickup" || hit.transform.tag == "Door" || hit.transform.tag == "CheckPoint")
             {
@@ -213,6 +234,7 @@ namespace Delore.Player
         private IEnumerator WaitToSaveGame(Vector3 position)
         {
             yield return new WaitUntil(() => Vector3.Distance(transform.position, position) < 2f);
+            audioUI.PlayOneShot(SaveAudio);
             playerMovement.agent.isStopped = true;
             SaveSystem.SavePlayer(gameObject);
             coroutine = null;
@@ -258,6 +280,7 @@ namespace Delore.Player
             effect.Stop();
             light.Stop();
             yield return new WaitForSeconds(2);
+            StartCoroutine(SoundFading.FadeInCoroutine(soundsToFade,fadeDuration,1,0));
             StartCoroutine(manager.SmoothEnding());
 
         }
@@ -267,9 +290,15 @@ namespace Delore.Player
             yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Movement"));
             PauseController.GamePaused = false;
             PauseController.BlockPauseMenu = false;
+            quests.BuildTextQuest(0);
+            notebook.UpdateNotebook("I have awakend", "I don't know what happened, iI died but im still alive? Wasn’t that just a dream? This place feels so familiar, yet so strange.");
         }
 
-
+        private IEnumerator DelayAfterlife()
+        {
+            yield return new WaitForSecondsRealtime(4f);
+            quests.BuildTextQuest(0);
+        }
 
         private void ChangeObjColor(RaycastHit hit)
         {

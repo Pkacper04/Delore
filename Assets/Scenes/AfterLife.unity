@@ -4301,6 +4301,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147770469}
   m_Mesh: {fileID: 4300446, guid: b2c61055c4a01ad43b08434f8178e1c9, type: 3}
+--- !u!114 &154580091 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+  m_PrefabInstance: {fileID: 612397546684903174}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d904d45df05ef04a959154caab52bc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &160398841
 GameObject:
   m_ObjectHideFlags: 0
@@ -8614,6 +8625,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397937539}
   m_Mesh: {fileID: 4300446, guid: b2c61055c4a01ad43b08434f8178e1c9, type: 3}
+--- !u!114 &408880953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3947422099738903161, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+  m_PrefabInstance: {fileID: 612397546684903174}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &409323589
 GameObject:
   m_ObjectHideFlags: 0
@@ -10727,7 +10749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 780597270192561361, guid: f54775fcd2a244142bb8c44f3d60559d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7074424
+      value: 0.70744234
       objectReference: {fileID: 0}
     - target: {fileID: 780597270192561361, guid: f54775fcd2a244142bb8c44f3d60559d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10735,11 +10757,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 780597270192561361, guid: f54775fcd2a244142bb8c44f3d60559d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6835978
+      value: -0.68359786
       objectReference: {fileID: 0}
     - target: {fileID: 780597270192561361, guid: f54775fcd2a244142bb8c44f3d60559d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.124730065
+      value: 0.12473008
       objectReference: {fileID: 0}
     - target: {fileID: 780597270192561361, guid: f54775fcd2a244142bb8c44f3d60559d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -24452,6 +24474,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 885560766}
     - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: fading
+      value: 
+      objectReference: {fileID: 1347621471}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: quests
+      value: 
+      objectReference: {fileID: 154580091}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: audioUI
+      value: 
+      objectReference: {fileID: 618304855}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 2950450823697388730}
@@ -24460,9 +24494,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1382665363}
     - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: fadeDuration
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
       propertyPath: blockStartParam
       value: WithoutStart
       objectReference: {fileID: 0}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: soundsToFade.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: soundsToFade.Array.data[0]
+      value: 
+      objectReference: {fileID: 18118613}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: soundsToFade.Array.data[1]
+      value: 
+      objectReference: {fileID: 951373296}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: soundsToFade.Array.data[2]
+      value: 
+      objectReference: {fileID: 1382665362}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: soundsToFade.Array.data[3]
+      value: 
+      objectReference: {fileID: 1356071474}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: soundsToFade.Array.data[4]
+      value: 
+      objectReference: {fileID: 885560766}
     - target: {fileID: 1191243023099082057, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
       propertyPath: chests.Array.size
       value: 0
@@ -26844,6 +26906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1347621470}
   - component: {fileID: 1347621469}
+  - component: {fileID: 1347621471}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -26866,6 +26929,13 @@ MonoBehaviour:
   SFXMixer: {fileID: 24100000, guid: d37ad02a13985d24b886be505cc380ef, type: 2}
   musicSlider: {fileID: 1989507179}
   soundEffectsSlider: {fileID: 1989507178}
+  fadeSounds:
+  - {fileID: 18118613}
+  - {fileID: 951373296}
+  - {fileID: 1382665362}
+  - {fileID: 1356071474}
+  - {fileID: 885560766}
+  fadeDuration: 5
 --- !u!4 &1347621470
 Transform:
   m_ObjectHideFlags: 0
@@ -26886,6 +26956,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1347621471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347621468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0180b87fcb701cb4eb69e8457633258e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1353129822
 GameObject:
   m_ObjectHideFlags: 0
@@ -30611,7 +30693,7 @@ MonoBehaviour:
   alias: 
   overrideStartNode: -1
   defaultNPCSprite: {fileID: 21300000, guid: 40785807ee98f534993b663578aa029a, type: 3}
-  defaultPlayerSprite: {fileID: 0}
+  defaultPlayerSprite: {fileID: 21300000, guid: 07505e7c17e8c6a45ad8d413ac5aaa25, type: 3}
   targetManager: {fileID: 0}
   preload: 0
   notuptodate: 0
@@ -37018,7 +37100,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874931220}
-  m_LocalRotation: {x: 0.12908076, y: -0.6835978, z: 0.124730065, w: 0.7074424}
+  m_LocalRotation: {x: 0.12908076, y: -0.68359786, z: 0.12473008, w: 0.70744234}
   m_LocalPosition: {x: 556.22, y: 260.3, z: 532.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -42165,6 +42247,178 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1989507181}
+    - target: {fileID: 280971126, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: questBuildingTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[0].questId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[1].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[2].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[3].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[4].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[5].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[6].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[7].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[8].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[9].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[10].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[11].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[12].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[13].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[14].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[15].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[16].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[17].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[18].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[19].questId
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[0].questName
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[1].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[2].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[3].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[4].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[5].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[6].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[7].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[8].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[9].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[10].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[11].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[12].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[13].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[14].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[15].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[16].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[17].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[18].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 473450062, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: quests.Array.data[19].questName
+      value: Open Skeleton Door
+      objectReference: {fileID: 0}
     - target: {fileID: 1472628039, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -42177,6 +42431,22 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1989507181}
+    - target: {fileID: 1683749274, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 612397544733835598, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 612397544733835598, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -600
+      objectReference: {fileID: 0}
+    - target: {fileID: 612397544733835598, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 2345732425933564877, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
       propertyPath: m_SizeDelta.y
       value: -230
@@ -42278,6 +42548,10 @@ PrefabInstance:
       value: MainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 2345732426418142140, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: Player_Sprite
+      value: 
+      objectReference: {fileID: 408880953}
+    - target: {fileID: 2345732426418142140, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
       propertyPath: mainMenuScene
       value: MainMenu
       objectReference: {fileID: 0}
@@ -42289,6 +42563,62 @@ PrefabInstance:
       propertyPath: mouseController
       value: 
       objectReference: {fileID: 476171501}
+    - target: {fileID: 2345732426836562741, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345732426922134262, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947422099738903161, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 07505e7c17e8c6a45ad8d413ac5aaa25, type: 3}
+    - target: {fileID: 4668426263681882219, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8018641723963553147, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_Name
+      value: Player_Sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792596043332837966, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792596043332837966, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792596043332837966, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792596043332837966, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -230
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792596043332837966, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792596043332837966, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792596043332837966, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792596043332837966, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792596043332837966, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -115
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
 --- !u!1 &1081991042935772028

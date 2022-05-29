@@ -31,12 +31,13 @@ namespace Delore.AI
         [SerializeField] float rotationSpeed = 10f;
         [SerializeField] float chasingSpeed = 3f;
         [SerializeField] float patrolSpeed = 2f;
+        [SerializeField] float floatingspeed;
         [SerializeField] Animator animator;
         [SerializeField] AudioTrigger audioTrigger;
         [SerializeField] AudioClip spotedClip;
 
         [AnimatorParam("animator")]
-        public string speedAnimator;
+        public string spotted;
 
         [SerializeField]
         float timeOfChasing = 3f;
@@ -64,15 +65,14 @@ namespace Delore.AI
                 Debug.Log("dziala");
                 agent.isStopped = true;
                 isChasing = false;
+                
                 if(patrolPoints.Count != 0)
                     StartCoroutine(Patrol());
-                UpdateAnimation();
                 return;
             }
             else if (playerMovement.dead)
             {
                 isChasing = false;
-                UpdateAnimation();
                 return;
             }
             
@@ -82,12 +82,11 @@ namespace Delore.AI
                 
             if (!isChasing && !waiting && patrolPoints.Count != 0)
                 StartCoroutine(Patrol());
-
-            UpdateAnimation();
         }
 
         private void Mover()
         {
+            animator.SetBool(spotted, true);
             if(!isChasing)
             {
                 Debug.Log("dzwiek");
@@ -110,22 +109,15 @@ namespace Delore.AI
             {
                 if (isChasing)
                     agent.isStopped = true;
+                animator.SetBool(spotted, false);
                 isChasing = false;
+                waiting = false;
             }
             timer -= Time.deltaTime;
         }
 
 
-        private void UpdateAnimation()
-        {
-            Vector3 velocity = agent.velocity;
-            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-            float speed = localVelocity.z;
-            float endSpeed = speed / agent.speed;
-            if (!isChasing)
-                endSpeed /= 2;
-            animator.SetFloat(speedAnimator, endSpeed);
-        }
+
         private IEnumerator Patrol()
         {
             agent.speed = patrolSpeed;
@@ -135,7 +127,6 @@ namespace Delore.AI
                 agent.isStopped = false;
 
             agent.destination = patrolPoints[currentPoint];
-            Debug.Log("new destination: "+agent.destination);
 
             yield return new WaitUntil(() => Vector3.Distance(transform.position,patrolPoints[currentPoint]) <= 1f);
 

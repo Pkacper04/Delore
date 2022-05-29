@@ -1024,8 +1024,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8745596435507396710}
   m_HandleRect: {fileID: 8745596436100226107}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.52598685
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1181,6 +1181,7 @@ GameObject:
   - component: {fileID: 8745596435937271873}
   - component: {fileID: 8745596435937271872}
   - component: {fileID: 1989507181}
+  - component: {fileID: 417467896}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -1285,6 +1286,106 @@ MonoBehaviour:
   source: {fileID: 0}
   highlightClip: {fileID: 8300000, guid: 9479476788bf1ef4b8c4f60273510b60, type: 3}
   clikedClip: {fileID: 8300000, guid: 5745dfc65b16f70478ef8262ed7bfd22, type: 3}
+--- !u!114 &417467896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745596435937271874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3968495c79ad8e847b2ee66a066fa2d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notebookText: {fileID: 8745596436185960199}
+  notificationAnimator: {fileID: 0}
+  showNotification: Show
+  notificationTime: 3
+  UiAudio: {fileID: 0}
+  notificationClip: {fileID: 8300000, guid: 73dda749c0277b0448837d1a7807134e, type: 3}
+  quests: {fileID: 0}
+  notebooks:
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: Locked. I need to find a key.
+    firstChestText: I have found a key, don't recognise it but it may fit in this
+      room's door.
+    secondDoorText: Key opened the door, wonder what waits for me there
+    activated: 0
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: Closed library door, key must be somewhere here.
+    firstChestText: Found a key in library, looks hefty, it must open the big door.
+    secondDoorText: "I opened the door in the library, hope i won\u2019t see anymore
+      ghosts, those things may not look terrifying but their voices make me shiver."
+    activated: 0
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: Looks like a cave behind this door
+    firstChestText: Found yet another key, but I don't see any more doors here need
+      to look elsewhere.
+    secondDoorText: There is a cave here, I see beautiful glow from underneath, and
+      no wraiths.
+    activated: 0
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: I think I see bones in between planks, what is behind this door!?
+    firstChestText: "Small key\u2026 for a small room?"
+    secondDoorText: Throne made of bones, with a chest next to it, this is creepy.
+    activated: 0
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: Prison cells? Here?
+    firstChestText: Looks like a key to a prison cell.
+    secondDoorText: I don't remember those cells being here, is this the hideout,
+      so twisted, it doesn't remind me of the original.
+    activated: 0
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: Is this a torture chamber?
+    firstChestText: This key has a weird smell, maybe it will open the chamber that
+      i passed.
+    secondDoorText: Opened door to torture chamber, looks like it was used a long
+      time ago.
+    activated: 0
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: I can see a cauldron inside, unfortunately i don't have a key.
+    firstChestText: Weird key that doesn't fit in the library, wonder where it belongs.
+    secondDoorText: Odd cauldron in the middle of the room here, and that smell.
+    activated: 0
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: Humid air is coming from behind that door.
+    firstChestText: Covered in moss, wonder what door it opens.
+    secondDoorText: Small swamp, how did it form here?
+    activated: 0
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: Big door, nothing unusual.
+    firstChestText: "Don't know why but this key seems odd, smells of\u2026 wine?"
+    secondDoorText: Another corridor, i feel lost.
+    activated: 0
+  - door1: {fileID: 0}
+    door2: {fileID: 0}
+    chest: {fileID: 0}
+    firstDoorText: "Light is flickering through, and I can see trees behind, it\u2019s
+      finally the  exit, but it's locked."
+    firstChestText: Skeleton key opens all the doors, maybe it will let me leave
+      this place?
+    secondDoorText: 
+    activated: 0
+  temporaryDoorId: -1
 --- !u!1 &8745596436100226106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,10 +1844,10 @@ RectTransform:
   m_Father: {fileID: 8745596436344648452}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 152.5, y: -800.005}
-  m_SizeDelta: {x: 305, y: 1600.01}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8745596436185960196
 CanvasRenderer:
@@ -1776,12 +1877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fe9783e341840cd4ea2f436dcb3751c6, type: 2}
   m_sharedMaterial: {fileID: 8302999320411448677, guid: fe9783e341840cd4ea2f436dcb3751c6, type: 2}
@@ -1808,8 +1904,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2391,7 +2487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &8745596436344648450
@@ -2566,10 +2662,10 @@ RectTransform:
   m_Father: {fileID: 8745596436344648452}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 152.5, y: -1608.01}
-  m_SizeDelta: {x: 305, y: 16}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8745596436677617624
 CanvasRenderer:

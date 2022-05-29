@@ -11,8 +11,12 @@ public class MenuController : MonoBehaviour
     [SerializeField] private Button continueButton;
     [SerializeField] private GameObject settings;
     [SerializeField] private GameObject infoBox;
+    [SerializeField] private GameObject credits;
     [SerializeField] private Sprite unClickableButton;
     [SerializeField] private Animator animator;
+
+    [SerializeField, AnimatorParam("animator")]
+    private string creditsParam;
 
     [Scene]
     public string newGameScene;
@@ -22,6 +26,7 @@ public class MenuController : MonoBehaviour
     {
         settings.SetActive(false);
         infoBox.SetActive(false);
+        credits.SetActive(false);
         PlayerData data = SaveSystem.LoadPlayer();
         if (data == null)
         {
@@ -46,7 +51,7 @@ public class MenuController : MonoBehaviour
         if (continueButton.interactable == false)
             StartNewGame();
 
-        if(infoBox.activeInHierarchy)
+        if (infoBox.activeInHierarchy)
         {
             animator.SetBool("info", false);
             StartCoroutine("WaitForAnimation", infoBox);
@@ -59,6 +64,16 @@ public class MenuController : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (credits.activeInHierarchy)
+            {
+                Credits();
+            }
+        }
+    }
 
     public void StartNewGame()
     {
@@ -73,6 +88,8 @@ public class MenuController : MonoBehaviour
         if (animator.IsInTransition(0))
             return;
         if (infoBox.activeInHierarchy)
+            return;
+        if (credits.activeInHierarchy)
             return;
 
         if (settings.activeInHierarchy)
@@ -90,7 +107,25 @@ public class MenuController : MonoBehaviour
 
     public void Credits()
     {
-        // Przyszle creditsy
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("buttons"))
+            return;
+        if (animator.IsInTransition(0))
+            return;
+        if (infoBox.activeInHierarchy)
+            return;
+        if (settings.activeInHierarchy)
+            return;
+
+        if (credits.activeInHierarchy)
+        {
+            animator.SetBool(creditsParam, false);
+            StartCoroutine("WaitForAnimation", credits);
+        }
+        else
+        {
+            animator.SetBool(creditsParam, true);
+            credits.SetActive(true);
+        }
     }
 
     public void Exit()

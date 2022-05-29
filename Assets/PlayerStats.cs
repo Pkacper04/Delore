@@ -16,16 +16,6 @@ public class PlayerStats : MonoBehaviour
             PickedUpItems = data.pickedUpItems;
             UsedItems = data.usedItems;
 
-            foreach (int keyId in PickedUpItems.Keys)
-            {
-                Debug.Log("Restored keys id: " + keyId);
-            }
-
-            foreach (string keyName in PickedUpItems.Values)
-            {
-                Debug.Log("Restored keys name: " + keyName);
-            }
-
             foreach (LockedDoor door in doors)
             {
                 if(UsedItems.ContainsKey(door.keyId))
@@ -34,6 +24,7 @@ public class PlayerStats : MonoBehaviour
                     door.Open();
                 }
             }
+
         }
     }
 

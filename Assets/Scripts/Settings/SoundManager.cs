@@ -12,6 +12,8 @@ public class SoundManager : MonoBehaviour
     public AudioMixer SFXMixer;
 
     [SerializeField] Slider musicSlider, soundEffectsSlider;
+    [SerializeField] AudioSource[] fadeSounds;
+    [SerializeField] float fadeDuration;
 
     private void Start()
     {
@@ -27,6 +29,8 @@ public class SoundManager : MonoBehaviour
             musicSlider.value = 0;
             soundEffectsSlider.value = 0;
         }
+
+        StartCoroutine(SoundFading.FadeInCoroutine(fadeSounds,fadeDuration,0,1));
     }
 
     public void UpdateSFXSound(Slider slider)

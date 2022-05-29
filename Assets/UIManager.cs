@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextWriter text_NPC;
     [SerializeField] private TextWriter text_player;
     [SerializeField] private Image NPC_Sprite;
+    [SerializeField] private Image Player_Sprite;
     [SerializeField] private GameObject GameOverScreen;
     [SerializeField] private Movement gameOverTrigger;
     [SerializeField] private float dialogueSpeed;
@@ -135,6 +136,7 @@ public class UIManager : MonoBehaviour
                 if (text_player.TextIsBuilding)
                     text_player.StopBuildingText();
                 text_player.ClearDialogue();
+                Player_Sprite.sprite = asign.defaultPlayerSprite;
                 text_player.BuildText(data.comments[data.commentIndex], dialogueSpeed);
             }
             else

@@ -33,6 +33,12 @@ public class CutsceneManager : MonoBehaviour
     [SerializeField]
     private TextWriter writer;
 
+    [SerializeField]
+    private AudioSource musicAudio;
+
+    [SerializeField]
+    private float soundFadeDuration;
+
     [Scene]
     public string afterCutsceneScene;
 
@@ -45,6 +51,7 @@ public class CutsceneManager : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(SoundFading.FadeInCoroutine(musicAudio, soundFadeDuration, 0, 1));
         dialoguePlace.color = new Color(1, 1, 1, 0);
         StartCoroutine(BlackScreen(2));
         
@@ -69,6 +76,7 @@ public class CutsceneManager : MonoBehaviour
     {
         if (currentCutscene + 1 == listOfCutscenes.numberOfCutscenes.Count)
         {
+            StartCoroutine(SoundFading.FadeInCoroutine(musicAudio, soundFadeDuration, 1, 0));
             StartCoroutine(EndScreen());
             return;
         }
@@ -166,6 +174,7 @@ public class CutsceneManager : MonoBehaviour
         writer.ClearDialogue();
         SceneManager.LoadScene(afterCutsceneScene);
     }
+
     private void ChangeImage()
     {
         cutscenePlace.sprite = listOfCutscenes.numberOfCutscenes[currentCutscene].cutsceneImages[currentImage];

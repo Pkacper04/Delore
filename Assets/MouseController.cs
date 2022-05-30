@@ -30,6 +30,7 @@ namespace Delore.Player
         [SerializeField]
         private AudioClip appearAudio;
 
+
         [SerializeField]
         private AudioSource audioUI;
         [SerializeField]
@@ -297,6 +298,8 @@ namespace Delore.Player
         private IEnumerator DelayAfterlife()
         {
             yield return new WaitForSecondsRealtime(4f);
+            yield return new WaitUntil(() => PauseController.BlockPauseMenu == false);
+            yield return new WaitForSecondsRealtime(1f);
             quests.BuildTextQuest(0);
         }
 

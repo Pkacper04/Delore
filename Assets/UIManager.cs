@@ -90,7 +90,7 @@ public class UIManager : MonoBehaviour
             }
         }
 
-        if(PauseController.GamePaused)
+        if(PauseController.GamePaused && !PauseController.BlockPauseMenu)
             raycaster.enabled = false;
         else
             raycaster.enabled = true;

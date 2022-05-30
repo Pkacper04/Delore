@@ -19,6 +19,7 @@ namespace Delore.AI
         float timer;
         bool isChasing = false;
         public bool waiting = false;
+        public bool endGame = false;
         Movement playerMovement;
        
 
@@ -60,6 +61,12 @@ namespace Delore.AI
 
         void Update()
         {
+            if (endGame)
+            {
+                agent.isStopped = true;
+                return;
+            }
+
             if(playerMovement.dead && !waiting)
             {
                 Debug.Log("dziala");

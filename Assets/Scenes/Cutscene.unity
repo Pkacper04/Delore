@@ -671,7 +671,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 231476796135932657, guid: d37ad02a13985d24b886be505cc380ef, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 82695f580b57d544791d1e9fcd54a190, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dcc1f9b7386afcf4183dea003fd80ea8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1391,8 +1391,9 @@ MonoBehaviour:
   SFXMixer: {fileID: 24100000, guid: d37ad02a13985d24b886be505cc380ef, type: 2}
   musicSlider: {fileID: 71773321}
   soundEffectsSlider: {fileID: 71773320}
-  fadeSounds: []
-  fadeDuration: 0
+  fadeSounds:
+  - {fileID: 556792970}
+  fadeDuration: 5
 --- !u!4 &1486248177
 Transform:
   m_ObjectHideFlags: 0

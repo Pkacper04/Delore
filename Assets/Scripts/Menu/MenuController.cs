@@ -12,6 +12,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] private GameObject settings;
     [SerializeField] private GameObject infoBox;
     [SerializeField] private GameObject credits;
+    [SerializeField] private GameObject tutorial;
     [SerializeField] private Sprite unClickableButton;
     [SerializeField] private Animator animator;
 
@@ -27,6 +28,7 @@ public class MenuController : MonoBehaviour
         settings.SetActive(false);
         infoBox.SetActive(false);
         credits.SetActive(false);
+        tutorial.SetActive(false);
         PlayerData data = SaveSystem.LoadPlayer();
         if (data == null)
         {
@@ -128,6 +130,19 @@ public class MenuController : MonoBehaviour
         }
     }
 
+    public void Tutorial()
+    {
+        if(tutorial.activeInHierarchy)
+        {
+            tutorial.SetActive(false);
+            settings.SetActive(true);
+        }
+        else
+        {
+            tutorial.SetActive(true);
+            settings.SetActive(false);
+        }
+    }
     public void Exit()
     {
         Application.Quit();

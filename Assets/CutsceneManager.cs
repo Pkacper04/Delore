@@ -172,6 +172,8 @@ public class CutsceneManager : MonoBehaviour
         if (writer.TextIsBuilding)
             writer.StopBuildingText();
         writer.ClearDialogue();
+
+        yield return new WaitForSeconds(4.5f);
         SceneManager.LoadScene(afterCutsceneScene);
     }
 

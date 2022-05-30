@@ -76,7 +76,7 @@ public class TextWriter : MonoBehaviour
         for(int i=0;i<text.Length;i++)
         {
             dialogue.text = string.Concat(dialogue.text, text[i]);
-            yield return new WaitForSeconds(displayTime);
+            yield return new WaitForSecondsRealtime(displayTime);
         }
         if (onEndIndent)
             dialogue.text += "\n";

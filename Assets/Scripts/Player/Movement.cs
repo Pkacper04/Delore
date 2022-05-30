@@ -34,6 +34,19 @@ namespace Delore.Player
         private Rigidbody rigidbody;
         private float cooldown = 0;
 
+        [SerializeField]
+        private AudioSource[] soundsToFade;
+
+
+        [SerializeField]
+        private AudioSource pingPongSource;
+
+        [SerializeField]
+        private AudioClip DeathClip;
+
+        [SerializeField]
+        private float deathFadeDuration;
+
         [AnimatorParam("animator")]
         public string deathParam;
 
@@ -221,6 +234,8 @@ namespace Delore.Player
 
         private IEnumerator DeathAnimation()
         {
+            StartCoroutine(SoundFading.FadeInCoroutine(soundsToFade, deathFadeDuration, 1, 0));
+            StartCoroutine(SoundFading.FadePingPong(pingPongSource, DeathClip, deathFadeDuration, 1, 0));
             animator.SetBool(deathParam,true);
             controller.DisableLooking();
             rigidbody.isKinematic = true;

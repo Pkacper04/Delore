@@ -1167,23 +1167,22 @@ MonoBehaviour:
     - cutsceneImages:
       - {fileID: 21300000, guid: 28c547c81accc0d4f9cfbbfdd93b3c4b, type: 3}
       - {fileID: 21300000, guid: 29f33098ba8ebcf40a0eb4858820aff8, type: 3}
-      cutsceneDialogue: In the kingdom which king is incompetent, its hard to be
-        suprised by apperance of rebelion.
+      cutsceneDialogue: In the kingdom where king is incompetent, nobody is suprised
+        by apperance of rebelion.
     - cutsceneImages:
       - {fileID: 21300000, guid: 32d2396def1f49142bf2db4bcfe8762e, type: 3}
       - {fileID: 21300000, guid: ebe289ef9282b59419da5f05b0724331, type: 3}
-      cutsceneDialogue: Thorn by inside conflicts and unhappy citizens, kingdom had
-        no future.
+      cutsceneDialogue: Torn by inside conflicts the kingdom had no future.
     - cutsceneImages:
       - {fileID: 21300000, guid: c62a5a51c7ac5114393856624bda2c55, type: 3}
       - {fileID: 21300000, guid: d3093ae54dddda04cafb32bee59bee59, type: 3}
-      cutsceneDialogue: Ambitions and over confidence of most powrful royal dignitaries
+      cutsceneDialogue: Ambitions and overconfidence of most powerful royal dignitaries
         made them stand up against it.
     - cutsceneImages:
       - {fileID: 21300000, guid: 4739c2c6dd91d9840a5f731a9a54202a, type: 3}
       - {fileID: 21300000, guid: 330bc2ea9107d984291e7ad5872c7678, type: 3}
-      cutsceneDialogue: Unfortunatley one of them was a traitor, and wanted to bury
-        the idea of rebelion.
+      cutsceneDialogue: Unfortunately one of them was a traitor, and wanted to bury
+        the idea of rebellion.
     - cutsceneImages:
       - {fileID: 21300000, guid: 5f7df96bc6bad964bae8e37405b7a97c, type: 3}
       - {fileID: 21300000, guid: 9dc4e0630f4304f4cabc6c3c8c281f6c, type: 3}
@@ -1197,8 +1196,8 @@ MonoBehaviour:
     - cutsceneImages:
       - {fileID: 21300000, guid: acdc0cfccf72f4b40935d489c1bcf4cd, type: 3}
       - {fileID: 21300000, guid: f6760ab3d433ed54e8f55a6005b3f8d6, type: 3}
-      cutsceneDialogue: Dago ressisted arrest, which resulted in one of tha guard
-        fatally wounding him.
+      cutsceneDialogue: Dago was ressisting, which resulted in fatal wounds dealt
+        by royal guard.
     - cutsceneImages:
       - {fileID: 21300000, guid: d0eb9dc4e84471f40a7f93b4e4124755, type: 3}
       - {fileID: 21300000, guid: 3a085d15ee343264e97f512c73a4e0db, type: 3}
@@ -1208,8 +1207,8 @@ MonoBehaviour:
       - {fileID: 21300000, guid: 2281614a78510844f943f9112a2e7440, type: 3}
       - {fileID: 21300000, guid: d74b9b1b722b1ab4d8ca35d704be053d, type: 3}
       cutsceneDialogue: "After countless escape attempts, people inside went insane.
-        Restless souls of the damned are haunting the corridors of the hideout. As
-        for Dago\u2026"
+        Trying to escape was futile. Restless souls of the damned are haunting the
+        corridors. As for Dago\u2026 "
 --- !u!1 &1415971087
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,11 +16,9 @@ namespace Delore.Player
         [SerializeField]
         private float appearDelay = 2f;
         [SerializeField]
-        private float duration = 2f;
-        [SerializeField]
         private VisualEffect effect;
         [SerializeField]
-        private ParticleSystem light;
+        private ParticleSystem particleLight;
         [SerializeField]
         private SkinnedMeshRenderer[] playerRenderers;
         [SerializeField]
@@ -128,23 +126,31 @@ namespace Delore.Player
         {
             if (SceneManager.GetActiveScene().name == afterlifeScene)
                 return;
+
+
             RaycastHit hit = GetMousePoint(false);
 
-            Debug.Log(hit);
 
-            if (hit.transform.tag == "Pickup" || hit.transform.tag == "Door" || hit.transform.tag == "CheckPoint")
+            try
             {
-                ChangeObjColor(hit);
-                ChangeCursros.PickUpCursor();
+                if (hit.transform.tag == "Pickup" || hit.transform.tag == "Door" || hit.transform.tag == "CheckPoint")
+                {
+                    ChangeObjColor(hit);
+                    ChangeCursros.PickUpCursor();
+                }
+                else
+                {
+                    if (objectScript == null)
+                        return;
+                    objectScript.OutHover();
+                    objectScript = null;
+                    ChangeCursros.ActiveCursor();
+
+                }
             }
-            else
+            catch
             {
-                if (objectScript == null)
-                    return;
-                objectScript.OutHover();
-                objectScript = null;
-                ChangeCursros.ActiveCursor();
-
+                return;
             }
 
 
@@ -198,7 +204,12 @@ namespace Delore.Player
             RaycastHit hit;
 
             Physics.Raycast(ray, out hit);
+
             return hit;
+           
+
+            
+            
         }
 
         private IEnumerator WaitToOpenChest(Vector3 position, ChestItem item)
@@ -244,7 +255,7 @@ namespace Delore.Player
         {
             yield return new WaitForSeconds(appearDelay);
             effect.Play();
-            light.Play();
+            particleLight.Play();
             yield return new WaitForSeconds(.5f);
             audioSFX.playOneTime(appearAudio);
             yield return new WaitForSeconds(1f);
@@ -258,7 +269,7 @@ namespace Delore.Player
                 item.enabled = true;
             }
             effect.Stop();
-            light.Stop();
+            particleLight.Stop();
 
 
             StartCoroutine(WaitForEndAnimation());
@@ -268,7 +279,7 @@ namespace Delore.Player
         {
             yield return new WaitForSeconds(appearDelay);
             effect.Play();
-            light.Play();
+            particleLight.Play();
             yield return new WaitForSeconds(1f);
             foreach (SkinnedMeshRenderer renderer in playerRenderers)
             {
@@ -279,7 +290,7 @@ namespace Delore.Player
                 item.enabled = false;
             }
             effect.Stop();
-            light.Stop();
+            particleLight.Stop();
             yield return new WaitForSeconds(2);
             StartCoroutine(SoundFading.FadeInCoroutine(soundsToFade,fadeDuration,1,0));
             StartCoroutine(manager.SmoothEnding());
@@ -292,7 +303,7 @@ namespace Delore.Player
             PauseController.GamePaused = false;
             PauseController.BlockPauseMenu = false;
             quests.BuildTextQuest(0);
-            notebook.UpdateNotebook("I have awakend", "I don't know what happened, iI died but im still alive? Wasn’t that just a dream? This place feels so familiar, yet so strange.");
+            notebook.UpdateNotebook("I have awakend", "I don't know what happened, I died but im still alive? Wasn’t that just a dream? This place feels so familiar, yet so strange.");
         }
 
         private IEnumerator DelayAfterlife()

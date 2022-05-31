@@ -22,7 +22,6 @@ public class CmeraSaveLoad : MonoBehaviour
 
             controller.camNumber = data.camNumber;
             controller.xAxis = data.xAxis;
-            controller.camNumberStorage = data.storedCamNumber;
 
             CinemachineVirtualCameraBase tmpCamera = stateCamera.ChildCameras[0];
 

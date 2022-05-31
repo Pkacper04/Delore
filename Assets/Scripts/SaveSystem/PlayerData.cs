@@ -44,7 +44,6 @@ public class PlayerData
         camNumber = controller.camNumber;
         xAxis = controller.xAxis;
         lastCameraId = controller.lastCameraId;
-        storedCamNumber = controller.camNumberStorage;
 
         levelID = SceneManager.GetActiveScene().buildIndex;
 

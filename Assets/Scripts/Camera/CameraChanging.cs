@@ -52,7 +52,7 @@ public class CameraChanging : MonoBehaviour
                 if (changeAxis && rotation == 90)
                 {
                     Debug.Log("xAxis and change: "+Mathf.Abs((enterPosition.z - other.transform.position.z)));
-                    if (Mathf.Abs((enterPosition.z - other.transform.position.z)) < 0.2)
+                    if (Mathf.Abs((enterPosition.z - other.transform.position.z)) < 0.35f)
                         return;
                     if (circle)
                     {
@@ -63,7 +63,7 @@ public class CameraChanging : MonoBehaviour
                 }
                 else {
                     Debug.Log("xAxis: " + Mathf.Abs((enterPosition.x - other.transform.position.x)));
-                    if (Mathf.Abs((enterPosition.x - other.transform.position.x)) < 0.2)
+                    if (Mathf.Abs((enterPosition.x - other.transform.position.x)) < 0.35f)
                     {
                         return;
                     }
@@ -87,7 +87,7 @@ public class CameraChanging : MonoBehaviour
                 if (changeAxis && rotation == 0)
                 {
                     Debug.Log("zAxis and change: " + Mathf.Abs((enterPosition.x - other.transform.position.x)));
-                    if (Mathf.Abs((enterPosition.x - other.transform.position.x)) < 0.2)
+                    if (Mathf.Abs((enterPosition.x - other.transform.position.x)) < 0.35f)
                         return;
                     if (circle)
                         cameraCircle.ChangeRight();
@@ -96,7 +96,7 @@ public class CameraChanging : MonoBehaviour
                 else
                 {
                     Debug.Log("zAxis: " + Mathf.Abs((enterPosition.z - other.transform.position.z)));
-                    if (Mathf.Abs((enterPosition.z - other.transform.position.z)) < 0.2)
+                    if (Mathf.Abs((enterPosition.z - other.transform.position.z)) < 0.35f)
                     {
                         return;
                     }

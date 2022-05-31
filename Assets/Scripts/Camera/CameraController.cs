@@ -24,13 +24,12 @@ public class CameraController : MonoBehaviour
     private bool blockOffseIncrement;
     private bool blockOffsetDectrement;
 
-    internal int camNumberStorage;
     internal Transform mainCamera;
     internal int camNumber = 1;
     internal int lastCameraId = 0;
     public bool xAxis = true;
 
-
+    private bool startCamera = false;
     private void Start()
     {
         storageOffset = playerOffset;
@@ -41,19 +40,21 @@ public class CameraController : MonoBehaviour
 
         cameraSaveSystem.LoadData(this);
 
-        if(xAxis)
-            animator.SetInteger("CameraNumberX", camNumber);
-        else
-        {
-            animator.SetInteger("CameraNumberZ", camNumber);
-            WaitForTransition();
-        }
+        Debug.Log("Camera Number: "+camNumber);
+        Debug.Log("Last Number: "+camNumber);
+        Debug.Log("XAxis: "+xAxis);
+
+        StartCoroutine(WaitForCameraToChange());
+
     }
 
 
 
     void Update()
     {
+        if (!startCamera)
+            return;
+
         cameraSaveSystem.SetCameraId(this);
 
         if (!animator.IsInTransition(0) && !inTransition)
@@ -135,6 +136,20 @@ public class CameraController : MonoBehaviour
         inTransition = true;
         yield return new WaitUntil(() => animator.IsInTransition(0));
         inTransition = false;
+    }
+
+    private IEnumerator WaitForCameraToChange()
+    {
+        if (xAxis)
+            animator.SetInteger("CameraNumberX", camNumber);
+        else
+        {
+            animator.SetInteger("CameraNumberZ", camNumber);
+            WaitForTransition();
+        }
+
+        yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsTag("start") == false);
+        startCamera = true;
     }
 
 private void OverrideOffset()

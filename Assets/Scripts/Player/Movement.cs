@@ -15,7 +15,6 @@ namespace Delore.Player
         public bool dead = false;
         public bool end = false;
         [SerializeField] private CapsuleCollider capsuleCollider;
-        [SerializeField] float slowingSpeed = 1.5f;
         [SerializeField] AudioSource playerSFX;
         [SerializeField] AudioClip steps;
         [SerializeField] AudioClip death;
@@ -31,7 +30,7 @@ namespace Delore.Player
         public float speed;
         private MouseController mouseController;
         private PlayerStats playerStats;
-        private Rigidbody rigidbody;
+        private Rigidbody prigidbody;
         private float cooldown = 0;
 
         [SerializeField]
@@ -49,6 +48,10 @@ namespace Delore.Player
 
         [AnimatorParam("animator")]
         public string deathParam;
+
+
+        [SerializeField, Tag]
+        private string doorTag;
 
         private void Awake()
         {
@@ -70,23 +73,23 @@ namespace Delore.Player
             speed = agent.speed;
             mouseController = GetComponent<MouseController>();
             playerStats = GetComponent<PlayerStats>();
-            rigidbody = GetComponent<Rigidbody>();
+            prigidbody = GetComponent<Rigidbody>();
         }
 
         void Update()
         {
             if (dead)
             {
-                rigidbody.velocity = new Vector3(0, -.2f, 0);
-                rigidbody.angularVelocity = new Vector3(0, -.2f, 0);
+                prigidbody.velocity = new Vector3(0, -.2f, 0);
+                prigidbody.angularVelocity = new Vector3(0, -.2f, 0);
                 return;
             }
 
 
-            rigidbody.velocity = new Vector3(0,0,0);
-            rigidbody.angularVelocity = new Vector3(0, 0, 0);
-            if (Mathf.Abs(rigidbody.velocity.x) > 1 || Mathf.Abs(rigidbody.velocity.y) > 1)
-                rigidbody.velocity = new Vector3(0,0,0);
+            prigidbody.velocity = new Vector3(0,0,0);
+            prigidbody.angularVelocity = new Vector3(0, 0, 0);
+            if (Mathf.Abs(prigidbody.velocity.x) > 1 || Mathf.Abs(prigidbody.velocity.y) > 1)
+                prigidbody.velocity = new Vector3(0,0,0);
             if (Input.GetMouseButton(1) && !PauseController.GamePaused)
             {
                 MoveToCursor();
@@ -107,13 +110,26 @@ namespace Delore.Player
                 agent.isStopped = false;
             RaycastHit hit = mouseController.GetMousePoint(true);
 
-            if (CanMove(hit.point))
+            try
             {
-                agent.destination = hit.point;
-                mouseController.MovingToChest = false;
+                if (hit.transform.tag == doorTag)
+                {
+                    ChangeCursros.DeclineCursor();
+                    return;
+                }
+
+                if (CanMove(hit.point))
+                {
+                    agent.destination = hit.point;
+                    mouseController.MovingToChest = false;
+                }
+                else
+                    ChangeCursros.DeclineCursor();
             }
-            else
-                ChangeCursros.DeclineCursor();
+            catch
+            {
+                return;
+            }
         }
 
         private void UpdateAnimations()
@@ -238,7 +254,7 @@ namespace Delore.Player
             StartCoroutine(SoundFading.FadePingPong(pingPongSource, DeathClip, deathFadeDuration, 1, 0));
             animator.SetBool(deathParam,true);
             controller.DisableLooking();
-            rigidbody.isKinematic = true;
+            prigidbody.isKinematic = true;
             capsuleCollider.enabled = false;
             agent.enabled = false;
 

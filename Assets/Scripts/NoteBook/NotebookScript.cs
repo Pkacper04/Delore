@@ -54,7 +54,7 @@ public class NotebookScript : MonoBehaviour
 
     public void UpdateNotebook(LockedDoor door = null)
     {
-        if (temporaryDoorId == door.keyId)
+        if (IsActivated(door))
         {
             Debug.Log("Door locked: "+door.Locked);
             if (!door.Locked)
@@ -179,6 +179,22 @@ public class NotebookScript : MonoBehaviour
         foreach (NotebookController controller in notebooks)
         {
             if (controller.chest.ItemId == chest.ItemId)
+            {
+                return controller.activated;
+            }
+        }
+        return false;
+    }
+
+    private bool IsActivated(LockedDoor door)
+    {
+        foreach (NotebookController controller in notebooks)
+        {
+            if (controller.door1.keyId == door.keyId)
+            {
+                return controller.activated;
+            }
+            else if(controller.door2.keyId == door.keyId)
             {
                 return controller.activated;
             }

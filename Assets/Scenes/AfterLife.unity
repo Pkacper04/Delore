@@ -4115,7 +4115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 78416cb133ec0374392bbc8446a9d9c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5978f3df6b4a2cb45998b0e33d10164a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25000,6 +25000,10 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+      propertyPath: particleLight
+      value: 
+      objectReference: {fileID: 1220321036}
+    - target: {fileID: 1191243022796658260, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
       propertyPath: blockStartParam
       value: WithoutStart
       objectReference: {fileID: 0}
@@ -26329,6 +26333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+--- !u!198 &1220321036 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1235662879846937342, guid: 3d3da0921ba10f44d812916e7eab608f, type: 3}
+  m_PrefabInstance: {fileID: 1220321035}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1225753591
 GameObject:
   m_ObjectHideFlags: 0
@@ -40973,6 +40982,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1566681885, guid: 5dd8c168e0740ad4aa215cf13f45b467, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 564b7f29bcf99df4fa8b9989efc22592, type: 3}
     - target: {fileID: 1989507181, guid: 5dd8c168e0740ad4aa215cf13f45b467, type: 3}
       propertyPath: source
       value: 
@@ -44473,12 +44486,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 612397544733835598, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -600
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 612397544733835598, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250
+      value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 612397544733835599, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 612397544733835599, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 612397544733835599, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: fe9783e341840cd4ea2f436dcb3751c6, type: 2}
+    - target: {fileID: 612397544733835599, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 612397544733835599, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 612397544733835599, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8302999320411448677, guid: fe9783e341840cd4ea2f436dcb3751c6, type: 2}
+    - target: {fileID: 612397546198061402, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 612397546198061402, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: fe9783e341840cd4ea2f436dcb3751c6, type: 2}
+    - target: {fileID: 612397546198061402, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 612397546198061402, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8302999320411448677, guid: fe9783e341840cd4ea2f436dcb3751c6, type: 2}
     - target: {fileID: 2345732425933564877, guid: 07ee855114297164aa76e8dc428b63c7, type: 3}
       propertyPath: m_SizeDelta.y
       value: -230
